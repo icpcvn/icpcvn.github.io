@@ -12,7 +12,7 @@ int p[311];
 int main() {
     int test;
     cin >> test;
-    
+
     while (test--) {
         int n;
         cin >> n;
@@ -26,11 +26,11 @@ int main() {
                 for (int c2 = 0; c2 <= c3; c2++) {
                     int c1 = i - c3 - c2;
                     if (c2 >= c1 && c1 >= 0) {
-                        
-                        bool p1 = (c3 >= c2 && c2 >= c1 - 1);
+
+                        bool p1 = (c3 >= c2 && c2 >= c1 - 1 && c1 - 1 >= 0);
                         bool p2 = (c3 >= c2 - 1 && c2 - 1 >= c1);
                         bool p3 = (c3 - 1 >= c2 && c2 >= c1);
-                        
+
                         f[i][c3][c2] = 0;
                         if (p1) f[i][c3][c2] = max(f[i][c3][c2], f[i - 1][c3][c2]);
                         if (p2) f[i][c3][c2] = max(f[i][c3][c2], f[i - 1][c3][c2 - 1] + p[i]);
@@ -40,7 +40,6 @@ int main() {
         }
         cout << f[3 * n][n][n] << endl;
     }
-    
+
     return 0;
 }
-
