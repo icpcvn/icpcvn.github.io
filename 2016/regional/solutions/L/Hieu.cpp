@@ -137,52 +137,8 @@ void trau(){
     }
 }
 
-int rand_small(){
-	return rand() % 100 + 1;
-}
-
-int rand_big(){
-	return rand() % 1000 * 1000000 + rand() % 1000 * 1000 + rand() % 1000 + 1;
-}
-
-void gen(){
-	srand(1412);
-	freopen("in.txt", "w", stdout);
-	cout << 100 << endl;
-	Rep(run, 100){
-		if(run < 20){
-			n = rand() % 5 + 1;
-			m = rand() % 10 + 1;
-		} else if(run < 50){
-			n = rand() % 10 + 1;
-			m = rand() % 100 + 1;
-		} else if(run < 70){
-			n = rand() % 10 + 1;
-			m = rand() % 10000 + 1;
-		} else if(run < 95){
-			n = rand() % 20 + 1;
-			m = rand() % 100 + 1;
-		} else{
-			n = 20;
-			m = 10000;
-		}
-		cout << n << " " << m << " " << n << endl;
-		Rep(i, n) Rep(j, m){
-			int x;
-			if(run < 50) x = rand_small();
-			else x = rand_big();
-			cout << x;
-			if(j == m - 1) cout << "\n";
-			else cout << " ";
-		}
-
-		Rep(i, n) cout << i + 1 << endl;
-	}
-}
-
 int main()
 {
-//	gen();
 	solve();
 //	trau();
     return 0;

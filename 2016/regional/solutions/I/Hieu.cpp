@@ -137,47 +137,8 @@ void solve(){
 	}
 }
 
-void gen_small(){
-	ll A = rand() % 100 + 2, add = rand() % 100;
-	ll B = A + add;
-	cout << A << " " << B << endl;
-}
-
-ll rand_big_number(){
-	ll X = rand() % 1000 * 1ll * 1000000000ll + rand() % 1000 * 1000000 + rand() % 1000 * 1000 + rand() % 1000 + 1;
-	return X;
-}
-
-void gen_big(int run){
-	while(1){
-		ll B = rand_big_number();
-		if(B >= 100001){
-			ll A = B - 100000 + 1 + (run - 70) * (rand() % 100);
-			cout << A << " " << B << "\n";
-			break;
-		}
-	}
-}
-
-void gen(){
-	srand(1412);
-	freopen("in.txt", "w", stdout);
-	cout << 100 << endl;
-	Rep(i, 18){
-		cout << 2 << " " << 2 + i + 1 << "\n";
-	}
-	cout << "842 850\n";
-	cout << "842 846\n";
-	Rep(run, 80){
-		if(run < 70){
-			gen_small();
-		} else gen_big(run);
-	}
-}
-
 int main()
 {
-//	gen();
 	solve();
 //	trau();
     return 0;
