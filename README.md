@@ -1,2 +1,2 @@
-acmicpc-vietnam.github.io
+icpcvn.github.io
 
