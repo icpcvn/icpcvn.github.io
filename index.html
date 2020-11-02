@@ -12,57 +12,57 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <title>ICPC Editorials</title>
+    <title>Vietnam ICPC Archives</title>
   </head>
   <body>
     <div class="container-fluid mb-3 mt-5">
-        <div class="row mb-4">
-            <div class="col-md-12 text-center">
-                <h1>
-                    Vietnam ICPC Editorials
-                </h1>
-            </div>
+      <div class="row mb-4">
+        <div class="col-md-12 text-center">
+          <h1>
+            Vietnam ICPC Archives
+          </h1>
         </div>
-        <div class="row">
-            {% for item in site.data.editorials %}
-                <div class="col-md-3">
-                    <div class="row mb-5">
-                        <div class="col-md-12">
-                            <div class="card">
-                                <div class="card-header text-center text-white bg-dark">
-                                    <h4 class="mb-0">
-                                        {{ item.year }}
-                                    </h4>
-                                </div>
-                                <div class="card-body">
-                                    {% for contest in item.contests %}
-                                        <div class="row">
-                                            <div class="col-md-4 border-right text-center d-flex flex-row justify-content-center align-items-center">
-                                                <h5 class="mb-0">
-                                                    {{ contest.type }}
-                                                </h5>
-                                            </div>
-                                            <div class="col-md-8">
-                                                {% for content in contest.contents %}
-                                                    <div><a target="_blank" href="{{ content.url }}">{{ content.title }}</a></div>
-                                                {% endfor %}
-                                            </div>
-                                        </div>
-                                        {% if forloop.index < item.contests.size-1 %}
-                                            <div class="row">
-                                                <div class="col-md-12">
-                                                    <hr>
-                                                </div>
-                                            </div>
-                                        {% endif %}
-                                    {% endfor %}
-                                </div>
-                            </div>
+      </div>
+      <div class="row">
+        {% for item in site.data.editorials %}
+          <div class="col-md-3">
+            <div class="row mb-5">
+              <div class="col-md-12">
+                <div class="card">
+                  <div class="card-header text-center text-white bg-dark">
+                    <h4 class="mb-0">
+                      {{ item.year }}
+                    </h4>
+                  </div>
+                  <div class="card-body">
+                    {% for contest in item.contests %}
+                      <div class="row">
+                        <div class="col-md-4 border-right text-center d-flex flex-row justify-content-center align-items-center">
+                          <h5 class="mb-0">
+                            {{ contest.type }}
+                          </h5>
                         </div>
-                    </div>
+                        <div class="col-md-8">
+                          {% for content in contest.contents %}
+                            <div><a target="_blank" href="{{ content.url }}">{{ content.title }}</a></div>
+                          {% endfor %}
+                        </div>
+                      </div>
+                      {% if forloop.index < item.contests.size %}
+                        <div class="row">
+                          <div class="col-md-12">
+                            <hr>
+                          </div>
+                        </div>
+                      {% endif %}
+                    {% endfor %}
+                  </div>
                 </div>
-            {% endfor %}
-        </div>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
     </div>
 
     <!-- Optional JavaScript -->
