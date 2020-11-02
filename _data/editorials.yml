@@ -1,5 +1,13 @@
 - year: 2020
   contests:
+    - type: Regional
+      contents:
+        # - title:
+        #   url:
+    - type: National
+      contents:
+        # - title:
+        #   url:
     - type: Southern
       contents:
         - title: Scoreboard
