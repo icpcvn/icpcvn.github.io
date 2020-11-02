@@ -1,3 +1,17 @@
+- year: 2020
+  contests:
+    - type: Southern
+      contents:
+        - title: Scoreboard
+          url: 2020/southern/scoreboard.html
+        - title: Problems
+          url: 2020/southern/problems.pdf
+    - type: Northern - Central
+      contents:
+        - title: Scoreboard
+          url: 2020/northern-central/scoreboard.html
+        - title: Problems
+          url: 2020/northern-central/problems.pdf
 - year: 2019
   contests:
     - type: Regional
@@ -117,6 +131,7 @@
         - title: Solutions
           url: https://github.com/acmicpc-vietnam/acmicpc-vietnam.github.io/tree/master/2016/regional/solutions
         - type: National
+    - type: National
       contents:
         - title: Scoreboard
           url: 2016/national/scoreboard.html
