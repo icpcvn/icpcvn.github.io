@@ -6,8 +6,8 @@
         #   url:
     - type: National
       contents:
-        # - title:
-        #   url:
+        - title: Full information
+          url: https://vietnam-national20.kattis.com
     - type: Southern
       contents:
         - title: Scoreboard
