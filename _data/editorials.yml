@@ -2,8 +2,8 @@
   contests:
     - type: Regional
       contents:
-        # - title:
-        #   url:
+        - title: Full information
+          url: https://cantho20.kattis.com
     - type: National
       contents:
         - title: Full information
