@@ -1,3 +1,11 @@
+- year: 2021
+  contests:
+    - type: Southern
+      contents:
+        - title: Scoreboard
+          url: 2021/southern/scoreboard.html
+        - title: Problems
+          url: 2021/southern/problems.zip
 - year: 2020
   contests:
     - type: Regional
