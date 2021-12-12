@@ -6,6 +6,12 @@
           url: 2021/southern/scoreboard.html
         - title: Problems
           url: 2021/southern/problems.zip
+    - type: Central
+      contents:
+        - title: Scoreboard
+          url: 2021/central/scoreboard.html
+        - title: Problems
+          url: 2021/central/problems.zip
 - year: 2020
   contests:
     - type: Regional
