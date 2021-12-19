@@ -12,6 +12,10 @@
           url: 2021/central/scoreboard.html
         - title: Problems
           url: 2021/central/problems.zip
+    - type: Northern
+      contents:
+        - title: Problems
+          url: 2021/northern/problems.pdf
 - year: 2020
   contests:
     - type: Regional
