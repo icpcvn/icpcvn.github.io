@@ -14,6 +14,8 @@
           url: 2021/central/problems.zip
     - type: Northern
       contents:
+        - title: Scoreboard
+          url: 2021/northern/scoreboard.html
         - title: Problems
           url: 2021/northern/problems.pdf
 - year: 2020
