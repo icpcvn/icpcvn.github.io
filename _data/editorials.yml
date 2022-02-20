@@ -1,5 +1,9 @@
 - year: 2021
   contests:
+    - type: National
+      contents:
+        - title: Problems
+          url: 2021/national/problems.pdf      
     - type: Southern
       contents:
         - title: Scoreboard
