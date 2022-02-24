@@ -3,8 +3,7 @@
     - type: National
       contents:
         - title: Scoreboard
-          url: 2021/national/scoreboard.html      
-      contents:
+          url: 2021/national/scoreboard.html
         - title: Problems
           url: 2021/national/problems.pdf      
     - type: Southern
