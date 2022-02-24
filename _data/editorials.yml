@@ -2,11 +2,11 @@
   contests:
     - type: National
       contents:
-        - title: Problems
-          url: 2021/national/problems.pdf      
+        - title: Scoreboard
+          url: 2021/national/scoreboard.html      
       contents:
         - title: Problems
-          url: 2021/national/scoreboard.html      
+          url: 2021/national/problems.pdf      
     - type: Southern
       contents:
         - title: Scoreboard
