@@ -1,5 +1,11 @@
 - year: 2021
   contests:
+    - type: Regional
+      contents:
+        - title: Scoreboard
+          url: 2021/regional/scoreboard.html
+        - title: Problems
+          url: 2021/regional/problems.pdf
     - type: National
       contents:
         - title: Scoreboard
