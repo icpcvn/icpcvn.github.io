@@ -5,12 +5,16 @@
         - title: Scoreboard
           url: 2021/regional/scoreboard.html
         - title: Problems
+          url: https://oj.vnoi.info/contest/icpc21_regional_m
+        - title: Problems PDF
           url: 2021/regional/problems.pdf
     - type: National
       contents:
         - title: Scoreboard
           url: 2021/national/scoreboard.html
         - title: Problems
+          url: https://oj.vnoi.info/contest/icpc21_national
+        - title: Problems PDF
           url: 2021/national/problems.pdf      
     - type: Southern
       contents:
