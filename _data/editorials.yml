@@ -1,3 +1,13 @@
+- year: 2022
+  contests:
+    - type: Northern
+      contents:
+        - title: Scoreboard
+          url: 2022/northern/scoreboard.html
+        - title: Problems
+          url: 2022/northern/problems.pdf
+        - title: Upsolve
+          url: https://oj.vnoi.info/contest/icpc22_mb
 - year: 2021
   contests:
     - type: Regional
@@ -5,17 +15,17 @@
         - title: Scoreboard
           url: 2021/regional/scoreboard.html
         - title: Problems
-          url: https://oj.vnoi.info/contest/icpc21_regional_m
-        - title: Problems PDF
           url: 2021/regional/problems.pdf
+        - title: Upsolve
+          url: https://oj.vnoi.info/contest/icpc21_regional_m
     - type: National
       contents:
         - title: Scoreboard
           url: 2021/national/scoreboard.html
         - title: Problems
-          url: https://oj.vnoi.info/contest/icpc21_national
-        - title: Problems PDF
           url: 2021/national/problems.pdf      
+        - title: Upsolve
+          url: https://oj.vnoi.info/contest/icpc21_national
     - type: Southern
       contents:
         - title: Scoreboard
