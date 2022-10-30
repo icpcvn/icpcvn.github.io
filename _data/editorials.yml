@@ -8,6 +8,14 @@
           url: 2022/northern/problems.pdf
         - title: Upsolve
           url: https://oj.vnoi.info/contest/icpc22_mb
+    - type: Central
+      contents:
+        - title: Scoreboard
+          url: 2022/central/scoreboard.html
+        - title: Problems
+          url: 2022/central/problems.pdf
+        - title: Upsolve
+          url: https://oj.vnoi.info/contest/icpc22_mt
 - year: 2021
   contests:
     - type: Regional
