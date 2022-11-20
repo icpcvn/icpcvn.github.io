@@ -47,7 +47,7 @@
         - title: Scoreboard
           url: 2021/national/scoreboard.html
         - title: Problems
-          url: 2021/national/problems.pdf      
+          url: 2021/national/problems.pdf
         - title: Upsolve
           url: https://oj.vnoi.info/contest/icpc21_national
     - type: Southern
@@ -56,18 +56,24 @@
           url: 2021/southern/scoreboard.html
         - title: Problems
           url: 2021/southern/problems.zip
+        - title: Upsolve
+          url: https://oj.vnoi.info/contest/icpc21_mn
     - type: Central
       contents:
         - title: Scoreboard
           url: 2021/central/scoreboard.html
         - title: Problems
           url: 2021/central/problems.zip
+        - title: Upsolve
+          url: https://oj.vnoi.info/contest/icpc21_mt
     - type: Northern
       contents:
         - title: Scoreboard
           url: 2021/northern/scoreboard.html
         - title: Problems
           url: 2021/northern/problems.pdf
+        - title: Upsolve
+          url: https://oj.vnoi.info/contest/icpc21_mb
 - year: 2020
   contests:
     - type: Regional
