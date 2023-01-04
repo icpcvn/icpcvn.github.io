@@ -1,5 +1,15 @@
 - year: 2022
   contests:
+    - type: Regional
+      contents:
+        - title: Scoreboard
+          url: 2022/regional/scoreboard.html
+        - title: Scoreboard (HSGS)
+          url: 2022/regional/hsgs-scoreboard.html
+        - title: Problems
+          url: 2022/regional/problems.pdf
+        - title: Upsolve
+          url: https://oj.vnoi.info/contest/icpc22_regional
     - type: National
       contents:
         - title: Scoreboard

@@ -1,0 +1,3575 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>[HSGS] The ICPC 2022 Asia HoChiMinh City Regional Programming Contest Rankings - VNOJ: VNOI Online Judge</title>
+
+<meta name="description" property="og:description" content="[HSGS] The ICPC 2022 Asia HoChiMinh City Regional Programming Contest">
+<meta id="viewport" name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="apple-touch-icon" sizes="57x57" href="https://olp.vnoi.info/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://olp.vnoi.info/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://olp.vnoi.info/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://olp.vnoi.info/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://olp.vnoi.info/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://olp.vnoi.info/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://olp.vnoi.info/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://olp.vnoi.info/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://olp.vnoi.info/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" href="https://olp.vnoi.info/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://olp.vnoi.info/android-chrome-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="https://olp.vnoi.info/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="https://olp.vnoi.info/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="https://olp.vnoi.info/manifest.json">
+<meta name="msapplication-TileColor" content="#231F20">
+<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+<meta name="theme-color" content="#231F20">
+<meta property="og:image" content="https://olp.vnoi.info/martor/aa2ba567-843c-4830-86d9-18ecf4757223.png">
+<meta property="og:site_name" content="VNOJ: VNOI Online Judge">
+<meta property="og:url" content="https://oj.vnoi.info/contest/hsgs/ranking/">
+<!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script>window.bad_browser = true</script>
+    <![endif]-->
+<link rel="stylesheet" href="./hsgs-scoreboard_files/output.830f997bbf19.css" type="text/css"> <link rel="canonical" href="https://oj.vnoi.info/contest/hsgs/ranking/">
+<style>
+        #users-table .username {
+            min-width: 20em;
+        }
+
+        #users-table td {
+            height: 2.5em;
+        }
+
+        #users-table a {
+            display: block;
+        }
+
+        #users-table {
+            font-size: 14px;
+            border-collapse: collapse;
+        }
+
+        .user-name a, .user-name form {
+            display: inline-block !important;
+        }
+
+        .user-name .info-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        #users-table th a, #users-table th a:link, #users-table th a:visited {
+            color: white;
+        }
+
+        #users-table th a:hover {
+            color: #0F0;
+        }
+
+        #users-table td:not(.user-name, .personal-info) a:hover {
+            text-decoration: underline;
+        }
+
+        .rank {
+            min-width: 2.4em
+        }
+
+        .points {
+            min-width: 2.4em;
+        }
+
+        .disqualified {
+            background-color: #ffa8a8 !important;
+        }
+
+        .point-denominator {
+            border-top: 1px solid gray;
+            font-size: 0.7em;
+        }
+
+        .start-time {
+            display: none;
+        }
+
+        .personal-info {
+            display: none;
+        }
+
+        .personal-info a {
+            color: gray !important;
+            font-weight: 600;
+            position: relative;
+            display: inline-flex !important;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .personal-info img {
+            width: 30px;
+            height: 30px;
+            margin-bottom: 0;
+        }
+
+        .personal-info .uni-name {
+            position: absolute;
+            z-index: 10000;
+            opacity: 0;
+            visibility: hidden;
+            background-color: rgb(255, 255, 255, 0.9);
+            padding: 8px;
+            margin-top: 32px;
+            border-radius: 8px;
+            box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.3);
+            pointer-events: none;
+            white-space: nowrap;
+            transition: all 0.5s;
+        }
+
+        .personal-info .organization:hover .uni-name  {
+            display: block;
+            visibility: visible;
+            width: min-content;
+            opacity: 1;
+        }
+
+        .virtual-participation {
+            color: grey;
+            float: right
+        }
+
+        .fa-heart {
+            color: red;
+        }
+
+        .fa-heart-o {
+            color: black;
+        }
+    </style>
+<style>
+    .first-solve {
+        background-color: #1daa1d !important;
+    }
+
+    .full-score {
+        color: black;
+        background-color: #60e760;
+    }
+
+    .failed-score {
+        color: black;
+        background-color: #e87272;
+    }
+
+    .pending {
+        background-color: #6666ff;
+    }
+
+    .failed-score a, .full-score a, .pending a {
+        color: black;
+    }
+
+    .user-points, .user-points a {
+        color: black;
+    }
+
+    .solving-time {
+        display: none;
+    }
+
+    .solving-time-minute {
+        color: black;
+        font-size: 1.25em;
+        padding-bottom: -0.75em;
+    }
+</style>
+<style>
+        .select2-selection__arrow {
+            display: none;
+        }
+
+        .select2-selection__rendered {
+            cursor: text;
+            overflow: initial !important
+        }
+
+        .select2-results__option--highlighted {
+            background-color: #DEDEDE !important;
+        }
+
+        .select2-results__option {
+            white-space: nowrap;
+        }
+
+        .select2-container {
+            z-index: 1;
+        }
+
+        #search-contest, #search-contest + .select2 {
+            margin-top: 0.5em;
+        }
+
+        #search-contest {
+            width: 200px;
+            height: 2.3em;
+        }
+
+        #org-dropdown-check-list {
+            display: inline-block;
+        }
+
+        #org-check-list-wrapper {
+            display: none;
+            background: #ffffff;
+            border: 1px solid gray;
+            padding: 10px;
+
+            right: auto;
+            position: absolute;
+            z-index: 1;
+        }
+
+        #org-check-list li {
+            list-style: none;
+        }
+
+        #org-dropdown-check-list.visible #org-check-list-wrapper {
+            display: block;
+        }
+
+        #org-check-list-wrapper button {
+            margin-bottom: 5px;
+            margin-left: 5px;
+        }
+
+        #org-check-list {
+            border-bottom: 1px solid gray;
+
+            /* reset properties of the parent elements */
+            color: black;
+            text-align: left;
+            font-weight: normal;
+        }
+
+        .filter-checklist-button {
+            float: right;
+        }
+
+        .select2-selection__rendered {
+            cursor: text;
+            overflow: initial !important;
+            width: 260px !important;
+        }
+
+        .select2-selection__rendered > li {
+            color: black;
+        }
+
+        #select2-org-check-list-results > li {
+            color: black;
+        }
+        #select2-org-check-list-results > li:hover {
+            background: #aaaaaa !important;
+        }
+
+        .select2-results__option[aria-selected=true] {
+            background: #cdcdcd !important;
+        }
+    </style>
+<style>
+        .user-pagination {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+    </style>
+<script src="./hsgs-scoreboard_files/3854179708000474" async=""></script><script async="" src="./hsgs-scoreboard_files/fbevents.js"></script><script src="./hsgs-scoreboard_files/output.7152931399a0.js"></script> <script type="text/javascript">
+        $(function () {
+            var url = '/contest/hsgs/participations/__username__';
+            var placeholder = $('#search-contest').replaceWith($('<select>').attr({
+                id: 'search-contest'
+            })).attr('placeholder');
+
+            $('#search-contest').select2({
+                placeholder: placeholder,
+                ajax: {
+                    url: '/widgets/select2/contest_users/hsgs'
+                },
+                minimumInputLength: 1,
+                templateResult: function (data) {
+                    return $('<span>')
+                        .append($('<img>', {
+                            class: 'user-search-image',
+                            src: data.gravatar_url,
+                            width: 24,
+                            height: 24,
+                        }))
+                        .append($('<span>', {
+                            class: data.display_rank + ' user-search-name',
+                        }).text(data.text));
+                }
+            }).on('change', function () {
+                window.location.href = url.replace('__username__', $(this).val());
+            });
+
+            $('#show-personal-info-checkbox').click(function () {
+                $('.personal-info').toggle();
+                localStorage.setItem('show-personal-info', $('.personal-info').is(':visible') ? 'true' : 'false');
+            });
+
+            if (localStorage.getItem('show-personal-info') == 'true') {
+                $('.personal-info').show();
+                $('#show-personal-info-checkbox').prop('checked', true);
+            }
+
+
+            $('#show-virtual-participations-checkbox').click(function () {
+                const parser = new URL(window.location.href);
+                parser.searchParams.set('show_virtual', 'true');
+                window.location.href = parser.href;
+            });
+
+            var contest_key = 'hsgs';
+
+            $("a#cache_alert").click(function () {
+                var $closer = $(this);
+                $closer.parent().hide();
+                localStorage.setItem(`hide-cache-alert-${contest_key}`, 'true');
+            });
+
+            if (localStorage.getItem(`hide-cache-alert-${contest_key}`) == 'true') {
+                $("a#cache_alert").click();
+            }
+
+            $("a#frozen_alert").click(function () {
+                var $closer = $(this);
+                $closer.parent().hide();
+                localStorage.setItem(`hide-frozen-alert-${contest_key}`, 'true');
+            });
+
+            if (localStorage.getItem(`hide-frozen-alert-${contest_key}`) == 'true') {
+                $("a#frozen_alert").click();
+            }
+
+            // hack to keep scroll position after selecting option
+            // https://stackoverflow.com/questions/55045146/select2-do-not-scroll-on-selection
+            // scrollAfterSelect is only available after v4.0.6
+            $(function() {
+                $('#org-check-list').select2({
+                    multiple: true,
+                    closeOnSelect: false,
+                    placeholder: 'Search organizations',
+                });
+
+                var selection = $('#org-check-list').data().select2.selection;
+                var results = $('#org-check-list').data().select2.results;
+
+                $('#org-check-list').on('select2:selecting', function(e) {
+                    let id = e.params.args.data.id;
+                    let val = $(e.target).val().concat([id]);
+                    $(e.target).val(val).trigger('change');
+
+                    if (selection.$search.val() != '') {
+                        selection.$search.val('');
+                        selection.trigger('query', {});
+                    } else {
+                        results.setClasses();
+                    }
+
+                    return false;
+                });
+
+                $('#org-check-list').on('select2:unselecting', function(e) {
+                    let id = e.params.args.data.id;
+                    let val = $(e.target).val().filter(function(v) { return v != id; });
+                    $(e.target).val(val).trigger('change');
+
+                    if (selection.$search.val() != '') {
+                        selection.$search.val('');
+                        selection.trigger('query', {});
+                    } else {
+                        results.setClasses();
+                    }
+
+                    return false;
+                });
+
+                $('#org-check-list').data().select2.toggleDropdown = function () {
+                    selection.$search.trigger('focus');
+
+                    if (!this.isOpen()) {
+                        this.open();
+                    }
+                }
+
+                $('#filter-by-organization-button').click(function () {
+                    $('#org-check-list-wrapper').toggle();
+                    $('#org-check-list').select2('open');
+                });
+            });
+
+            if (localStorage.getItem(`filter-cleared-${contest_key}`) === null) {
+                localStorage.setItem(`filter-cleared-${contest_key}`, 'true');
+            }
+
+            if (localStorage.getItem(`filter-selected-orgs-${contest_key}`) === null) {
+                localStorage.setItem(`filter-selected-orgs-${contest_key}`, []);
+            }
+
+            $('#apply-organization-filter').click(function () {
+                $('#org-check-list-wrapper').hide();
+
+                let selected_orgs = $('#org-check-list').val().map(x => x.trim());
+                localStorage.setItem(`filter-selected-orgs-${contest_key}`, selected_orgs);
+                window.applyRankingFilter();
+                window.totalAC();
+            });
+
+            $('#clear-organization-filter').click(function () {
+                $('#org-check-list').val(null).trigger('change');
+                $('#apply-organization-filter').click();
+            });
+
+            // hide checklist by clicking outside
+            $(document).mouseup(function (e) {
+                e.stopPropagation();
+
+                // if clicked on the filter button
+                // then this function should not do anything
+                if ($('#filter-by-organization-button').has(e.target).length !== 0) {
+                    return;
+                }
+
+                if ($('#select2-org-check-list-results').has(e.target).length !== 0) {
+                    return;
+                }
+
+                if ($(e.target).attr('id') && $(e.target).attr('id').startsWith('select2-org-check-list-result')) {
+                    return;
+                }
+
+                // check if the clicked area is the checklist or not
+                if ($('#org-dropdown-check-list').has(e.target).length === 0) {
+                    $('#apply-organization-filter').click();
+                }
+            });
+
+            window.getOrganizationCodes = function () {
+                let org_list = []
+
+                $('#users-table > tbody > *').each(function () {
+                    let org_anchor = $(this).find("div > div > .personal-info > .organization > a")[0];
+
+                    if (org_anchor) {
+                        org_list.push(org_anchor.text);
+                    }
+                });
+
+                org_list.sort();
+                org_list.push("Other");
+
+                org_list = new Set(org_list);
+
+                let org_options = $('#org-check-list');
+                org_options.empty();
+
+                org_list.forEach(function (org) {
+                    org_options.append(
+                        `<option value="${org}">${org}</option>`
+                    );
+                });
+            };
+
+            window.getOrganizationCodes();
+
+            function extractCurrentAbsRank(row_text) {
+                let paren_surround_text = row_text.match(/\(([^)]+)\)/);
+                let current_abs_rank
+                    = (paren_surround_text !== null)
+                    ? paren_surround_text[1]
+                    : row_text;
+                return current_abs_rank;
+            }
+
+            window.clearRankingFilter = function () {
+                if (localStorage.getItem(`filter-cleared-${contest_key}`) == 'true') {
+                    return;
+                }
+
+                $('#users-table > tbody > tr[id]').each(function () {
+                    $(this).show();
+                    $(this).find("td")[0].innerHTML = extractCurrentAbsRank($(this).find("td")[0].innerText);
+                });
+
+                localStorage.setItem(`filter-cleared-${contest_key}`, 'true');
+            };
+
+            window.applyRankingFilter = function () {
+                let counter = 0;
+                let previous_abs_rank = -1;
+                let selected_orgs = localStorage.getItem(`filter-selected-orgs-${contest_key}`);
+
+                if (!selected_orgs.length) {
+                    window.clearRankingFilter();
+                    return;
+                }
+
+                $('#users-table > tbody > tr[id]').each(function () {
+                    let row = $(this);
+
+                    let org_anchor = row.find("div > div > .personal-info > .organization > a")[0];
+                    let org = org_anchor ? org_anchor.text : 'Other';
+
+                    if (!selected_orgs.includes(org.trim())) {
+                        row.hide();
+                        return;
+                    }
+
+                    row.show();
+                    let current_abs_rank = extractCurrentAbsRank(row.find("td")[0].innerText);
+
+                    if (previous_abs_rank == -1 || previous_abs_rank != current_abs_rank) {
+                        ++counter;
+                    }
+
+                    row.find("td")[0].innerHTML = `${counter}<br>(${current_abs_rank})`;
+                    previous_abs_rank = current_abs_rank;
+                });
+
+                if (counter > 0) {
+                    localStorage.setItem(`filter-cleared-${contest_key}`, 'false');
+                }
+            };
+
+            window.applyRankingFilter();
+
+            window.restoreChecklistOptions = function () {
+                let selected_orgs = localStorage.getItem(`filter-selected-orgs-${contest_key}`).split(',');
+                $('#org-check-list').val(selected_orgs).trigger('change');
+            };
+
+            window.restoreChecklistOptions();
+
+            window.applyFavoriteUsers = function() {
+                let fav_users = localStorage.getItem(`favorite-users-${contest_key}`)?.split(',');
+                if (!fav_users) return;
+
+                let index = 0;
+                let table_body = $('#users-table > tbody').get(0);
+
+                $('#users-table > tbody > .favorite').each(function () {
+                    this.remove();
+                });
+
+                $('#users-table > tbody > tr[id]:not(.favorite)').each(function () {
+                    let row = $(this);
+                    let user_name = row.find(".user-name > .info-container > div > span > a")[0].text.trim();
+                    let fav_button = row.find('.user-name > .info-container > div > i').get(0);
+
+                    if (!fav_users.includes(user_name)) {
+                        fav_button.classList.add('fa-heart-o');
+                        return;
+                    }
+
+                    fav_button.classList.remove('fa-heart-o');
+
+                    let new_row = row.clone();
+                    new_row.addClass('favorite');
+                    table_body.insertBefore(new_row.get(0), table_body.children[index++]);
+                });
+
+                $(table_body.children[index - 1]).css('border-bottom', 'thick solid black');
+            }
+
+            window.applyFavoriteUsers();
+
+            $(document).ready(() => {
+                $('#users-table').on('click', '.fav-button', function() {
+                    let is_fav = !this.classList.contains('fa-heart-o');
+                    let user_name = $(this.parentNode).find('span > a')[0].textContent.trim();
+                    let fav_users = localStorage.getItem(`favorite-users-${contest_key}`)?.split(',');
+                    if (!fav_users) fav_users = [];
+
+                    if (!is_fav) {
+                        fav_users.push(user_name);
+                        this.classList.remove('fa-heart-o');
+                    } else {
+                        this.classList.add('fa-heart-o');
+
+                        // https://stackoverflow.com/a/3954451
+                        let id = fav_users.indexOf(user_name);
+                        if (id !== -1) {
+                            fav_users.splice(id, 1);
+                        }
+                    }
+
+                    localStorage.setItem(`favorite-users-${contest_key}`, fav_users);
+                    window.applyFavoriteUsers();
+                });
+            });
+
+            window.firstSolve = function() {
+                function convertToSeconds(timeString) {
+                    const time = timeString.split(':').map(Number); // time = [hour, minute, second]
+                    return time[0] * 60 * 60 + time[1] * 60 + time[2];
+                }
+
+                function timeComparison(sub1, sub2) {
+                    if (!sub2) return;
+                    return sub1['time'] < sub2['time'];
+                }
+
+                let firstSolves = {};
+
+                $('td.full-score a').each(function () {
+                    if (this.parentNode.parentNode.getElementsByClassName('virtual-participation').length) {
+                        // Skip virtual participation
+                        return;
+                    }
+
+                    if (this.parentNode.parentNode.classList.contains('disqualified')) {
+                        return;
+                    }
+
+                    let href = this['attributes']['href']['value'];
+                    if (href.includes('submissions')) {
+                        let time = this.getElementsByClassName('solving-time')[0].textContent;
+                        if (time.length == 0) {
+                            return;
+                        }
+                        let hrefElement = href.split('/');
+
+                        let problem = hrefElement[hrefElement.length - 2];
+
+                        let curSub = {
+                            'td': $(this).parent(),
+                            'time': convertToSeconds(time),
+                        }
+
+                        let fs = firstSolves[problem];
+
+                        if (fs == null || timeComparison(curSub, fs)) {
+                            firstSolves[problem] = curSub;
+                        }
+                    }
+                });
+
+                for (let problem in firstSolves) {
+                    firstSolves[problem]['td'].addClass('first-solve');
+                }
+            }
+
+            window.firstSolve();
+
+            window.totalAC = function() {
+                // Problems are indexed from 0
+                let total_ac = {};
+
+                // Number of columns before first problem
+                let offset = 4;
+
+                $('td.full-score').each(function () {
+                    if ($(this).parent().is(':hidden')) {
+                        return;
+                    }
+
+                    total_ac[$(this).index() - offset] = (total_ac[$(this).index() - offset] || 0) + 1;
+                });
+                $('td.total-ac').each(function () {
+                    // There is exactly one column (Total AC) before first problem
+                    $(this).text(total_ac[$(this).index() - 1]);
+                });
+            };
+
+            window.totalAC();
+
+            window.enableAdminOperations = function () {
+                $('a.disqualify-participation').click(function (e) {
+                    e.preventDefault();
+                    if (e.ctrlKey || e.metaKey || confirm("Are you sure you want to disqualify this participation?"))
+                        $(this).closest('form').submit();
+                })
+                $('a.un-disqualify-participation').click(function (e) {
+                    e.preventDefault();
+                    if (e.ctrlKey || e.metaKey || confirm("Are you sure you want to un-disqualify this participation?"))
+                        $(this).closest('form').submit();
+                })
+            };
+
+            window.enableAdminOperations();
+
+            function replaceOrgImageWithName (el) {
+                const parentEl = el.parentNode;
+                const siblingEl = el.nextSibling.nextSibling;
+                el.style.display = "none";
+                siblingEl.classList = "";
+            }
+
+            window.loadOrgLogo = function () {
+                const allImg = $('.uni-logo');
+                allImg.each((i, el) => {
+                    if (el.src == window.location.href) {
+                        replaceOrgImageWithName(el);
+                    }
+                })
+            }
+            window.loadOrgLogo();
+        });
+
+            $.fn.ignore = function(sel) {
+                return this.clone().find(sel || '>*').remove().end();
+            };
+
+            function download_table_as_csv() {
+                function clean_text(text) {
+                    // Remove new line and leading/trailing spaces
+                    text = text.replace(/(\r\n|\n|\r)/gm, '').trim();
+                    // Escape double-quote with double-double-quote
+                    text = text.replace(/"/g, '""');
+
+                    return '"' + text + '"';
+                }
+
+                var csv = [];
+
+                $('table#users-table thead tr').each(function () {
+                    var header = [];
+                    $(this).find('th').each(function () {
+                        var $col = $(this);
+
+                        if ($col.hasClass('rating-column')) {
+                            // Skip rating
+                            return;
+                        } else if ($col.hasClass('rank')) {
+                            // Rank
+                            header.push(clean_text($col.text()));
+                        } else if ($col.hasClass('username')) {
+                            // Username and Full name
+                            header.push(clean_text('Username'));
+                            header.push(clean_text('Full Name'));
+                        } else {
+                            // Point
+                            var name = $col.find('.problem-code').text();
+                            if (name == '') {
+                                name = $col.text();
+                            }
+                            header.push(clean_text(name));
+                        }
+                    });
+                    csv.push(header.join(','));
+                });
+
+                $('table#users-table tbody tr').each(function () {
+                    // Skip hidden row (due to filtering)
+                    if ($(this).is(':hidden')) {
+                        return;
+                    }
+
+                    var row_data = [];
+                    $(this).find('td').each(function () {
+                        var $col = $(this);
+
+                        if ($col.hasClass('rating-column')) {
+                            // Skip rating
+                            return;
+                        } else if ($col.hasClass('user-name')) {
+                            // Username and Full name
+                            row_data.push(clean_text($col.find('.rating').first().text()));
+                            row_data.push(clean_text($col.find('.personal-info').first().text()));
+                        } else {
+                            // Point or rank
+                            row_data.push(clean_text($col.ignore('.solving-time').text()));
+                        }
+                    });
+                    csv.push(row_data.join(','));
+                });
+
+                var csv_string = csv.join('\n');
+                var filename = 'ranking_hsgs_' + moment().format('YYYY-MM-DD-HH-mm-ss') + '.csv';
+                var link = document.createElement('a');
+                link.style.display = 'none';
+                link.setAttribute('target', '_blank');
+                link.setAttribute('href', 'data:text/csv;charset=utf-8,\uFEFF' + encodeURIComponent(csv_string));
+                link.setAttribute('download', filename);
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+            }
+    </script>
+<script type="text/javascript">
+    $(function () {
+        $('.leaving-forever').click(function () {
+            return confirm('Are you sure you want to leave?\n' +
+                'You cannot come back to a virtual participation. You will have to start a new one.');
+        });
+
+
+    });
+</script> <script>
+        $(function () {
+            $('#search-handle').replaceWith($('<select>').attr({
+                id: 'search-handle',
+                name: 'handle',
+                onchange: 'form.submit()'
+            }));
+            var in_user_redirect = false;
+            $('#search-handle').select2({
+                placeholder: 'Search by handle...',
+                ajax: {
+                    url: '/widgets/select2/user_search'
+                },
+                minimumInputLength: 1,
+                templateResult: function (data, container) {
+                    return $('<span>')
+                        .append($('<img>', {
+                            'class': 'user-search-image', src: data.gravatar_url,
+                            width: 24, height: 24
+                        }))
+                        .append($('<span>', {'class': data.display_rank + ' user-search-name'}).text(data.text))
+                        .append($('<a>', {href: '/user/' + data.text, 'class': 'user-redirect'})
+                            .append($('<i>', {'class': 'fa fa-mail-forward'}))
+                            .mouseover(function () {
+                                in_user_redirect = true;
+                            }).mouseout(function () {
+                                in_user_redirect = false;
+                            }));
+                }
+            }).on('select2:selecting', function () {
+                return !in_user_redirect;
+            });
+
+            var $last = null;
+            $(window).on('hashchange', function () {
+                var hash = window.location.hash;
+                if (hash.startsWith('#!')) {
+                    var $user = $('#user-' + hash.substring(2)).addClass('highlight');
+                    if ($user) {
+                        $(document).scrollTop($user.position().top - 50);
+                        if ($last !== null) $last.removeClass('highlight');
+                        $last = $user;
+                    }
+                }
+            }).trigger('hashchange');
+        });
+    </script>
+<script>
+            window.event_dispatcher = new WSEventDispatcher(
+                'wss://olp.vnoi.info/event/',
+                '/channels/',
+                1670641473176
+            );
+        </script>
+<script>window.user = {};</script>
+<script>
+        function submmit_language(lang) {
+            if (lang != "en" ) {
+                $("input[name=language]").val(lang)
+                $("#set_language").submit()
+            }
+        }
+    </script>
+<noscript>
+        <style>
+            #content {
+                margin: 80px auto auto;
+            }
+
+            #navigation {
+                top: 27px;
+            }
+        </style>
+    </noscript>
+
+<script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+    document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '3854179708000474');
+    fbq('track', 'PageView');
+    </script>
+<noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=3854179708000474&ev=PageView&noscript=1"
+    /></noscript>
+
+
+<style type="text/css">.CtxtMenu_InfoClose {  top:.2em; right:.2em;}
+.CtxtMenu_InfoContent {  overflow:auto; text-align:left; font-size:80%;  padding:.4em .6em; border:1px inset; margin:1em 0px;  max-height:20em; max-width:30em; background-color:#EEEEEE;  white-space:normal;}
+.CtxtMenu_Info.CtxtMenu_MousePost {outline:none;}
+.CtxtMenu_Info {  position:fixed; left:50%; width:auto; text-align:center;  border:3px outset; padding:1em 2em; background-color:#DDDDDD;  color:black;  cursor:default; font-family:message-box; font-size:120%;  font-style:normal; text-indent:0; text-transform:none;  line-height:normal; letter-spacing:normal; word-spacing:normal;  word-wrap:normal; white-space:nowrap; float:none; z-index:201;  border-radius: 15px;                     /* Opera 10.5 and IE9 */  -webkit-border-radius:15px;               /* Safari and Chrome */  -moz-border-radius:15px;                  /* Firefox */  -khtml-border-radius:15px;                /* Konqueror */  box-shadow:0px 10px 20px #808080;         /* Opera 10.5 and IE9 */  -webkit-box-shadow:0px 10px 20px #808080; /* Safari 3 & Chrome */  -moz-box-shadow:0px 10px 20px #808080;    /* Forefox 3.5 */  -khtml-box-shadow:0px 10px 20px #808080;  /* Konqueror */  filter:progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color="gray", Positive="true"); /* IE */}
+</style><style type="text/css">.CtxtMenu_MenuClose {  position:absolute;  cursor:pointer;  display:inline-block;  border:2px solid #AAA;  border-radius:18px;  -webkit-border-radius: 18px;             /* Safari and Chrome */  -moz-border-radius: 18px;                /* Firefox */  -khtml-border-radius: 18px;              /* Konqueror */  font-family: "Courier New", Courier;  font-size:24px;  color:#F0F0F0}
+.CtxtMenu_MenuClose span {  display:block; background-color:#AAA; border:1.5px solid;  border-radius:18px;  -webkit-border-radius: 18px;             /* Safari and Chrome */  -moz-border-radius: 18px;                /* Firefox */  -khtml-border-radius: 18px;              /* Konqueror */  line-height:0;  padding:8px 0 6px     /* may need to be browser-specific */}
+.CtxtMenu_MenuClose:hover {  color:white!important;  border:2px solid #CCC!important}
+.CtxtMenu_MenuClose:hover span {  background-color:#CCC!important}
+.CtxtMenu_MenuClose:hover:focus {  outline:none}
+</style><style type="text/css">.CtxtMenu_Menu {  position:absolute;  background-color:white;  color:black;  width:auto; padding:5px 0px;  border:1px solid #CCCCCC; margin:0; cursor:default;  font: menu; text-align:left; text-indent:0; text-transform:none;  line-height:normal; letter-spacing:normal; word-spacing:normal;  word-wrap:normal; white-space:nowrap; float:none; z-index:201;  border-radius: 5px;                     /* Opera 10.5 and IE9 */  -webkit-border-radius: 5px;             /* Safari and Chrome */  -moz-border-radius: 5px;                /* Firefox */  -khtml-border-radius: 5px;              /* Konqueror */  box-shadow:0px 10px 20px #808080;         /* Opera 10.5 and IE9 */  -webkit-box-shadow:0px 10px 20px #808080; /* Safari 3 & Chrome */  -moz-box-shadow:0px 10px 20px #808080;    /* Forefox 3.5 */  -khtml-box-shadow:0px 10px 20px #808080;  /* Konqueror */}
+.CtxtMenu_MenuItem {  padding: 1px 2em;  background:transparent;}
+.CtxtMenu_MenuArrow {  position:absolute; right:.5em; padding-top:.25em; color:#666666;  font-family: null; font-size: .75em}
+.CtxtMenu_MenuActive .CtxtMenu_MenuArrow {color:white}
+.CtxtMenu_MenuArrow.CtxtMenu_RTL {left:.5em; right:auto}
+.CtxtMenu_MenuCheck {  position:absolute; left:.7em;  font-family: null}
+.CtxtMenu_MenuCheck.CtxtMenu_RTL { right:.7em; left:auto }
+.CtxtMenu_MenuRadioCheck {  position:absolute; left: .7em;}
+.CtxtMenu_MenuRadioCheck.CtxtMenu_RTL {  right: .7em; left:auto}
+.CtxtMenu_MenuInputBox {  padding-left: 1em; right:.5em; color:#666666;  font-family: null;}
+.CtxtMenu_MenuInputBox.CtxtMenu_RTL {  left: .1em;}
+.CtxtMenu_MenuComboBox {  left:.1em; padding-bottom:.5em;}
+.CtxtMenu_MenuSlider {  left: .1em;}
+.CtxtMenu_SliderValue {  position:absolute; right:.1em; padding-top:.25em; color:#333333;  font-size: .75em}
+.CtxtMenu_SliderBar {  outline: none; background: #d3d3d3}
+.CtxtMenu_MenuLabel {  padding: 1px 2em 3px 1.33em;  font-style:italic}
+.CtxtMenu_MenuRule {  border-top: 1px solid #DDDDDD;  margin: 4px 3px;}
+.CtxtMenu_MenuDisabled {  color:GrayText}
+.CtxtMenu_MenuActive {  background-color: #606872;  color: white;}
+.CtxtMenu_MenuDisabled:focus {  background-color: #E8E8E8}
+.CtxtMenu_MenuLabel:focus {  background-color: #E8E8E8}
+.CtxtMenu_ContextMenu:focus {  outline:none}
+.CtxtMenu_ContextMenu .CtxtMenu_MenuItem:focus {  outline:none}
+.CtxtMenu_SelectionMenu {  position:relative; float:left;  border-bottom: none; -webkit-box-shadow:none; -webkit-border-radius:0px; }
+.CtxtMenu_SelectionItem {  padding-right: 1em;}
+.CtxtMenu_Selection {  right: 40%; width:50%; }
+.CtxtMenu_SelectionBox {  padding: 0em; max-height:20em; max-width: none;  background-color:#FFFFFF;}
+.CtxtMenu_SelectionDivider {  clear: both; border-top: 2px solid #000000;}
+.CtxtMenu_Menu .CtxtMenu_MenuClose {  top:-10px; left:-10px}
+</style><style id="MJX-CHTML-styles">
+mjx-container[jax="CHTML"] {
+  line-height: 0;
+}
+
+mjx-container [space="1"] {
+  margin-left: .111em;
+}
+
+mjx-container [space="2"] {
+  margin-left: .167em;
+}
+
+mjx-container [space="3"] {
+  margin-left: .222em;
+}
+
+mjx-container [space="4"] {
+  margin-left: .278em;
+}
+
+mjx-container [space="5"] {
+  margin-left: .333em;
+}
+
+mjx-container [rspace="1"] {
+  margin-right: .111em;
+}
+
+mjx-container [rspace="2"] {
+  margin-right: .167em;
+}
+
+mjx-container [rspace="3"] {
+  margin-right: .222em;
+}
+
+mjx-container [rspace="4"] {
+  margin-right: .278em;
+}
+
+mjx-container [rspace="5"] {
+  margin-right: .333em;
+}
+
+mjx-container [size="s"] {
+  font-size: 70.7%;
+}
+
+mjx-container [size="ss"] {
+  font-size: 50%;
+}
+
+mjx-container [size="Tn"] {
+  font-size: 60%;
+}
+
+mjx-container [size="sm"] {
+  font-size: 85%;
+}
+
+mjx-container [size="lg"] {
+  font-size: 120%;
+}
+
+mjx-container [size="Lg"] {
+  font-size: 144%;
+}
+
+mjx-container [size="LG"] {
+  font-size: 173%;
+}
+
+mjx-container [size="hg"] {
+  font-size: 207%;
+}
+
+mjx-container [size="HG"] {
+  font-size: 249%;
+}
+
+mjx-container [width="full"] {
+  width: 100%;
+}
+
+mjx-box {
+  display: inline-block;
+}
+
+mjx-block {
+  display: block;
+}
+
+mjx-itable {
+  display: inline-table;
+}
+
+mjx-row {
+  display: table-row;
+}
+
+mjx-row > * {
+  display: table-cell;
+}
+
+mjx-mtext {
+  display: inline-block;
+}
+
+mjx-mstyle {
+  display: inline-block;
+}
+
+mjx-merror {
+  display: inline-block;
+  color: red;
+  background-color: yellow;
+}
+
+mjx-mphantom {
+  visibility: hidden;
+}
+
+_::-webkit-full-page-media, _:future, :root mjx-container {
+  will-change: opacity;
+}
+
+mjx-assistive-mml {
+  position: absolute !important;
+  top: 0px;
+  left: 0px;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 1px 0px 0px 0px !important;
+  border: 0px !important;
+  display: block !important;
+  width: auto !important;
+  overflow: hidden !important;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+mjx-assistive-mml[display="block"] {
+  width: 100% !important;
+}
+
+mjx-c::before {
+  display: block;
+  width: 0;
+}
+
+.MJX-TEX {
+  font-family: MJXZERO, MJXTEX;
+}
+
+.TEX-B {
+  font-family: MJXZERO, MJXTEX-B;
+}
+
+.TEX-I {
+  font-family: MJXZERO, MJXTEX-I;
+}
+
+.TEX-MI {
+  font-family: MJXZERO, MJXTEX-MI;
+}
+
+.TEX-BI {
+  font-family: MJXZERO, MJXTEX-BI;
+}
+
+.TEX-S1 {
+  font-family: MJXZERO, MJXTEX-S1;
+}
+
+.TEX-S2 {
+  font-family: MJXZERO, MJXTEX-S2;
+}
+
+.TEX-S3 {
+  font-family: MJXZERO, MJXTEX-S3;
+}
+
+.TEX-S4 {
+  font-family: MJXZERO, MJXTEX-S4;
+}
+
+.TEX-A {
+  font-family: MJXZERO, MJXTEX-A;
+}
+
+.TEX-C {
+  font-family: MJXZERO, MJXTEX-C;
+}
+
+.TEX-CB {
+  font-family: MJXZERO, MJXTEX-CB;
+}
+
+.TEX-FR {
+  font-family: MJXZERO, MJXTEX-FR;
+}
+
+.TEX-FRB {
+  font-family: MJXZERO, MJXTEX-FRB;
+}
+
+.TEX-SS {
+  font-family: MJXZERO, MJXTEX-SS;
+}
+
+.TEX-SSB {
+  font-family: MJXZERO, MJXTEX-SSB;
+}
+
+.TEX-SSI {
+  font-family: MJXZERO, MJXTEX-SSI;
+}
+
+.TEX-SC {
+  font-family: MJXZERO, MJXTEX-SC;
+}
+
+.TEX-T {
+  font-family: MJXZERO, MJXTEX-T;
+}
+
+.TEX-V {
+  font-family: MJXZERO, MJXTEX-V;
+}
+
+.TEX-VB {
+  font-family: MJXZERO, MJXTEX-VB;
+}
+
+mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
+  font-family: MJXZERO, MJXTEX-S1, MJXTEX-S4, MJXTEX, MJXTEX-A ! important;
+}
+
+@font-face /* 0 */ {
+  font-family: MJXZERO;
+  src: url("https://olp.vnoi.info/static/vnoj/mathjax/output/chtml/fonts/woff-v2/MathJax_Zero.woff") format("woff");
+}
+
+@font-face /* 1 */ {
+  font-family: MJXTEX;
+  src: url("https://olp.vnoi.info/static/vnoj/mathjax/output/chtml/fonts/woff-v2/MathJax_Main-Regular.woff") format("woff");
+}
+
+@font-face /* 2 */ {
+  font-family: MJXTEX-B;
+  src: url("https://olp.vnoi.info/static/vnoj/mathjax/output/chtml/fonts/woff-v2/MathJax_Main-Bold.woff") format("woff");
+}
+
+@font-face /* 3 */ {
+  font-family: MJXTEX-I;
+  src: url("https://olp.vnoi.info/static/vnoj/mathjax/output/chtml/fonts/woff-v2/MathJax_Math-Italic.woff") format("woff");
+}
+
+@font-face /* 4 */ {
+  font-family: MJXTEX-MI;
+  src: url("https://olp.vnoi.info/static/vnoj/mathjax/output/chtml/fonts/woff-v2/MathJax_Main-Italic.woff") format("woff");
+}
+
+@font-face /* 5 */ {
+  font-family: MJXTEX-BI;
+  src: url("https://olp.vnoi.info/static/vnoj/mathjax/output/chtml/fonts/woff-v2/MathJax_Math-BoldItalic.woff") format("woff");
+}
+
+@font-face /* 6 */ {
+  font-family: MJXTEX-S1;
+  src: url("https://olp.vnoi.info/static/vnoj/mathjax/output/chtml/fonts/woff-v2/MathJax_Size1-Regular.woff") format("woff");
+}
+
+@font-face /* 7 */ {
+  font-family: MJXTEX-S2;
+  src: url("https://olp.vnoi.info/static/vnoj/mathjax/output/chtml/fonts/woff-v2/MathJax_Size2-Regular.woff") format("woff");
+}
+
+@font-face /* 8 */ {
+  font-family: MJXTEX-S3;
+  src: url("https://olp.vnoi.info/static/vnoj/mathjax/output/chtml/fonts/woff-v2/MathJax_Size3-Regular.woff") format("woff");
+}
+
+@font-face /* 9 */ {
+  font-family: MJXTEX-S4;
+  src: url("https://olp.vnoi.info/static/vnoj/mathjax/output/chtml/fonts/woff-v2/MathJax_Size4-Regular.woff") format("woff");
+}
+
+@font-face /* 10 */ {
+  font-family: MJXTEX-A;
+  src: url("https://olp.vnoi.info/static/vnoj/mathjax/output/chtml/fonts/woff-v2/MathJax_AMS-Regular.woff") format("woff");
+}
+
+@font-face /* 11 */ {
+  font-family: MJXTEX-C;
+  src: url("https://olp.vnoi.info/static/vnoj/mathjax/output/chtml/fonts/woff-v2/MathJax_Calligraphic-Regular.woff") format("woff");
+}
+
+@font-face /* 12 */ {
+  font-family: MJXTEX-CB;
+  src: url("https://olp.vnoi.info/static/vnoj/mathjax/output/chtml/fonts/woff-v2/MathJax_Calligraphic-Bold.woff") format("woff");
+}
+
+@font-face /* 13 */ {
+  font-family: MJXTEX-FR;
+  src: url("https://olp.vnoi.info/static/vnoj/mathjax/output/chtml/fonts/woff-v2/MathJax_Fraktur-Regular.woff") format("woff");
+}
+
+@font-face /* 14 */ {
+  font-family: MJXTEX-FRB;
+  src: url("https://olp.vnoi.info/static/vnoj/mathjax/output/chtml/fonts/woff-v2/MathJax_Fraktur-Bold.woff") format("woff");
+}
+
+@font-face /* 15 */ {
+  font-family: MJXTEX-SS;
+  src: url("https://olp.vnoi.info/static/vnoj/mathjax/output/chtml/fonts/woff-v2/MathJax_SansSerif-Regular.woff") format("woff");
+}
+
+@font-face /* 16 */ {
+  font-family: MJXTEX-SSB;
+  src: url("https://olp.vnoi.info/static/vnoj/mathjax/output/chtml/fonts/woff-v2/MathJax_SansSerif-Bold.woff") format("woff");
+}
+
+@font-face /* 17 */ {
+  font-family: MJXTEX-SSI;
+  src: url("https://olp.vnoi.info/static/vnoj/mathjax/output/chtml/fonts/woff-v2/MathJax_SansSerif-Italic.woff") format("woff");
+}
+
+@font-face /* 18 */ {
+  font-family: MJXTEX-SC;
+  src: url("https://olp.vnoi.info/static/vnoj/mathjax/output/chtml/fonts/woff-v2/MathJax_Script-Regular.woff") format("woff");
+}
+
+@font-face /* 19 */ {
+  font-family: MJXTEX-T;
+  src: url("https://olp.vnoi.info/static/vnoj/mathjax/output/chtml/fonts/woff-v2/MathJax_Typewriter-Regular.woff") format("woff");
+}
+
+@font-face /* 20 */ {
+  font-family: MJXTEX-V;
+  src: url("https://olp.vnoi.info/static/vnoj/mathjax/output/chtml/fonts/woff-v2/MathJax_Vector-Regular.woff") format("woff");
+}
+
+@font-face /* 21 */ {
+  font-family: MJXTEX-VB;
+  src: url("https://olp.vnoi.info/static/vnoj/mathjax/output/chtml/fonts/woff-v2/MathJax_Vector-Bold.woff") format("woff");
+}
+</style></head>
+<body class="window-visible">
+<script>
+        fbq('track', 'ViewContent');
+    </script>
+<svg width="0" height="0" style="display: block">
+<defs>
+<clippath id="rating-clip"><circle cx="8" cy="8" r="7"></circle></clippath>
+</defs>
+</svg>
+<nav id="navigation" class="unselectable">
+<div id="nav-container">
+<a id="navicon" href="javascript:void(0)"><i class="fa fa-bars"></i></a>
+<ul id="nav-list">
+<li class="home-nav-element"><a href="https://olp.vnoi.info/"> <img src="./hsgs-scoreboard_files/logo.svg" alt="VNOJ" width="130" height="40" onerror="this.src=&quot;/static/icons/logo.png&quot;; this.onerror=null" style="border: none; padding-top: 4px">
+</a></li>
+<li class="home-nav-element"><span class="nav-divider"></span></li>
+<li class="home-menu-item"><a href="https://olp.vnoi.info/" class="nav-home">Home</a></li>
+<li>
+<a href="https://olp.vnoi.info/contests/" class="nav-contest active">
+Contests
+</a>
+</li>
+<li>
+<a href="https://olp.vnoi.info/contest/icpc22/ranking/" class="nav-ranking">
+Ranking
+</a>
+</li>
+<li>
+<a href="https://olp.vnoi.info/about/" class="nav-about">
+About
+</a>
+<ul> <li>
+<a href="https://olp.vnoi.info/status/" class="nav-status">
+Judges
+</a>
+</li>
+</ul> </li>
+</ul>
+<span id="user-links">
+<a href="https://olp.vnoi.info/tickets/new?issue_url=https%3A//olp.vnoi.info/contest/hsgs/ranking/" style="margin-right: 5px;">
+<span title="Report issue">
+<i class="fa fa-exclamation-triangle" style="color: yellow;"></i>
+</span>
+</a>
+<a id="flag_vi" href="https://olp.vnoi.info/contest/hsgs/ranking/#" onclick="submmit_language(&#39;vi&#39;)" style="margin-right: 5px; margin-top: 4px;">
+<img src="./hsgs-scoreboard_files/vi_flag.svg" alt="VI" height="24">
+</a>
+<a id="flag_en" href="https://olp.vnoi.info/contest/hsgs/ranking/#" onclick="submmit_language(&#39;en&#39;)" style="margin-right: 5px; margin-top: 4px;">
+<img src="./hsgs-scoreboard_files/gb_flag.svg" alt="EN" height="24">
+</a>
+<span class="anon">
+<a href="https://olp.vnoi.info/accounts/login/?next=/contest/hsgs/ranking/"><b>Log in</b></a>
+&nbsp;or&nbsp;
+<a href="https://olp.vnoi.info/accounts/register/"><b>Sign up</b></a>
+</span>
+</span>
+</div>
+<div id="nav-shadow"></div>
+</nav>
+<div id="page-container">
+<noscript>
+        <div id="noscript">This site works best with JavaScript enabled.</div>
+    </noscript>
+<br>
+<main id="content">
+<div class="page-title">
+<div class="tabs tabs-no-flex">
+<h2>[HSGS] The ICPC 2022 Asia HoChiMinh City Regional Programming Contest</h2>
+<span class="spacer"></span>
+<ul>
+<li class="tab"><a href="https://olp.vnoi.info/contest/hsgs"><i class="tab-icon fa fa-info-circle"></i> Info</a></li>
+<li class="tab"><a href="https://olp.vnoi.info/contest/hsgs/stats"><i class="tab-icon fa fa-pie-chart"></i> Statistics</a></li>
+<li class="tab active"><a href="https://olp.vnoi.info/contest/hsgs/ranking/"><i class="tab-icon fa fa-bar-chart"></i> Rankings</a></li>
+<li class="tab"><a href="https://olp.vnoi.info/contest/hsgs/submissions/"><i class="tab-icon fa fa-bar-chart"></i> Submissions</a></li>
+<form action="https://olp.vnoi.info/accounts/login/" method="get" class="contest-join-pseudotab unselectable button">
+<input type="hidden" name="next" value="/contest/hsgs/ranking/">
+<input type="submit" value="Log in to participate">
+</form>
+</ul>
+</div>
+</div> <div id="content-body">
+<div id="common-content">
+<div id="content-left" class="users">
+<div style="margin-bottom: 1.25em">
+<div id="org-dropdown-check-list">
+<button id="filter-by-organization-button" class="inline-button">
+<i class="tab-icon fa fa-filter"></i>
+<b>Filter</b>
+</button>
+<div id="org-check-list-wrapper">
+<div>
+<button id="apply-organization-filter" class="inline-button filter-checklist-button">Apply</button>
+<button id="clear-organization-filter" class="inline-button filter-checklist-button">Clear</button>
+</div>
+<select id="org-check-list" name="orgs[]" multiple="" tabindex="-1" class="select2-hidden-accessible" aria-hidden="true"><option value="
+
+ HSGS Ha Long - Quang Ninh
+">
+
+ HSGS Ha Long - Quang Ninh
+</option><option value="
+
+HSGS Bac Giang
+">
+
+HSGS Bac Giang
+</option><option value="
+
+HSGS Bien Hoa - Ha Nam
+">
+
+HSGS Bien Hoa - Ha Nam
+</option><option value="
+
+HSGS Binh Long - Binh Phuoc
+">
+
+HSGS Binh Long - Binh Phuoc
+</option><option value="
+
+HSGS Ha Tinh
+">
+
+HSGS Ha Tinh
+</option><option value="
+
+HSGS Hanoi Amsterdam
+">
+
+HSGS Hanoi Amsterdam
+</option><option value="
+
+HSGS Hanoi National University of Education
+">
+
+HSGS Hanoi National University of Education
+</option><option value="
+
+HSGS Hung Vuong - Binh Duong
+">
+
+HSGS Hung Vuong - Binh Duong
+</option><option value="
+
+HSGS Hung Vuong - Phu Tho
+">
+
+HSGS Hung Vuong - Phu Tho
+</option><option value="
+
+HSGS Huynh Man Dat - Kien Giang
+">
+
+HSGS Huynh Man Dat - Kien Giang
+</option><option value="
+
+HSGS Lam Son - Thanh Hoa
+">
+
+HSGS Lam Son - Thanh Hoa
+</option><option value="
+
+HSGS Le Hong Phong - Ho Chi Minh City
+">
+
+HSGS Le Hong Phong - Ho Chi Minh City
+</option><option value="
+
+HSGS Le Hong Phong - Nam Dinh
+">
+
+HSGS Le Hong Phong - Nam Dinh
+</option><option value="
+
+HSGS Le Quy Don - Danang
+">
+
+HSGS Le Quy Don - Danang
+</option><option value="
+
+HSGS Le Quy Don - Khanh Hoa
+">
+
+HSGS Le Quy Don - Khanh Hoa
+</option><option value="
+
+HSGS Le Quy Don - Quang Tri
+">
+
+HSGS Le Quy Don - Quang Tri
+</option><option value="
+
+HSGS Luong The Vinh - Dong Nai
+">
+
+HSGS Luong The Vinh - Dong Nai
+</option><option value="
+
+HSGS Ly Tu Trong - Can Tho
+">
+
+HSGS Ly Tu Trong - Can Tho
+</option><option value="
+
+HSGS Nguyen Du - Dak Lak
+">
+
+HSGS Nguyen Du - Dak Lak
+</option><option value="
+
+HSGS Nguyen Hue - Hanoi
+">
+
+HSGS Nguyen Hue - Hanoi
+</option><option value="
+
+HSGS Nguyen Trai - Hai Duong
+">
+
+HSGS Nguyen Trai - Hai Duong
+</option><option value="
+
+HSGS Phan Boi Chau - Nghe An
+">
+
+HSGS Phan Boi Chau - Nghe An
+</option><option value="
+
+HSGS Quoc Hoc - Thua Thien Hue
+">
+
+HSGS Quoc Hoc - Thua Thien Hue
+</option><option value="
+
+HSGS Thai Nguyen
+">
+
+HSGS Thai Nguyen
+</option><option value="
+
+HSGS Thang Long - Lam Dong
+">
+
+HSGS Thang Long - Lam Dong
+</option><option value="
+
+HSGS Thoai Ngoc Hau - An Giang
+">
+
+HSGS Thoai Ngoc Hau - An Giang
+</option><option value="
+
+HSGS Tran Dai Nghia - Ho Chi Minh City
+">
+
+HSGS Tran Dai Nghia - Ho Chi Minh City
+</option><option value="
+
+HSGS Tran Phu - Haiphong
+">
+
+HSGS Tran Phu - Haiphong
+</option><option value="
+
+HSGS Vietnam National University Hanoi
+">
+
+HSGS Vietnam National University Hanoi
+</option><option value="
+
+HSGS Vietnam National University Ho Chi Minh
+">
+
+HSGS Vietnam National University Ho Chi Minh
+</option><option value="
+
+HSGS Vinh University
+">
+
+HSGS Vinh University
+</option><option value="Other">Other</option></select><span class="select2 select2-container select2-container--default" dir="ltr" style="width: auto;"><span class="selection"><span class="select2-selection select2-selection--multiple" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="-1"><ul class="select2-selection__rendered"><li class="select2-search select2-search--inline"><input class="select2-search__field" type="search" tabindex="0" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" role="textbox" aria-autocomplete="list" placeholder="Search organizations" style="width: 260px;"></li></ul></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+ </div>
+</div>
+<input id="show-personal-info-checkbox" type="checkbox" style="vertical-align: bottom">
+<label for="show-personal-info-checkbox" style="vertical-align: bottom">Show full name/organization</label>
+<input id="show-virtual-participations-checkbox" type="checkbox" style="vertical-align: bottom">
+<label for="show-virtual-participations-checkbox" style="vertical-align: bottom">Show virtual participations</label>
+</div>
+<div class="h-scrollable-table">
+<table id="users-table" class="table">
+<thead>
+<tr>
+<th class="header rank" style="width: 5%;">Rank</th>
+<th class="header username">Username</th>
+<th class="header points">
+Points </th>
+<th class="penalty">Penalty</th>
+<th class="points header"><a href="https://olp.vnoi.info/problem/icpc_a">A
+<div class="problem-code" style="display: none;">icpc_a</div>
+</a></th>
+<th class="points header"><a href="https://olp.vnoi.info/problem/icpc_b">B
+<div class="problem-code" style="display: none;">icpc_b</div>
+</a></th>
+<th class="points header"><a href="https://olp.vnoi.info/problem/icpc_c">C
+<div class="problem-code" style="display: none;">icpc_c</div>
+</a></th>
+<th class="points header"><a href="https://olp.vnoi.info/problem/icpc_d">D
+<div class="problem-code" style="display: none;">icpc_d</div>
+</a></th>
+<th class="points header"><a href="https://olp.vnoi.info/problem/icpc_e">E
+<div class="problem-code" style="display: none;">icpc_e</div>
+</a></th>
+<th class="points header"><a href="https://olp.vnoi.info/problem/icpc_f">F
+<div class="problem-code" style="display: none;">icpc_f</div>
+</a></th>
+<th class="points header"><a href="https://olp.vnoi.info/problem/icpc_g">G
+<div class="problem-code" style="display: none;">icpc_g</div>
+</a></th>
+<th class="points header"><a href="https://olp.vnoi.info/problem/icpc_h">H
+<div class="problem-code" style="display: none;">icpc_h</div>
+</a></th>
+<th class="points header"><a href="https://olp.vnoi.info/problem/icpc_i">I
+<div class="problem-code" style="display: none;">icpc_i</div>
+</a></th>
+<th class="points header"><a href="https://olp.vnoi.info/problem/icpc_j">J
+<div class="problem-code" style="display: none;">icpc_j</div>
+</a></th>
+<th class="points header"><a href="https://olp.vnoi.info/problem/icpc_k">K
+<div class="problem-code" style="display: none;">icpc_k</div>
+</a></th>
+<th class="points header"><a href="https://olp.vnoi.info/problem/icpc_l">L
+<div class="problem-code" style="display: none;">icpc_l</div>
+</a></th>
+<th class="points header"><a href="https://olp.vnoi.info/problem/icpc_m">M
+<div class="problem-code" style="display: none;">icpc_m</div>
+</a></th>
+</tr>
+</thead>
+<tbody>
+<tr id="user-hsgs1">
+<td>
+1
+</td>
+<td class="user-name">
+<div class="info-container">
+<div style="float:left">
+<i class="fav-button fa fa-heart fa-heart-o" aria-hidden="true"></i>
+<span class="rating rate-none user">
+<a href="https://olp.vnoi.info/user/hsgs1" style="display: flex; align-items: center;">Bánh gối Thiệu Huê
+</a>
+</span>
+<div class="personal-info" style="display: block;">
+<span style="font-weight: 600; color: gray;"></span>
+</div>
+</div>
+<div style="float:right">
+<div class="personal-info" style="text-align: right; display: block;">
+<span class="organization"><a href="https://olp.vnoi.info/organization/75-icpc">
+<img class="uni-logo" src="./hsgs-scoreboard_files/2.png">
+<p class="uni-name">HSGS Vietnam National University Hanoi</p>
+</a></span>
+</div>
+</div>
+</div>
+</td><td class="user-points"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs1/">11</a></td><td class="user-penalty">1430</td>
+<td class="full-score first-solve"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs1/icpc_a/"><div class="solving-time-minute">211</div><div class="solving-time">03:31:43</div>2 tries</a></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs1/icpc_c/"><div class="solving-time-minute">112</div><div class="solving-time">01:52:17</div>2 tries</a></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs1/icpc_d/"><div class="solving-time-minute">59</div><div class="solving-time">00:59:48</div>2 tries</a></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs1/icpc_e/"><div class="solving-time-minute">142</div><div class="solving-time">02:22:42</div>4 tries</a></td>
+<td class="full-score first-solve"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs1/icpc_f/"><div class="solving-time-minute">24</div><div class="solving-time">00:24:34</div>1 try</a></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs1/icpc_g/"><div class="solving-time-minute">18</div><div class="solving-time">00:18:44</div>1 try</a></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs1/icpc_i/"><div class="solving-time-minute">98</div><div class="solving-time">01:38:03</div>2 tries</a></td>
+<td class="full-score first-solve"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs1/icpc_j/"><div class="solving-time-minute">14</div><div class="solving-time">00:14:25</div>1 try</a></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs1/icpc_k/"><div class="solving-time-minute">168</div><div class="solving-time">02:48:25</div>1 try</a></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs1/icpc_l/"><div class="solving-time-minute">49</div><div class="solving-time">00:49:39</div>1 try</a></td>
+<td class="full-score first-solve"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs1/icpc_m/"><div class="solving-time-minute">295</div><div class="solving-time">04:55:57</div>6 tries</a></td>
+</tr>
+<tr id="user-hsgs3">
+<td>
+2
+</td>
+<td class="user-name">
+<div class="info-container">
+<div style="float:left">
+<i class="fav-button fa fa-heart fa-heart-o" aria-hidden="true"></i>
+<span class="rating rate-none user">
+<a href="https://olp.vnoi.info/user/hsgs3" style="display: flex; align-items: center;">Bánh mì chảo Phú Ông
+</a>
+</span>
+<div class="personal-info" style="display: block;">
+<span style="font-weight: 600; color: gray;"></span>
+</div>
+</div>
+<div style="float:right">
+<div class="personal-info" style="text-align: right; display: block;">
+<span class="organization"><a href="https://olp.vnoi.info/organization/75-icpc">
+<img class="uni-logo" src="./hsgs-scoreboard_files/2.png">
+<p class="uni-name">HSGS Vietnam National University Hanoi</p>
+</a></span>
+</div>
+</div>
+</div>
+</td><td class="user-points"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs3/">10</a></td><td class="user-penalty">997</td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs3/icpc_a/"><div class="solving-time-minute">233</div><div class="solving-time">03:53:48</div>1 try</a></td>
+<td></td>
+<td class="full-score first-solve"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs3/icpc_c/"><div class="solving-time-minute">36</div><div class="solving-time">00:36:00</div>1 try</a></td>
+<td class="full-score first-solve"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs3/icpc_d/"><div class="solving-time-minute">29</div><div class="solving-time">00:29:55</div>1 try</a></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs3/icpc_e/"><div class="solving-time-minute">205</div><div class="solving-time">03:25:35</div>1 try</a></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs3/icpc_f/"><div class="solving-time-minute">37</div><div class="solving-time">00:37:56</div>1 try</a></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs3/icpc_g/"><div class="solving-time-minute">11</div><div class="solving-time">00:11:51</div>1 try</a></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs3/icpc_i/"><div class="solving-time-minute">102</div><div class="solving-time">01:42:07</div>1 try</a></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs3/icpc_j/"><div class="solving-time-minute">20</div><div class="solving-time">00:20:48</div>1 try</a></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs3/icpc_k/"><div class="solving-time-minute">201</div><div class="solving-time">03:21:10</div>1 try</a></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs3/icpc_l/"><div class="solving-time-minute">103</div><div class="solving-time">01:43:11</div>2 tries</a></td>
+<td></td>
+</tr>
+<tr id="user-hsgs2">
+<td>
+3
+</td>
+<td class="user-name">
+<div class="info-container">
+<div style="float:left">
+<i class="fav-button fa fa-heart fa-heart-o" aria-hidden="true"></i>
+<span class="rating rate-none user">
+<a href="https://olp.vnoi.info/user/hsgs2" style="display: flex; align-items: center;">Bún Bò Thu Sương
+</a>
+</span>
+<div class="personal-info" style="display: block;">
+<span style="font-weight: 600; color: gray;"></span>
+</div>
+</div>
+<div style="float:right">
+<div class="personal-info" style="text-align: right; display: block;">
+<span class="organization"><a href="https://olp.vnoi.info/organization/75-icpc">
+<img class="uni-logo" src="./hsgs-scoreboard_files/2.png">
+<p class="uni-name">HSGS Vietnam National University Hanoi</p>
+</a></span>
+</div>
+</div>
+</div>
+</td><td class="user-points"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs2/">9</a></td><td class="user-penalty">870</td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs2/icpc_a/"><div class="solving-time-minute">265</div><div class="solving-time">04:25:11</div>2 tries</a></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs2/icpc_c/"><div class="solving-time-minute">103</div><div class="solving-time">01:43:31</div>2 tries</a></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs2/icpc_d/"><div class="solving-time-minute">59</div><div class="solving-time">00:59:52</div>1 try</a></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs2/icpc_f/"><div class="solving-time-minute">33</div><div class="solving-time">00:33:16</div>1 try</a></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs2/icpc_g/"><div class="solving-time-minute">30</div><div class="solving-time">00:30:36</div>1 try</a></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs2/icpc_i/"><div class="solving-time-minute">141</div><div class="solving-time">02:21:12</div>2 tries</a></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs2/icpc_j/"><div class="solving-time-minute">19</div><div class="solving-time">00:19:25</div>2 tries</a></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs2/icpc_k/"><div class="solving-time-minute">87</div><div class="solving-time">01:27:01</div>1 try</a></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs2/icpc_l/"><div class="solving-time-minute">53</div><div class="solving-time">00:53:20</div>1 try</a></td>
+<td class="failed-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs2/icpc_m/">1 try</a></td>
+</tr>
+<tr id="user-hsgs8">
+<td>
+4
+</td>
+<td class="user-name">
+<div class="info-container">
+<div style="float:left">
+<i class="fav-button fa fa-heart fa-heart-o" aria-hidden="true"></i>
+<span class="rating rate-none user">
+<a href="https://olp.vnoi.info/user/hsgs8" style="display: flex; align-items: center;">PT.CHV VULE
+</a>
+</span>
+<div class="personal-info" style="display: block;">
+<span style="font-weight: 600; color: gray;"></span>
+</div>
+</div>
+<div style="float:right">
+<div class="personal-info" style="text-align: right; display: block;">
+<span class="organization"><a href="https://olp.vnoi.info/organization/80-icpc">
+<img class="uni-logo" src="./hsgs-scoreboard_files/4.png">
+<p class="uni-name">HSGS Hung Vuong - Phu Tho</p>
+</a></span>
+</div>
+</div>
+</div>
+</td><td class="user-points"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs8/">9</a></td><td class="user-penalty">889</td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs8/icpc_a/"><div class="solving-time-minute">214</div><div class="solving-time">03:34:03</div>1 try</a></td>
+<td class="failed-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs8/icpc_b/">2 tries</a></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs8/icpc_c/"><div class="solving-time-minute">100</div><div class="solving-time">01:40:55</div>1 try</a></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs8/icpc_d/"><div class="solving-time-minute">54</div><div class="solving-time">00:54:28</div>1 try</a></td>
+<td class="failed-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs8/icpc_e/">1 try</a></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs8/icpc_f/"><div class="solving-time-minute">25</div><div class="solving-time">00:25:17</div>1 try</a></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs8/icpc_g/"><div class="solving-time-minute">12</div><div class="solving-time">00:12:26</div>1 try</a></td>
+<td class="failed-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs8/icpc_h/">1 try</a></td>
+<td class="full-score first-solve"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs8/icpc_i/"><div class="solving-time-minute">90</div><div class="solving-time">01:30:57</div>1 try</a></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs8/icpc_j/"><div class="solving-time-minute">18</div><div class="solving-time">00:18:13</div>1 try</a></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs8/icpc_k/"><div class="solving-time-minute">146</div><div class="solving-time">02:26:41</div>1 try</a></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs8/icpc_l/"><div class="solving-time-minute">150</div><div class="solving-time">02:30:11</div>5 tries</a></td>
+<td class="failed-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs8/icpc_m/">5 tries</a></td>
+</tr>
+<tr id="user-hsgs4">
+<td>
+5
+</td>
+<td class="user-name">
+<div class="info-container">
+<div style="float:left">
+<i class="fav-button fa fa-heart fa-heart-o" aria-hidden="true"></i>
+<span class="rating rate-none user">
+<a href="https://olp.vnoi.info/user/hsgs4" style="display: flex; align-items: center;">LQDDN KAT
+</a>
+</span>
+<div class="personal-info" style="display: block;">
+<span style="font-weight: 600; color: gray;"></span>
+</div>
+</div>
+<div style="float:right">
+<div class="personal-info" style="text-align: right; display: block;">
+<span class="organization"><a href="https://olp.vnoi.info/organization/76-icpc">
+<img class="uni-logo" src="./hsgs-scoreboard_files/unk.png">
+<p class="uni-name">HSGS Le Quy Don - Danang</p>
+</a></span>
+</div>
+</div>
+</div>
+</td><td class="user-points"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs4/">9</a></td><td class="user-penalty">910</td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs4/icpc_a/"><div class="solving-time-minute">245</div><div class="solving-time">04:05:03</div>1 try</a></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs4/icpc_c/"><div class="solving-time-minute">161</div><div class="solving-time">02:41:34</div>1 try</a></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs4/icpc_d/"><div class="solving-time-minute">54</div><div class="solving-time">00:54:32</div>3 tries</a></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs4/icpc_f/"><div class="solving-time-minute">94</div><div class="solving-time">01:34:32</div>3 tries</a></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs4/icpc_g/"><div class="solving-time-minute">20</div><div class="solving-time">00:20:43</div>1 try</a></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs4/icpc_i/"><div class="solving-time-minute">112</div><div class="solving-time">01:52:26</div>1 try</a></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs4/icpc_j/"><div class="solving-time-minute">27</div><div class="solving-time">00:27:10</div>1 try</a></td>
+<td class="full-score first-solve"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs4/icpc_k/"><div class="solving-time-minute">83</div><div class="solving-time">01:23:38</div>1 try</a></td>
+<td class="full-score first-solve"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs4/icpc_l/"><div class="solving-time-minute">34</div><div class="solving-time">00:34:49</div>1 try</a></td>
+<td></td>
+</tr>
+<tr id="user-hsgs17">
+<td>
+6
+</td>
+<td class="user-name">
+<div class="info-container">
+<div style="float:left">
+<i class="fav-button fa fa-heart fa-heart-o" aria-hidden="true"></i>
+<span class="rating rate-none user">
+<a href="https://olp.vnoi.info/user/hsgs17" style="display: flex; align-items: center;">NonNerd
+</a>
+</span>
+<div class="personal-info" style="display: block;">
+<span style="font-weight: 600; color: gray;"></span>
+</div>
+</div>
+<div style="float:right">
+<div class="personal-info" style="text-align: right; display: block;">
+<span class="organization"><a href="https://olp.vnoi.info/organization/87-icpc">
+<img class="uni-logo" src="./hsgs-scoreboard_files/unk.png">
+<p class="uni-name">HSGS Hanoi National University of Education</p>
+</a></span>
+</div>
+</div>
+</div>
+</td><td class="user-points"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs17/">9</a></td><td class="user-penalty">1268</td>
+<td></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs17/icpc_c/"><div class="solving-time-minute">197</div><div class="solving-time">03:17:56</div>1 try</a></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs17/icpc_d/"><div class="solving-time-minute">72</div><div class="solving-time">01:12:14</div>3 tries</a></td>
+<td class="full-score first-solve"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs17/icpc_e/"><div class="solving-time-minute">133</div><div class="solving-time">02:13:45</div>1 try</a></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs17/icpc_f/"><div class="solving-time-minute">54</div><div class="solving-time">00:54:12</div>1 try</a></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs17/icpc_g/"><div class="solving-time-minute">35</div><div class="solving-time">00:35:04</div>1 try</a></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs17/icpc_i/"><div class="solving-time-minute">202</div><div class="solving-time">03:22:43</div>1 try</a></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs17/icpc_j/"><div class="solving-time-minute">44</div><div class="solving-time">00:44:26</div>1 try</a></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs17/icpc_k/"><div class="solving-time-minute">229</div><div class="solving-time">03:49:17</div>4 tries</a></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs17/icpc_l/"><div class="solving-time-minute">122</div><div class="solving-time">02:02:55</div>5 tries</a></td>
+<td></td>
+</tr>
+<tr id="user-hsgs19">
+<td>
+7
+</td>
+<td class="user-name">
+<div class="info-container">
+<div style="float:left">
+<i class="fav-button fa fa-heart fa-heart-o" aria-hidden="true"></i>
+<span class="rating rate-none user">
+<a href="https://olp.vnoi.info/user/hsgs19" style="display: flex; align-items: center;">AMS.sati
+</a>
+</span>
+<div class="personal-info" style="display: block;">
+<span style="font-weight: 600; color: gray;"></span>
+</div>
+</div>
+<div style="float:right">
+<div class="personal-info" style="text-align: right; display: block;">
+<span class="organization"><a href="https://olp.vnoi.info/organization/85-icpc">
+<img class="uni-logo" src="./hsgs-scoreboard_files/unk.png">
+<p class="uni-name">HSGS Hanoi Amsterdam</p>
+</a></span>
+</div>
+</div>
+</div>
+</td><td class="user-points"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs19/">9</a></td><td class="user-penalty">1541</td>
+<td></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs19/icpc_c/"><div class="solving-time-minute">111</div><div class="solving-time">01:51:38</div>4 tries</a></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs19/icpc_d/"><div class="solving-time-minute">94</div><div class="solving-time">01:34:03</div>2 tries</a></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs19/icpc_e/"><div class="solving-time-minute">286</div><div class="solving-time">04:46:04</div>5 tries</a></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs19/icpc_f/"><div class="solving-time-minute">44</div><div class="solving-time">00:44:40</div>1 try</a></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs19/icpc_g/"><div class="solving-time-minute">25</div><div class="solving-time">00:25:18</div>2 tries</a></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs19/icpc_i/"><div class="solving-time-minute">224</div><div class="solving-time">03:44:05</div>1 try</a></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs19/icpc_j/"><div class="solving-time-minute">30</div><div class="solving-time">00:30:01</div>1 try</a></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs19/icpc_k/"><div class="solving-time-minute">287</div><div class="solving-time">04:47:53</div>6 tries</a></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs19/icpc_l/"><div class="solving-time-minute">140</div><div class="solving-time">02:20:38</div>2 tries</a></td>
+<td class="failed-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs19/icpc_m/">8 tries</a></td>
+</tr>
+<tr id="user-hsgs15">
+<td>
+8
+</td>
+<td class="user-name">
+<div class="info-container">
+<div style="float:left">
+<i class="fav-button fa fa-heart fa-heart-o" aria-hidden="true"></i>
+<span class="rating rate-none user">
+<a href="https://olp.vnoi.info/user/hsgs15" style="display: flex; align-items: center;">AMS.egg
+</a>
+</span>
+<div class="personal-info" style="display: block;">
+<span style="font-weight: 600; color: gray;"></span>
+</div>
+</div>
+<div style="float:right">
+<div class="personal-info" style="text-align: right; display: block;">
+<span class="organization"><a href="https://olp.vnoi.info/organization/85-icpc">
+<img class="uni-logo" src="./hsgs-scoreboard_files/unk.png">
+<p class="uni-name">HSGS Hanoi Amsterdam</p>
+</a></span>
+</div>
+</div>
+</div>
+</td><td class="user-points"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs15/">8</a></td><td class="user-penalty">957</td>
+ <td></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs15/icpc_c/"><div class="solving-time-minute">146</div><div class="solving-time">02:26:54</div>2 tries</a></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs15/icpc_d/"><div class="solving-time-minute">92</div><div class="solving-time">01:32:31</div>2 tries</a></td>
+<td class="failed-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs15/icpc_e/">2 tries</a></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs15/icpc_f/"><div class="solving-time-minute">39</div><div class="solving-time">00:39:22</div>1 try</a></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs15/icpc_g/"><div class="solving-time-minute">22</div><div class="solving-time">00:22:38</div>1 try</a></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs15/icpc_i/"><div class="solving-time-minute">196</div><div class="solving-time">03:16:45</div>2 tries</a></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs15/icpc_j/"><div class="solving-time-minute">33</div><div class="solving-time">00:33:20</div>1 try</a></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs15/icpc_k/"><div class="solving-time-minute">234</div><div class="solving-time">03:54:41</div>1 try</a></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs15/icpc_l/"><div class="solving-time-minute">115</div><div class="solving-time">01:55:59</div>2 tries</a></td>
+<td></td>
+</tr>
+<tr id="user-hsgs25">
+<td>
+9
+</td>
+<td class="user-name">
+<div class="info-container">
+<div style="float:left">
+<i class="fav-button fa fa-heart fa-heart-o" aria-hidden="true"></i>
+<span class="rating rate-none user">
+<a href="https://olp.vnoi.info/user/hsgs25" style="display: flex; align-items: center;">TH.LS.Sunday
+</a>
+</span>
+<div class="personal-info" style="display: block;">
+<span style="font-weight: 600; color: gray;"></span>
+</div>
+</div>
+<div style="float:right">
+<div class="personal-info" style="text-align: right; display: block;">
+<span class="organization"><a href="https://olp.vnoi.info/organization/93-icpc">
+<img class="uni-logo" src="./hsgs-scoreboard_files/25.png">
+<p class="uni-name">HSGS Lam Son - Thanh Hoa</p>
+</a></span>
+</div>
+</div>
+</div>
+</td><td class="user-points"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs25/">8</a></td><td class="user-penalty">992</td>
+<td></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs25/icpc_c/"><div class="solving-time-minute">117</div><div class="solving-time">01:57:09</div>1 try</a></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs25/icpc_d/"><div class="solving-time-minute">55</div><div class="solving-time">00:55:25</div>3 tries</a></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs25/icpc_f/"><div class="solving-time-minute">24</div><div class="solving-time">00:24:51</div>2 tries</a></td>
+<td class="full-score first-solve"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs25/icpc_g/"><div class="solving-time-minute">11</div><div class="solving-time">00:11:19</div>1 try</a></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs25/icpc_i/"><div class="solving-time-minute">231</div><div class="solving-time">03:51:38</div>2 tries</a></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs25/icpc_j/"><div class="solving-time-minute">21</div><div class="solving-time">00:21:21</div>1 try</a></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs25/icpc_k/"><div class="solving-time-minute">257</div><div class="solving-time">04:17:42</div>1 try</a></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs25/icpc_l/"><div class="solving-time-minute">176</div><div class="solving-time">02:56:51</div>2 tries</a></td>
+<td></td>
+</tr>
+<tr id="user-hsgs7">
+<td>
+10
+</td>
+<td class="user-name">
+<div class="info-container">
+<div style="float:left">
+<i class="fav-button fa fa-heart fa-heart-o" aria-hidden="true"></i>
+<span class="rating rate-none user">
+<a href="https://olp.vnoi.info/user/hsgs7" style="display: flex; align-items: center;">QT.HNN
+</a>
+</span>
+<div class="personal-info" style="display: block;">
+<span style="font-weight: 600; color: gray;"></span>
+</div>
+</div>
+<div style="float:right">
+<div class="personal-info" style="text-align: right; display: block;">
+<span class="organization"><a href="https://olp.vnoi.info/organization/79-icpc">
+<img class="uni-logo" src="./hsgs-scoreboard_files/15.png">
+<p class="uni-name">HSGS Le Quy Don - Quang Tri</p>
+</a></span>
+</div>
+</div>
+</div>
+</td><td class="user-points"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs7/">8</a></td><td class="user-penalty">1339</td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs7/icpc_a/"><div class="solving-time-minute">280</div><div class="solving-time">04:40:19</div>1 try</a></td>
+<td></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs7/icpc_d/"><div class="solving-time-minute">92</div><div class="solving-time">01:32:40</div>1 try</a></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs7/icpc_f/"><div class="solving-time-minute">184</div><div class="solving-time">03:04:33</div>4 tries</a></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs7/icpc_g/"><div class="solving-time-minute">85</div><div class="solving-time">01:25:24</div>1 try</a></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs7/icpc_i/"><div class="solving-time-minute">164</div><div class="solving-time">02:44:31</div>5 tries</a></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs7/icpc_j/"><div class="solving-time-minute">71</div><div class="solving-time">01:11:11</div>1 try</a></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs7/icpc_k/"><div class="solving-time-minute">199</div><div class="solving-time">03:19:53</div>1 try</a></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs7/icpc_l/"><div class="solving-time-minute">124</div><div class="solving-time">02:04:24</div>1 try</a></td>
+<td></td>
+</tr>
+<tr id="user-hsgs5">
+<td>
+11
+</td>
+<td class="user-name">
+<div class="info-container">
+<div style="float:left">
+<i class="fav-button fa fa-heart fa-heart-o" aria-hidden="true"></i>
+<span class="rating rate-none user">
+<a href="https://olp.vnoi.info/user/hsgs5" style="display: flex; align-items: center;">HP.CTP.01
+</a>
+</span>
+<div class="personal-info" style="display: block;">
+<span style="font-weight: 600; color: gray;"></span>
+</div>
+</div>
+<div style="float:right">
+<div class="personal-info" style="text-align: right; display: block;">
+<span class="organization"><a href="https://olp.vnoi.info/organization/77-icpc">
+<img class="uni-logo" src="./hsgs-scoreboard_files/unk.png">
+<p class="uni-name">HSGS Tran Phu - Haiphong</p>
+</a></span>
+</div>
+</div>
+</div>
+</td><td class="user-points"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs5/">7</a></td><td class="user-penalty">1000</td>
+<td></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs5/icpc_c/"><div class="solving-time-minute">269</div><div class="solving-time">04:29:53</div>4 tries</a></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs5/icpc_d/"><div class="solving-time-minute">128</div><div class="solving-time">02:08:56</div>1 try</a></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs5/icpc_f/"><div class="solving-time-minute">80</div><div class="solving-time">01:20:42</div>1 try</a></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs5/icpc_g/"><div class="solving-time-minute">19</div><div class="solving-time">00:19:15</div>1 try</a></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs5/icpc_i/"><div class="solving-time-minute">255</div><div class="solving-time">04:15:42</div>4 tries</a></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs5/icpc_j/"><div class="solving-time-minute">27</div><div class="solving-time">00:27:53</div>1 try</a></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs5/icpc_l/"><div class="solving-time-minute">82</div><div class="solving-time">01:22:51</div>2 tries</a></td>
+<td></td>
+</tr>
+<tr id="user-hsgs6">
+<td>
+12
+</td>
+<td class="user-name">
+<div class="info-container">
+<div style="float:left">
+<i class="fav-button fa fa-heart fa-heart-o" aria-hidden="true"></i>
+<span class="rating rate-none user">
+<a href="https://olp.vnoi.info/user/hsgs6" style="display: flex; align-items: center;">HSG-SQRT
+</a>
+</span>
+<div class="personal-info" style="display: block;">
+<span style="font-weight: 600; color: gray;"></span>
+</div>
+</div>
+<div style="float:right">
+<div class="personal-info" style="text-align: right; display: block;">
+<span class="organization"><a href="https://olp.vnoi.info/organization/78-icpc">
+<img class="uni-logo" src="./hsgs-scoreboard_files/unk.png">
+<p class="uni-name">HSGS Vietnam National University Ho Chi Minh</p>
+</a></span>
+</div>
+</div>
+</div>
+</td><td class="user-points"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs6/">7</a></td><td class="user-penalty">1179</td>
+<td></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs6/icpc_c/"><div class="solving-time-minute">278</div><div class="solving-time">04:38:31</div>5 tries</a></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs6/icpc_d/"><div class="solving-time-minute">64</div><div class="solving-time">01:04:22</div>1 try</a></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs6/icpc_f/"><div class="solving-time-minute">41</div><div class="solving-time">00:41:53</div>1 try</a></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs6/icpc_g/"><div class="solving-time-minute">28</div><div class="solving-time">00:28:26</div>1 try</a></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs6/icpc_i/"><div class="solving-time-minute">224</div><div class="solving-time">03:44:50</div>4 tries</a></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs6/icpc_j/"><div class="solving-time-minute">51</div><div class="solving-time">00:51:09</div>1 try</a></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs6/icpc_l/"><div class="solving-time-minute">253</div><div class="solving-time">04:13:38</div>6 tries</a></td>
+<td></td>
+</tr>
+<tr id="user-hsgs30">
+<td>
+13
+</td>
+<td class="user-name">
+<div class="info-container">
+<div style="float:left">
+<i class="fav-button fa fa-heart fa-heart-o" aria-hidden="true"></i>
+<span class="rating rate-none user">
+<a href="https://olp.vnoi.info/user/hsgs30" style="display: flex; align-items: center;">HT.T2K30
+</a>
+</span>
+<div class="personal-info" style="display: block;">
+<span style="font-weight: 600; color: gray;"></span>
+</div>
+</div>
+<div style="float:right">
+<div class="personal-info" style="text-align: right; display: block;">
+<span class="organization"><a href="https://olp.vnoi.info/organization/81-icpc">
+<img class="uni-logo" src="./hsgs-scoreboard_files/unk.png">
+<p class="uni-name">HSGS Ha Tinh</p>
+</a></span>
+</div>
+</div>
+</div>
+</td><td class="user-points"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs30/">6</a></td><td class="user-penalty">588</td>
+<td></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs30/icpc_c/"><div class="solving-time-minute">201</div><div class="solving-time">03:21:09</div>1 try</a></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs30/icpc_d/"><div class="solving-time-minute">98</div><div class="solving-time">01:38:16</div>1 try</a></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs30/icpc_f/"><div class="solving-time-minute">52</div><div class="solving-time">00:52:26</div>1 try</a></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs30/icpc_g/"><div class="solving-time-minute">32</div><div class="solving-time">00:32:11</div>1 try</a></td>
+<td></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs30/icpc_j/"><div class="solving-time-minute">42</div><div class="solving-time">00:42:14</div>2 tries</a></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs30/icpc_l/"><div class="solving-time-minute">123</div><div class="solving-time">02:03:45</div>2 tries</a></td>
+<td></td>
+</tr>
+<tr id="user-hsgs18">
+<td>
+14
+</td>
+<td class="user-name">
+<div class="info-container">
+<div style="float:left">
+<i class="fav-button fa fa-heart fa-heart-o" aria-hidden="true"></i>
+<span class="rating rate-none user">
+<a href="https://olp.vnoi.info/user/hsgs18" style="display: flex; align-items: center;">CTN2223-TAT
+</a>
+</span>
+<div class="personal-info" style="display: block;">
+<span style="font-weight: 600; color: gray;"></span>
+</div>
+</div>
+<div style="float:right">
+<div class="personal-info" style="text-align: right; display: block;">
+<span class="organization"><a href="https://olp.vnoi.info/organization/88-icpc">
+<img class="uni-logo" src="./hsgs-scoreboard_files/69.png">
+<p class="uni-name">HSGS Thai Nguyen</p>
+</a></span>
+</div>
+</div>
+</div>
+</td><td class="user-points"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs18/">6</a></td><td class="user-penalty">664</td>
+<td></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs18/icpc_c/"><div class="solving-time-minute">231</div><div class="solving-time">03:51:12</div>2 tries</a></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs18/icpc_d/"><div class="solving-time-minute">49</div><div class="solving-time">00:49:36</div>1 try</a></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs18/icpc_f/"><div class="solving-time-minute">72</div><div class="solving-time">01:12:48</div>1 try</a></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs18/icpc_g/"><div class="solving-time-minute">48</div><div class="solving-time">00:48:52</div>2 tries</a></td>
+<td></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs18/icpc_j/"><div class="solving-time-minute">22</div><div class="solving-time">00:22:02</div>1 try</a></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs18/icpc_l/"><div class="solving-time-minute">162</div><div class="solving-time">02:42:10</div>3 tries</a></td>
+<td></td>
+</tr>
+<tr id="user-hsgs14">
+<td>
+15
+</td>
+<td class="user-name">
+<div class="info-container">
+<div style="float:left">
+<i class="fav-button fa fa-heart fa-heart-o" aria-hidden="true"></i>
+<span class="rating rate-none user">
+<a href="https://olp.vnoi.info/user/hsgs14" style="display: flex; align-items: center;">Bubble Cat
+</a>
+</span>
+<div class="personal-info" style="display: block;">
+<span style="font-weight: 600; color: gray;"></span>
+</div>
+</div>
+<div style="float:right">
+<div class="personal-info" style="text-align: right; display: block;">
+<span class="organization"><a href="https://olp.vnoi.info/organization/84-icpc">
+<img class="uni-logo" src="./hsgs-scoreboard_files/32.png">
+<p class="uni-name">HSGS Le Hong Phong - Ho Chi Minh City</p>
+</a></span>
+</div>
+</div>
+</div>
+</td><td class="user-points"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs14/">6</a></td><td class="user-penalty">727</td>
+<td></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs14/icpc_c/"><div class="solving-time-minute">248</div><div class="solving-time">04:08:02</div>2 tries</a></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs14/icpc_d/"><div class="solving-time-minute">97</div><div class="solving-time">01:37:19</div>1 try</a></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs14/icpc_f/"><div class="solving-time-minute">71</div><div class="solving-time">01:11:32</div>3 tries</a></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs14/icpc_g/"><div class="solving-time-minute">22</div><div class="solving-time">00:22:54</div>1 try</a></td>
+<td></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs14/icpc_j/"><div class="solving-time-minute">40</div><div class="solving-time">00:40:41</div>1 try</a></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs14/icpc_k/"><div class="solving-time-minute">189</div><div class="solving-time">03:09:42</div>1 try</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr id="user-hsgs12">
+<td>
+16
+</td>
+<td class="user-name">
+<div class="info-container">
+<div style="float:left">
+<i class="fav-button fa fa-heart fa-heart-o" aria-hidden="true"></i>
+<span class="rating rate-none user">
+<a href="https://olp.vnoi.info/user/hsgs12" style="display: flex; align-items: center;">HSG-ZoohockGang
+</a>
+</span>
+<div class="personal-info" style="display: block;">
+<span style="font-weight: 600; color: gray;"></span>
+</div>
+</div>
+<div style="float:right">
+<div class="personal-info" style="text-align: right; display: block;">
+<span class="organization"><a href="https://olp.vnoi.info/organization/78-icpc">
+<img class="uni-logo" src="./hsgs-scoreboard_files/unk.png">
+<p class="uni-name">HSGS Vietnam National University Ho Chi Minh</p>
+</a></span>
+</div>
+</div>
+</div>
+</td><td class="user-points"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs12/">6</a></td><td class="user-penalty">763</td>
+<td></td>
+<td></td>
+<td class="failed-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs12/icpc_c/">1 try</a></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs12/icpc_d/"><div class="solving-time-minute">75</div><div class="solving-time">01:15:26</div>1 try</a></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs12/icpc_f/"><div class="solving-time-minute">66</div><div class="solving-time">01:06:58</div>3 tries</a></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs12/icpc_g/"><div class="solving-time-minute">32</div><div class="solving-time">00:32:55</div>1 try</a></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs12/icpc_i/"><div class="solving-time-minute">140</div><div class="solving-time">02:20:14</div>1 try</a></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs12/icpc_j/"><div class="solving-time-minute">40</div><div class="solving-time">00:40:55</div>1 try</a></td>
+<td class="failed-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs12/icpc_k/">1 try</a></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs12/icpc_l/"><div class="solving-time-minute">230</div><div class="solving-time">03:50:46</div>8 tries</a></td>
+<td></td>
+</tr>
+<tr id="user-hsgs28">
+<td>
+17
+</td>
+<td class="user-name">
+<div class="info-container">
+<div style="float:left">
+<i class="fav-button fa fa-heart fa-heart-o" aria-hidden="true"></i>
+<span class="rating rate-none user">
+<a href="https://olp.vnoi.info/user/hsgs28" style="display: flex; align-items: center;">BDg.CHV SecondWind
+</a>
+</span>
+<div class="personal-info" style="display: block;">
+<span style="font-weight: 600; color: gray;"></span>
+</div>
+</div>
+<div style="float:right">
+<div class="personal-info" style="text-align: right; display: block;">
+<span class="organization"><a href="https://olp.vnoi.info/organization/95-icpc">
+<img class="uni-logo" src="./hsgs-scoreboard_files/16.png">
+<p class="uni-name">HSGS Hung Vuong - Binh Duong</p>
+</a></span>
+</div>
+</div>
+</div>
+</td><td class="user-points"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs28/">6</a></td><td class="user-penalty">948</td>
+<td></td>
+<td></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs28/icpc_d/"><div class="solving-time-minute">188</div><div class="solving-time">03:08:17</div>2 tries</a></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs28/icpc_f/"><div class="solving-time-minute">98</div><div class="solving-time">01:38:06</div>2 tries</a></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs28/icpc_g/"><div class="solving-time-minute">29</div><div class="solving-time">00:29:25</div>3 tries</a></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs28/icpc_i/"><div class="solving-time-minute">295</div><div class="solving-time">04:55:18</div>6 tries</a></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs28/icpc_j/"><div class="solving-time-minute">48</div><div class="solving-time">00:48:35</div>1 try</a></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs28/icpc_l/"><div class="solving-time-minute">110</div><div class="solving-time">01:50:30</div>1 try</a></td>
+<td></td>
+</tr>
+<tr id="user-hsgs9">
+<td>
+18
+</td>
+<td class="user-name">
+<div class="info-container">
+<div style="float:left">
+<i class="fav-button fa fa-heart fa-heart-o" aria-hidden="true"></i>
+<span class="rating rate-none user">
+<a href="https://olp.vnoi.info/user/hsgs9" style="display: flex; align-items: center;">HT.tht2005
+</a>
+</span>
+<div class="personal-info" style="display: block;">
+<span style="font-weight: 600; color: gray;"></span>
+</div>
+</div>
+<div style="float:right">
+<div class="personal-info" style="text-align: right; display: block;">
+<span class="organization"><a href="https://olp.vnoi.info/organization/81-icpc">
+<img class="uni-logo" src="./hsgs-scoreboard_files/unk.png">
+<p class="uni-name">HSGS Ha Tinh</p>
+</a></span>
+</div>
+ </div>
+</div>
+</td><td class="user-points"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs9/">6</a></td><td class="user-penalty">1064</td>
+<td></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs9/icpc_c/"><div class="solving-time-minute">248</div><div class="solving-time">04:08:00</div>2 tries</a></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs9/icpc_d/"><div class="solving-time-minute">150</div><div class="solving-time">02:30:22</div>3 tries</a></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs9/icpc_f/"><div class="solving-time-minute">121</div><div class="solving-time">02:01:02</div>1 try</a></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs9/icpc_g/"><div class="solving-time-minute">41</div><div class="solving-time">00:41:39</div>1 try</a></td>
+<td></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs9/icpc_j/"><div class="solving-time-minute">53</div><div class="solving-time">00:53:09</div>1 try</a></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs9/icpc_l/"><div class="solving-time-minute">291</div><div class="solving-time">04:51:47</div>6 tries</a></td>
+<td></td>
+</tr>
+<tr id="user-hsgs11">
+<td>
+19
+</td>
+<td class="user-name">
+<div class="info-container">
+<div style="float:left">
+<i class="fav-button fa fa-heart fa-heart-o" aria-hidden="true"></i>
+<span class="rating rate-none user">
+<a href="https://olp.vnoi.info/user/hsgs11" style="display: flex; align-items: center;">HD.CNT Nov HKT
+</a>
+</span>
+<div class="personal-info" style="display: block;">
+<span style="font-weight: 600; color: gray;"></span>
+</div>
+</div>
+<div style="float:right">
+<div class="personal-info" style="text-align: right; display: block;">
+<span class="organization"><a href="https://olp.vnoi.info/organization/82-icpc">
+<img class="uni-logo" src="./hsgs-scoreboard_files/30.png">
+<p class="uni-name">HSGS Nguyen Trai - Hai Duong</p>
+</a></span>
+</div>
+</div>
+</div>
+</td><td class="user-points"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs11/">6</a></td><td class="user-penalty">1219</td>
+<td></td>
+<td></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs11/icpc_d/"><div class="solving-time-minute">224</div><div class="solving-time">03:44:21</div>1 try</a></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs11/icpc_f/"><div class="solving-time-minute">232</div><div class="solving-time">03:52:25</div>5 tries</a></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs11/icpc_g/"><div class="solving-time-minute">102</div><div class="solving-time">01:42:59</div>1 try</a></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs11/icpc_i/"><div class="solving-time-minute">192</div><div class="solving-time">03:12:04</div>11 tries</a></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs11/icpc_j/"><div class="solving-time-minute">55</div><div class="solving-time">00:55:08</div>1 try</a></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs11/icpc_l/"><div class="solving-time-minute">74</div><div class="solving-time">01:14:38</div>4 tries</a></td>
+<td></td>
+</tr>
+<tr id="user-hsgs16">
+<td>
+20
+</td>
+<td class="user-name">
+<div class="info-container">
+<div style="float:left">
+<i class="fav-button fa fa-heart fa-heart-o" aria-hidden="true"></i>
+<span class="rating rate-none user">
+<a href="https://olp.vnoi.info/user/hsgs16" style="display: flex; align-items: center;">QHH_owl+++
+</a>
+</span>
+<div class="personal-info" style="display: block;">
+<span style="font-weight: 600; color: gray;"></span>
+</div>
+</div>
+<div style="float:right">
+<div class="personal-info" style="text-align: right; display: block;">
+<span class="organization"><a href="https://olp.vnoi.info/organization/86-icpc">
+<img class="uni-logo" src="./hsgs-scoreboard_files/37.png">
+<p class="uni-name">HSGS Quoc Hoc - Thua Thien Hue</p>
+</a></span>
+</div>
+</div>
+</div>
+</td><td class="user-points"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs16/">5</a></td><td class="user-penalty">385</td>
+<td></td>
+<td></td>
+<td class="failed-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs16/icpc_c/">2 tries</a></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs16/icpc_d/"><div class="solving-time-minute">76</div><div class="solving-time">01:16:16</div>1 try</a></td>
+<td class="failed-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs16/icpc_e/">5 tries</a></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs16/icpc_f/"><div class="solving-time-minute">51</div><div class="solving-time">00:51:40</div>2 tries</a></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs16/icpc_g/"><div class="solving-time-minute">29</div><div class="solving-time">00:29:59</div>1 try</a></td>
+<td></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs16/icpc_j/"><div class="solving-time-minute">23</div><div class="solving-time">00:23:15</div>1 try</a></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs16/icpc_l/"><div class="solving-time-minute">166</div><div class="solving-time">02:46:43</div>2 tries</a></td>
+<td></td>
+</tr>
+<tr id="user-hsgs21">
+<td>
+21
+</td>
+<td class="user-name">
+<div class="info-container">
+<div style="float:left">
+<i class="fav-button fa fa-heart fa-heart-o" aria-hidden="true"></i>
+<span class="rating rate-none user">
+<a href="https://olp.vnoi.info/user/hsgs21" style="display: flex; align-items: center;">ChuBeDan
+</a>
+</span>
+<div class="personal-info" style="display: block;">
+<span style="font-weight: 600; color: gray;"></span>
+</div>
+</div>
+<div style="float:right">
+<div class="personal-info" style="text-align: right; display: block;">
+<span class="organization"><a href="https://olp.vnoi.info/organization/90-icpc">
+<img class="uni-logo" src="./hsgs-scoreboard_files/22.png">
+<p class="uni-name">HSGS Le Hong Phong - Nam Dinh</p>
+</a></span>
+</div>
+</div>
+</div>
+</td><td class="user-points"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs21/">5</a></td><td class="user-penalty">495</td>
+<td></td>
+<td></td>
+<td class="failed-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs21/icpc_c/">3 tries</a></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs21/icpc_d/"><div class="solving-time-minute">119</div><div class="solving-time">01:59:49</div>1 try</a></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs21/icpc_f/"><div class="solving-time-minute">107</div><div class="solving-time">01:47:04</div>1 try</a></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs21/icpc_g/"><div class="solving-time-minute">48</div><div class="solving-time">00:48:58</div>1 try</a></td>
+<td></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs21/icpc_j/"><div class="solving-time-minute">69</div><div class="solving-time">01:09:15</div>3 tries</a></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs21/icpc_l/"><div class="solving-time-minute">92</div><div class="solving-time">01:32:17</div>2 tries</a></td>
+<td></td>
+</tr>
+<tr id="user-hsgs23">
+<td>
+22
+</td>
+<td class="user-name">
+<div class="info-container">
+<div style="float:left">
+<i class="fav-button fa fa-heart fa-heart-o" aria-hidden="true"></i>
+<span class="rating rate-none user">
+<a href="https://olp.vnoi.info/user/hsgs23" style="display: flex; align-items: center;">HD.CNT Nov DMN
+</a>
+</span>
+<div class="personal-info" style="display: block;">
+<span style="font-weight: 600; color: gray;"></span>
+</div>
+</div>
+<div style="float:right">
+<div class="personal-info" style="text-align: right; display: block;">
+<span class="organization"><a href="https://olp.vnoi.info/organization/82-icpc">
+<img class="uni-logo" src="./hsgs-scoreboard_files/30.png">
+<p class="uni-name">HSGS Nguyen Trai - Hai Duong</p>
+</a></span>
+</div>
+</div>
+</div>
+</td><td class="user-points"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs23/">5</a></td><td class="user-penalty">697</td>
+<td></td>
+<td></td>
+<td class="failed-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs23/icpc_c/">2 tries</a></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs23/icpc_d/"><div class="solving-time-minute">48</div><div class="solving-time">00:48:42</div>2 tries</a></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs23/icpc_f/"><div class="solving-time-minute">211</div><div class="solving-time">03:31:08</div>1 try</a></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs23/icpc_g/"><div class="solving-time-minute">108</div><div class="solving-time">01:48:05</div>1 try</a></td>
+<td></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs23/icpc_j/"><div class="solving-time-minute">29</div><div class="solving-time">00:29:18</div>1 try</a></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs23/icpc_l/"><div class="solving-time-minute">261</div><div class="solving-time">04:21:11</div>2 tries</a></td>
+<td></td>
+</tr>
+<tr id="user-hsgs37">
+<td>
+23
+</td>
+<td class="user-name">
+<div class="info-container">
+<div style="float:left">
+<i class="fav-button fa fa-heart fa-heart-o" aria-hidden="true"></i>
+<span class="rating rate-none user">
+<a href="https://olp.vnoi.info/user/hsgs37" style="display: flex; align-items: center;">DONA.LTV.HHS
+</a>
+</span>
+<div class="personal-info" style="display: block;">
+<span style="font-weight: 600; color: gray;"></span>
+</div>
+</div>
+<div style="float:right">
+<div class="personal-info" style="text-align: right; display: block;">
+<span class="organization"><a href="https://olp.vnoi.info/organization/98-icpc">
+<img class="uni-logo" src="./hsgs-scoreboard_files/21.png">
+<p class="uni-name">HSGS Luong The Vinh - Dong Nai</p>
+</a></span>
+</div>
+</div>
+</div>
+</td><td class="user-points"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs37/">5</a></td><td class="user-penalty">896</td>
+<td></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs37/icpc_c/"><div class="solving-time-minute">267</div><div class="solving-time">04:27:58</div>5 tries</a></td>
+<td></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs37/icpc_f/"><div class="solving-time-minute">180</div><div class="solving-time">03:00:49</div>4 tries</a></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs37/icpc_g/"><div class="solving-time-minute">69</div><div class="solving-time">01:09:19</div>1 try</a></td>
+<td></td>
+<td class="failed-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs37/icpc_i/">1 try</a></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs37/icpc_j/"><div class="solving-time-minute">40</div><div class="solving-time">00:40:36</div>1 try</a></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs37/icpc_l/"><div class="solving-time-minute">160</div><div class="solving-time">02:40:54</div>3 tries</a></td>
+<td></td>
+</tr>
+<tr id="user-hsgs33">
+<td>
+24
+</td>
+<td class="user-name">
+<div class="info-container">
+<div style="float:left">
+<i class="fav-button fa fa-heart fa-heart-o" aria-hidden="true"></i>
+<span class="rating rate-none user">
+<a href="https://olp.vnoi.info/user/hsgs33" style="display: flex; align-items: center;">DONA.LTV.LSP
+</a>
+</span>
+<div class="personal-info" style="display: block;">
+<span style="font-weight: 600; color: gray;"></span>
+</div>
+</div>
+<div style="float:right">
+<div class="personal-info" style="text-align: right; display: block;">
+<span class="organization"><a href="https://olp.vnoi.info/organization/98-icpc">
+<img class="uni-logo" src="./hsgs-scoreboard_files/21.png">
+<p class="uni-name">HSGS Luong The Vinh - Dong Nai</p>
+</a></span>
+</div>
+</div>
+</div>
+</td><td class="user-points"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs33/">5</a></td><td class="user-penalty">998</td>
+<td></td>
+<td></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs33/icpc_d/"><div class="solving-time-minute">144</div><div class="solving-time">02:24:31</div>6 tries</a></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs33/icpc_f/"><div class="solving-time-minute">122</div><div class="solving-time">02:02:04</div>2 tries</a></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs33/icpc_g/"><div class="solving-time-minute">51</div><div class="solving-time">00:51:07</div>5 tries</a></td>
+<td></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs33/icpc_j/"><div class="solving-time-minute">20</div><div class="solving-time">00:20:27</div>1 try</a></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs33/icpc_l/"><div class="solving-time-minute">281</div><div class="solving-time">04:41:30</div>10 tries</a></td>
+<td></td>
+</tr>
+<tr id="user-hsgs32">
+<td>
+25
+</td>
+<td class="user-name">
+<div class="info-container">
+<div style="float:left">
+<i class="fav-button fa fa-heart fa-heart-o" aria-hidden="true"></i>
+<span class="rating rate-none user">
+<a href="https://olp.vnoi.info/user/hsgs32" style="display: flex; align-items: center;">LQDDN HVL
+</a>
+</span>
+<div class="personal-info" style="display: block;">
+<span style="font-weight: 600; color: gray;"></span>
+</div>
+</div>
+<div style="float:right">
+<div class="personal-info" style="text-align: right; display: block;">
+<span class="organization"><a href="https://olp.vnoi.info/organization/76-icpc">
+<img class="uni-logo" src="./hsgs-scoreboard_files/unk.png">
+<p class="uni-name">HSGS Le Quy Don - Danang</p>
+</a></span>
+</div>
+</div>
+</div>
+</td><td class="user-points"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs32/">4</a></td><td class="user-penalty">297</td>
+<td></td>
+<td></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs32/icpc_d/"><div class="solving-time-minute">96</div><div class="solving-time">01:36:27</div>2 tries</a></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs32/icpc_f/"><div class="solving-time-minute">85</div><div class="solving-time">01:25:54</div>1 try</a></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs32/icpc_g/"><div class="solving-time-minute">68</div><div class="solving-time">01:08:26</div>1 try</a></td>
+<td></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs32/icpc_j/"><div class="solving-time-minute">28</div><div class="solving-time">00:28:04</div>1 try</a></td>
+<td></td>
+<td class="failed-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs32/icpc_l/">6 tries</a></td>
+<td></td>
+</tr>
+<tr id="user-hsgs24">
+<td>
+26
+</td>
+<td class="user-name">
+<div class="info-container">
+<div style="float:left">
+<i class="fav-button fa fa-heart fa-heart-o" aria-hidden="true"></i>
+<span class="rating rate-none user">
+<a href="https://olp.vnoi.info/user/hsgs24" style="display: flex; align-items: center;">DHV.ManipulaTE
+</a>
+</span>
+<div class="personal-info" style="display: block;">
+<span style="font-weight: 600; color: gray;"></span>
+</div>
+</div>
+<div style="float:right">
+<div class="personal-info" style="text-align: right; display: block;">
+<span class="organization"><a href="https://olp.vnoi.info/organization/92-icpc">
+<img class="uni-logo" src="./hsgs-scoreboard_files/86.png">
+<p class="uni-name">HSGS Vinh University</p>
+</a></span>
+</div>
+</div>
+</div>
+</td><td class="user-points"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs24/">4</a></td><td class="user-penalty">337</td>
+<td></td>
+<td></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs24/icpc_d/"><div class="solving-time-minute">98</div><div class="solving-time">01:38:15</div>1 try</a></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs24/icpc_f/"><div class="solving-time-minute">75</div><div class="solving-time">01:15:19</div>1 try</a></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs24/icpc_g/"><div class="solving-time-minute">47</div><div class="solving-time">00:47:27</div>2 tries</a></td>
+<td></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs24/icpc_j/"><div class="solving-time-minute">57</div><div class="solving-time">00:57:44</div>3 tries</a></td>
+<td></td>
+<td class="failed-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs24/icpc_l/">8 tries</a></td>
+<td></td>
+</tr>
+<tr id="user-hsgs45">
+<td>
+27
+</td>
+<td class="user-name">
+<div class="info-container">
+<div style="float:left">
+<i class="fav-button fa fa-heart fa-heart-o" aria-hidden="true"></i>
+<span class="rating rate-none user">
+<a href="https://olp.vnoi.info/user/hsgs45" style="display: flex; align-items: center;">PBC.TheUnicornGuys
+</a>
+</span>
+<div class="personal-info" style="display: block;">
+<span style="font-weight: 600; color: gray;"></span>
+</div>
+</div>
+<div style="float:right">
+<div class="personal-info" style="text-align: right; display: block;">
+<span class="organization"><a href="https://olp.vnoi.info/organization/105-icpc">
+<img class="uni-logo" src="./hsgs-scoreboard_files/12.png">
+<p class="uni-name">HSGS Phan Boi Chau - Nghe An</p>
+</a></span>
+</div>
+</div>
+</div>
+</td><td class="user-points"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs45/">4</a></td><td class="user-penalty">366</td>
+<td></td>
+<td></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs45/icpc_d/"><div class="solving-time-minute">131</div><div class="solving-time">02:11:12</div>2 tries</a></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs45/icpc_f/"><div class="solving-time-minute">105</div><div class="solving-time">01:45:48</div>1 try</a></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs45/icpc_g/"><div class="solving-time-minute">42</div><div class="solving-time">00:42:31</div>1 try</a></td>
+<td></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs45/icpc_j/"><div class="solving-time-minute">68</div><div class="solving-time">01:08:11</div>1 try</a></td>
+<td class="failed-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs45/icpc_k/">1 try</a></td>
+<td class="failed-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs45/icpc_l/">9 tries</a></td>
+<td></td>
+</tr>
+<tr id="user-hsgs43">
+<td>
+28
+</td>
+<td class="user-name">
+<div class="info-container">
+<div style="float:left">
+<i class="fav-button fa fa-heart fa-heart-o" aria-hidden="true"></i>
+<span class="rating rate-none user">
+<a href="https://olp.vnoi.info/user/hsgs43" style="display: flex; align-items: center;">Kumpacking
+</a>
+</span>
+<div class="personal-info" style="display: block;">
+<span style="font-weight: 600; color: gray;"></span>
+</div>
+</div>
+<div style="float:right">
+<div class="personal-info" style="text-align: right; display: block;">
+<span class="organization"><a href="https://olp.vnoi.info/organization/90-icpc">
+<img class="uni-logo" src="./hsgs-scoreboard_files/22.png">
+<p class="uni-name">HSGS Le Hong Phong - Nam Dinh</p>
+</a></span>
+</div>
+</div>
+</div>
+</td><td class="user-points"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs43/">4</a></td><td class="user-penalty">379</td>
+<td></td>
+<td></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs43/icpc_d/"><div class="solving-time-minute">134</div><div class="solving-time">02:14:03</div>2 tries</a></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs43/icpc_f/"><div class="solving-time-minute">96</div><div class="solving-time">01:36:09</div>1 try</a></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs43/icpc_g/"><div class="solving-time-minute">64</div><div class="solving-time">01:04:16</div>1 try</a></td>
+<td></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs43/icpc_j/"><div class="solving-time-minute">45</div><div class="solving-time">00:45:42</div>2 tries</a></td>
+<td></td>
+<td class="failed-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs43/icpc_l/">8 tries</a></td>
+<td></td>
+</tr>
+<tr id="user-hsgs41">
+<td>
+29
+</td>
+<td class="user-name">
+<div class="info-container">
+<div style="float:left">
+<i class="fav-button fa fa-heart fa-heart-o" aria-hidden="true"></i>
+<span class="rating rate-none user">
+<a href="https://olp.vnoi.info/user/hsgs41" style="display: flex; align-items: center;">HP.CTP.03
+</a>
+</span>
+<div class="personal-info" style="display: block;">
+<span style="font-weight: 600; color: gray;"></span>
+</div>
+</div>
+<div style="float:right">
+<div class="personal-info" style="text-align: right; display: block;">
+<span class="organization"><a href="https://olp.vnoi.info/organization/77-icpc">
+<img class="uni-logo" src="./hsgs-scoreboard_files/unk.png">
+<p class="uni-name">HSGS Tran Phu - Haiphong</p>
+</a></span>
+</div>
+</div>
+</div>
+</td><td class="user-points"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs41/">4</a></td><td class="user-penalty">427</td>
+<td></td>
+<td></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs41/icpc_d/"><div class="solving-time-minute">143</div><div class="solving-time">02:23:05</div>3 tries</a></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs41/icpc_f/"><div class="solving-time-minute">113</div><div class="solving-time">01:53:09</div>2 tries</a></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs41/icpc_g/"><div class="solving-time-minute">48</div><div class="solving-time">00:48:17</div>1 try</a></td>
+<td></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs41/icpc_j/"><div class="solving-time-minute">63</div><div class="solving-time">01:03:05</div>1 try</a></td>
+<td></td>
+<td class="failed-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs41/icpc_l/">1 try</a></td>
+<td></td>
+</tr>
+<tr id="user-hsgs38">
+<td>
+30
+</td>
+<td class="user-name">
+<div class="info-container">
+<div style="float:left">
+<i class="fav-button fa fa-heart fa-heart-o" aria-hidden="true"></i>
+<span class="rating rate-none user">
+<a href="https://olp.vnoi.info/user/hsgs38" style="display: flex; align-items: center;">KG.HMD Journalists 1
+</a>
+</span>
+<div class="personal-info" style="display: block;">
+<span style="font-weight: 600; color: gray;"></span>
+</div>
+</div>
+<div style="float:right">
+<div class="personal-info" style="text-align: right; display: block;">
+<span class="organization"><a href="https://olp.vnoi.info/organization/100-icpc">
+<img class="uni-logo" src="./hsgs-scoreboard_files/60.png">
+<p class="uni-name">HSGS Huynh Man Dat - Kien Giang</p>
+</a></span>
+</div>
+</div>
+</div>
+</td><td class="user-points"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs38/">4</a></td><td class="user-penalty">448</td>
+<td></td>
+<td></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs38/icpc_d/"><div class="solving-time-minute">130</div><div class="solving-time">02:10:12</div>1 try</a></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs38/icpc_f/"><div class="solving-time-minute">122</div><div class="solving-time">02:02:53</div>1 try</a></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs38/icpc_g/"><div class="solving-time-minute">45</div><div class="solving-time">00:45:48</div>3 tries</a></td>
+<td></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs38/icpc_j/"><div class="solving-time-minute">71</div><div class="solving-time">01:11:44</div>3 tries</a></td>
+<td></td>
+<td class="failed-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs38/icpc_l/">3 tries</a></td>
+<td></td>
+</tr>
+<tr id="user-hsgs10">
+<td>
+31
+</td>
+<td class="user-name">
+<div class="info-container">
+<div style="float:left">
+<i class="fav-button fa fa-heart fa-heart-o" aria-hidden="true"></i>
+<span class="rating rate-none user">
+<a href="https://olp.vnoi.info/user/hsgs10" style="display: flex; align-items: center;">QT.SQRTDECOMSITION
+</a>
+</span>
+<div class="personal-info" style="display: block;">
+<span style="font-weight: 600; color: gray;"></span>
+</div>
+</div>
+<div style="float:right">
+<div class="personal-info" style="text-align: right; display: block;">
+<span class="organization"><a href="https://olp.vnoi.info/organization/79-icpc">
+<img class="uni-logo" src="./hsgs-scoreboard_files/15.png">
+<p class="uni-name">HSGS Le Quy Don - Quang Tri</p>
+</a></span>
+</div>
+</div>
+</div>
+</td><td class="user-points"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs10/">4</a></td><td class="user-penalty">519</td>
+<td></td>
+<td></td>
+<td class="failed-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs10/icpc_c/">5 tries</a></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs10/icpc_d/"><div class="solving-time-minute">190</div><div class="solving-time">03:10:02</div>5 tries</a></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs10/icpc_f/"><div class="solving-time-minute">157</div><div class="solving-time">02:37:19</div>1 try</a></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs10/icpc_g/"><div class="solving-time-minute">78</div><div class="solving-time">01:18:01</div>1 try</a></td>
+<td></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs10/icpc_j/"><div class="solving-time-minute">14</div><div class="solving-time">00:14:50</div>1 try</a></td>
+<td></td>
+<td class="failed-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs10/icpc_l/">1 try</a></td>
+<td></td>
+</tr>
+<tr id="user-hsgs42">
+<td>
+32
+</td>
+<td class="user-name">
+<div class="info-container">
+<div style="float:left">
+<i class="fav-button fa fa-heart fa-heart-o" aria-hidden="true"></i>
+<span class="rating rate-none user">
+<a href="https://olp.vnoi.info/user/hsgs42" style="display: flex; align-items: center;">Chick2
+</a>
+</span>
+<div class="personal-info" style="display: block;">
+<span style="font-weight: 600; color: gray;"></span>
+</div>
+</div>
+<div style="float:right">
+<div class="personal-info" style="text-align: right; display: block;">
+<span class="organization"><a href="https://olp.vnoi.info/organization/103-icpc">
+<img class="uni-logo" src="./hsgs-scoreboard_files/33.png">
+<p class="uni-name">HSGS Nguyen Hue - Hanoi</p>
+</a></span>
+</div>
+</div>
+</div>
+</td><td class="user-points"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs42/">4</a></td><td class="user-penalty">532</td>
+<td></td>
+<td></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs42/icpc_d/"><div class="solving-time-minute">101</div><div class="solving-time">01:41:59</div>2 tries</a></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs42/icpc_f/"><div class="solving-time-minute">148</div><div class="solving-time">02:28:14</div>3 tries</a></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs42/icpc_g/"><div class="solving-time-minute">43</div><div class="solving-time">00:43:48</div>4 tries</a></td>
+<td></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs42/icpc_j/"><div class="solving-time-minute">80</div><div class="solving-time">01:20:04</div>3 tries</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr id="user-hsgs34">
+<td>
+33
+</td>
+<td class="user-name">
+<div class="info-container">
+<div style="float:left">
+<i class="fav-button fa fa-heart fa-heart-o" aria-hidden="true"></i>
+<span class="rating rate-none user">
+<a href="https://olp.vnoi.info/user/hsgs34" style="display: flex; align-items: center;">HD.CNT Nov ATK
+</a>
+</span>
+<div class="personal-info" style="display: block;">
+<span style="font-weight: 600; color: gray;"></span>
+</div>
+</div>
+<div style="float:right">
+<div class="personal-info" style="text-align: right; display: block;">
+<span class="organization"><a href="https://olp.vnoi.info/organization/82-icpc">
+<img class="uni-logo" src="./hsgs-scoreboard_files/30.png">
+<p class="uni-name">HSGS Nguyen Trai - Hai Duong</p>
+</a></span>
+</div>
+</div>
+</div>
+</td><td class="user-points"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs34/">4</a></td><td class="user-penalty">559</td>
+<td></td>
+<td></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs34/icpc_d/"><div class="solving-time-minute">235</div><div class="solving-time">03:55:07</div>2 tries</a></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs34/icpc_f/"><div class="solving-time-minute">128</div><div class="solving-time">02:08:47</div>1 try</a></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs34/icpc_g/"><div class="solving-time-minute">45</div><div class="solving-time">00:45:45</div>1 try</a></td>
+<td></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs34/icpc_j/"><div class="solving-time-minute">91</div><div class="solving-time">01:31:27</div>3 tries</a></td>
+<td></td>
+<td class="failed-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs34/icpc_l/">9 tries</a></td>
+<td></td>
+</tr>
+<tr id="user-hsgs35">
+<td>
+34
+</td>
+<td class="user-name">
+<div class="info-container">
+<div style="float:left">
+<i class="fav-button fa fa-heart fa-heart-o" aria-hidden="true"></i>
+<span class="rating rate-none user">
+<a href="https://olp.vnoi.info/user/hsgs35" style="display: flex; align-items: center;">QN-CHL2
+</a>
+</span>
+<div class="personal-info" style="display: block;">
+<span style="font-weight: 600; color: gray;"></span>
+</div>
+</div>
+<div style="float:right">
+<div class="personal-info" style="text-align: right; display: block;">
+<span class="organization"><a href="https://olp.vnoi.info/organization/99-icpc">
+<img class="uni-logo" src="./hsgs-scoreboard_files/80.png">
+ <p class="uni-name">HSGS Ha Long - Quang Ninh</p>
+</a></span>
+</div>
+</div>
+</div>
+</td><td class="user-points"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs35/">4</a></td><td class="user-penalty">566</td>
+<td></td>
+<td></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs35/icpc_d/"><div class="solving-time-minute">232</div><div class="solving-time">03:52:19</div>2 tries</a></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs35/icpc_f/"><div class="solving-time-minute">86</div><div class="solving-time">01:26:05</div>3 tries</a></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs35/icpc_g/"><div class="solving-time-minute">43</div><div class="solving-time">00:43:22</div>4 tries</a></td>
+<td></td>
+<td class="failed-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs35/icpc_i/">8 tries</a></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs35/icpc_j/"><div class="solving-time-minute">25</div><div class="solving-time">00:25:48</div>4 tries</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr id="user-hsgs29">
+<td>
+35
+</td>
+<td class="user-name">
+<div class="info-container">
+<div style="float:left">
+<i class="fav-button fa fa-heart fa-heart-o" aria-hidden="true"></i>
+<span class="rating rate-none user">
+<a href="https://olp.vnoi.info/user/hsgs29" style="display: flex; align-items: center;">CBL.NKN.2022
+</a>
+</span>
+<div class="personal-info" style="display: block;">
+<span style="font-weight: 600; color: gray;"></span>
+</div>
+</div>
+<div style="float:right">
+<div class="personal-info" style="text-align: right; display: block;">
+<span class="organization"><a href="https://olp.vnoi.info/organization/96-icpc">
+<img class="uni-logo" src="./hsgs-scoreboard_files/20.png">
+<p class="uni-name">HSGS Binh Long - Binh Phuoc</p>
+</a></span>
+</div>
+</div>
+</div>
+</td><td class="user-points"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs29/">4</a></td><td class="user-penalty">608</td>
+<td></td>
+<td></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs29/icpc_d/"><div class="solving-time-minute">284</div><div class="solving-time">04:44:48</div>2 tries</a></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs29/icpc_f/"><div class="solving-time-minute">166</div><div class="solving-time">02:46:07</div>1 try</a></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs29/icpc_g/"><div class="solving-time-minute">48</div><div class="solving-time">00:48:05</div>1 try</a></td>
+<td></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs29/icpc_j/"><div class="solving-time-minute">90</div><div class="solving-time">01:30:54</div>1 try</a></td>
+<td></td>
+<td class="failed-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs29/icpc_l/">10 tries</a></td>
+<td></td>
+</tr>
+<tr id="user-hsgs26">
+<td>
+36
+</td>
+<td class="user-name">
+<div class="info-container">
+<div style="float:left">
+<i class="fav-button fa fa-heart fa-heart-o" aria-hidden="true"></i>
+<span class="rating rate-none user">
+<a href="https://olp.vnoi.info/user/hsgs26" style="display: flex; align-items: center;">HSG-Expurosion
+</a>
+</span>
+<div class="personal-info" style="display: block;">
+<span style="font-weight: 600; color: gray;"></span>
+</div>
+</div>
+<div style="float:right">
+<div class="personal-info" style="text-align: right; display: block;">
+<span class="organization"><a href="https://olp.vnoi.info/organization/78-icpc">
+<img class="uni-logo" src="./hsgs-scoreboard_files/unk.png">
+<p class="uni-name">HSGS Vietnam National University Ho Chi Minh</p>
+</a></span>
+</div>
+</div>
+</div>
+</td><td class="user-points"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs26/">4</a></td><td class="user-penalty">649</td>
+<td></td>
+<td></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs26/icpc_d/"><div class="solving-time-minute">249</div><div class="solving-time">04:09:21</div>1 try</a></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs26/icpc_f/"><div class="solving-time-minute">201</div><div class="solving-time">03:21:42</div>5 tries</a></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs26/icpc_g/"><div class="solving-time-minute">44</div><div class="solving-time">00:44:34</div>2 tries</a></td>
+<td></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs26/icpc_j/"><div class="solving-time-minute">55</div><div class="solving-time">00:55:15</div>1 try</a></td>
+<td></td>
+<td class="failed-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs26/icpc_l/">3 tries</a></td>
+<td></td>
+</tr>
+<tr id="user-hsgs44">
+<td>
+37
+</td>
+<td class="user-name">
+<div class="info-container">
+<div style="float:left">
+<i class="fav-button fa fa-heart fa-heart-o" aria-hidden="true"></i>
+<span class="rating rate-none user">
+<a href="https://olp.vnoi.info/user/hsgs44" style="display: flex; align-items: center;">CLTT_TMA
+</a>
+</span>
+<div class="personal-info" style="display: block;">
+<span style="font-weight: 600; color: gray;"></span>
+</div>
+</div>
+<div style="float:right">
+<div class="personal-info" style="text-align: right; display: block;">
+<span class="organization"><a href="https://olp.vnoi.info/organization/104-icpc">
+<img class="uni-logo" src="./hsgs-scoreboard_files/unk.png">
+<p class="uni-name">HSGS Ly Tu Trong - Can Tho</p>
+</a></span>
+</div>
+</div>
+</div>
+</td><td class="user-points"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs44/">4</a></td><td class="user-penalty">701</td>
+<td></td>
+<td></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs44/icpc_d/"><div class="solving-time-minute">218</div><div class="solving-time">03:38:00</div>1 try</a></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs44/icpc_f/"><div class="solving-time-minute">191</div><div class="solving-time">03:11:00</div>5 tries</a></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs44/icpc_g/"><div class="solving-time-minute">90</div><div class="solving-time">01:30:15</div>2 tries</a></td>
+<td></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs44/icpc_j/"><div class="solving-time-minute">82</div><div class="solving-time">01:22:25</div>2 tries</a></td>
+<td></td>
+<td class="failed-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs44/icpc_l/">2 tries</a></td>
+<td></td>
+</tr>
+<tr id="user-hsgs46">
+<td>
+38
+</td>
+<td class="user-name">
+<div class="info-container">
+<div style="float:left">
+<i class="fav-button fa fa-heart fa-heart-o" aria-hidden="true"></i>
+<span class="rating rate-none user">
+<a href="https://olp.vnoi.info/user/hsgs46" style="display: flex; align-items: center;">LQDDN LQD
+</a>
+</span>
+<div class="personal-info" style="display: block;">
+<span style="font-weight: 600; color: gray;"></span>
+</div>
+</div>
+<div style="float:right">
+<div class="personal-info" style="text-align: right; display: block;">
+<span class="organization"><a href="https://olp.vnoi.info/organization/76-icpc">
+<img class="uni-logo" src="./hsgs-scoreboard_files/unk.png">
+<p class="uni-name">HSGS Le Quy Don - Danang</p>
+</a></span>
+</div>
+</div>
+</div>
+</td><td class="user-points"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs46/">3</a></td><td class="user-penalty">161</td>
+<td></td>
+<td></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs46/icpc_d/"><div class="solving-time-minute">76</div><div class="solving-time">01:16:53</div>2 tries</a></td>
+<td></td>
+<td class="failed-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs46/icpc_f/">8 tries</a></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs46/icpc_g/"><div class="solving-time-minute">13</div><div class="solving-time">00:13:07</div>2 tries</a></td>
+<td></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs46/icpc_j/"><div class="solving-time-minute">32</div><div class="solving-time">00:32:59</div>1 try</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr id="user-hsgs40">
+<td>
+39
+</td>
+<td class="user-name">
+<div class="info-container">
+<div style="float:left">
+<i class="fav-button fa fa-heart fa-heart-o" aria-hidden="true"></i>
+<span class="rating rate-none user">
+<a href="https://olp.vnoi.info/user/hsgs40" style="display: flex; align-items: center;">KH.LQD_MotDoiGanhTa
+</a>
+</span>
+<div class="personal-info" style="display: block;">
+<span style="font-weight: 600; color: gray;"></span>
+</div>
+</div>
+<div style="float:right">
+<div class="personal-info" style="text-align: right; display: block;">
+<span class="organization"><a href="https://olp.vnoi.info/organization/102-icpc">
+<img class="uni-logo" src="./hsgs-scoreboard_files/45.png">
+<p class="uni-name">HSGS Le Quy Don - Khanh Hoa</p>
+</a></span>
+</div>
+</div>
+</div>
+</td><td class="user-points"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs40/">3</a></td><td class="user-penalty">200</td>
+<td></td>
+<td></td>
+<td></td>
+<td class="failed-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs40/icpc_d/">1 try</a></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs40/icpc_f/"><div class="solving-time-minute">146</div><div class="solving-time">02:26:58</div>1 try</a></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs40/icpc_g/"><div class="solving-time-minute">33</div><div class="solving-time">00:33:31</div>1 try</a></td>
+<td></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs40/icpc_j/"><div class="solving-time-minute">21</div><div class="solving-time">00:21:38</div>1 try</a></td>
+<td></td>
+<td class="failed-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs40/icpc_l/">5 tries</a></td>
+<td></td>
+</tr>
+<tr id="user-hsgs36">
+<td>
+40
+</td>
+<td class="user-name">
+<div class="info-container">
+<div style="float:left">
+<i class="fav-button fa fa-heart fa-heart-o" aria-hidden="true"></i>
+<span class="rating rate-none user">
+<a href="https://olp.vnoi.info/user/hsgs36" style="display: flex; align-items: center;">HSG-SimpLord
+</a>
+</span>
+<div class="personal-info" style="display: block;">
+<span style="font-weight: 600; color: gray;"></span>
+</div>
+</div>
+<div style="float:right">
+<div class="personal-info" style="text-align: right; display: block;">
+<span class="organization"><a href="https://olp.vnoi.info/organization/78-icpc">
+<img class="uni-logo" src="./hsgs-scoreboard_files/unk.png">
+<p class="uni-name">HSGS Vietnam National University Ho Chi Minh</p>
+</a></span>
+</div>
+</div>
+</div>
+</td><td class="user-points"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs36/">3</a></td><td class="user-penalty">327</td>
+<td></td>
+<td></td>
+<td></td>
+<td class="failed-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs36/icpc_d/">6 tries</a></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs36/icpc_f/"><div class="solving-time-minute">103</div><div class="solving-time">01:43:07</div>3 tries</a></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs36/icpc_g/"><div class="solving-time-minute">56</div><div class="solving-time">00:56:32</div>3 tries</a></td>
+<td></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs36/icpc_j/"><div class="solving-time-minute">68</div><div class="solving-time">01:08:25</div>2 tries</a></td>
+<td></td>
+<td class="failed-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs36/icpc_l/">1 try</a></td>
+<td></td>
+</tr>
+<tr id="user-hsgs13">
+<td>
+41
+</td>
+<td class="user-name">
+<div class="info-container">
+<div style="float:left">
+<i class="fav-button fa fa-heart fa-heart-o" aria-hidden="true"></i>
+<span class="rating rate-none user">
+<a href="https://olp.vnoi.info/user/hsgs13" style="display: flex; align-items: center;">THPT CHUYEN BAC GIANG
+</a>
+</span>
+<div class="personal-info" style="display: block;">
+<span style="font-weight: 600; color: gray;"></span>
+</div>
+</div>
+<div style="float:right">
+<div class="personal-info" style="text-align: right; display: block;">
+<span class="organization"><a href="https://olp.vnoi.info/organization/83-icpc">
+<img class="uni-logo" src="./hsgs-scoreboard_files/unk.png">
+<p class="uni-name">HSGS Bac Giang</p>
+</a></span>
+</div>
+</div>
+</div>
+</td><td class="user-points"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs13/">3</a></td><td class="user-penalty">395</td>
+<td></td>
+<td></td>
+<td></td>
+<td class="failed-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs13/icpc_d/">3 tries</a></td>
+<td></td>
+<td class="failed-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs13/icpc_f/">2 tries</a></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs13/icpc_g/"><div class="solving-time-minute">38</div><div class="solving-time">00:38:42</div>1 try</a></td>
+<td></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs13/icpc_j/"><div class="solving-time-minute">52</div><div class="solving-time">00:52:42</div>2 tries</a></td>
+<td></td>
+<td class="full-score"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs13/icpc_l/"><div class="solving-time-minute">245</div><div class="solving-time">04:05:57</div>3 tries</a></td>
+<td></td>
+</tr>
+<tr id="user-hsgs20">
+<td>
+42
+</td>
+<td class="user-name">
+<div class="info-container">
+<div style="float:left">
+<i class="fav-button fa fa-heart fa-heart-o" aria-hidden="true"></i>
+<span class="rating rate-none user">
+<a href="https://olp.vnoi.info/user/hsgs20" style="display: flex; align-items: center;">Hello Kitty
+</a>
+</span>
+<div class="personal-info" style="display: block;">
+<span style="font-weight: 600; color: gray;"></span>
+</div>
+</div>
+<div style="float:right">
+<div class="personal-info" style="text-align: right; display: block;">
+<span class="organization"><a href="https://olp.vnoi.info/organization/89-icpc">
+<img class="uni-logo" src="./hsgs-scoreboard_files/23.png">
+<p class="uni-name">HSGS Thoai Ngoc Hau - An Giang</p>
+</a></span>
+ </div>
+</div>
+</div>
+</td><td class="user-points"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs20/">0</a></td><td class="user-penalty">0</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr id="user-hsgs22">
+<td>
+42
+</td>
+<td class="user-name">
+<div class="info-container">
+<div style="float:left">
+<i class="fav-button fa fa-heart fa-heart-o" aria-hidden="true"></i>
+<span class="rating rate-none user">
+<a href="https://olp.vnoi.info/user/hsgs22" style="display: flex; align-items: center;">DL.NDU.VoiConBM
+</a>
+</span>
+<div class="personal-info" style="display: block;">
+<span style="font-weight: 600; color: gray;"></span>
+</div>
+</div>
+<div style="float:right">
+<div class="personal-info" style="text-align: right; display: block;">
+<span class="organization"><a href="https://olp.vnoi.info/organization/91-icpc">
+<img class="uni-logo" src="./hsgs-scoreboard_files/52.png">
+<p class="uni-name">HSGS Nguyen Du - Dak Lak</p>
+</a></span>
+</div>
+</div>
+</div>
+</td><td class="user-points"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs22/">0</a></td><td class="user-penalty">0</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr id="user-hsgs27">
+<td>
+42
+</td>
+<td class="user-name">
+<div class="info-container">
+<div style="float:left">
+<i class="fav-button fa fa-heart fa-heart-o" aria-hidden="true"></i>
+<span class="rating rate-none user">
+<a href="https://olp.vnoi.info/user/hsgs27" style="display: flex; align-items: center;">LD_CTL_fftlovers
+</a>
+</span>
+<div class="personal-info" style="display: block;">
+<span style="font-weight: 600; color: gray;"></span>
+</div>
+</div>
+<div style="float:right">
+<div class="personal-info" style="text-align: right; display: block;">
+<span class="organization"><a href="https://olp.vnoi.info/organization/94-icpc">
+<img class="uni-logo" src="./hsgs-scoreboard_files/unk.png">
+<p class="uni-name">HSGS Thang Long - Lam Dong</p>
+</a></span>
+</div>
+</div>
+</div>
+</td><td class="user-points"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs27/">0</a></td><td class="user-penalty">0</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr id="user-hsgs31">
+<td>
+42
+</td>
+<td class="user-name">
+<div class="info-container">
+<div style="float:left">
+<i class="fav-button fa fa-heart fa-heart-o" aria-hidden="true"></i>
+<span class="rating rate-none user">
+<a href="https://olp.vnoi.info/user/hsgs31" style="display: flex; align-items: center;">HNa.CBH Turtle
+</a>
+</span>
+<div class="personal-info" style="display: block;">
+<span style="font-weight: 600; color: gray;"></span>
+</div>
+</div>
+<div style="float:right">
+<div class="personal-info" style="text-align: right; display: block;">
+<span class="organization"><a href="https://olp.vnoi.info/organization/97-icpc">
+<img class="uni-logo" src="./hsgs-scoreboard_files/unk.png">
+<p class="uni-name">HSGS Bien Hoa - Ha Nam</p>
+</a></span>
+</div>
+ </div>
+</div>
+</td><td class="user-points"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs31/">0</a></td><td class="user-penalty">0</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr id="user-hsgs39">
+<td>
+42
+</td>
+<td class="user-name">
+<div class="info-container">
+<div style="float:left">
+<i class="fav-button fa fa-heart fa-heart-o" aria-hidden="true"></i>
+<span class="rating rate-none user">
+<a href="https://olp.vnoi.info/user/hsgs39" style="display: flex; align-items: center;">TDN.TooGoodToAC
+</a>
+</span>
+<div class="personal-info" style="display: block;">
+<span style="font-weight: 600; color: gray;"></span>
+</div>
+</div>
+<div style="float:right">
+<div class="personal-info" style="text-align: right; display: block;">
+<span class="organization"><a href="https://olp.vnoi.info/organization/101-icpc">
+<img class="uni-logo" src="./hsgs-scoreboard_files/42.png">
+<p class="uni-name">HSGS Tran Dai Nghia - Ho Chi Minh City</p>
+</a></span>
+</div>
+</div>
+</div>
+</td><td class="user-points"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs39/">0</a></td><td class="user-penalty">0</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr id="user-hsgs47">
+<td>
+42
+</td>
+<td class="user-name">
+<div class="info-container">
+<div style="float:left">
+<i class="fav-button fa fa-heart fa-heart-o" aria-hidden="true"></i>
+<span class="rating rate-none user">
+<a href="https://olp.vnoi.info/user/hsgs47" style="display: flex; align-items: center;">DL.NDU.VoiMeBMT
+</a>
+</span>
+<div class="personal-info" style="display: block;">
+<span style="font-weight: 600; color: gray;"></span>
+</div>
+</div>
+<div style="float:right">
+<div class="personal-info" style="text-align: right; display: block;">
+<span class="organization"><a href="https://olp.vnoi.info/organization/91-icpc">
+<img class="uni-logo" src="./hsgs-scoreboard_files/52.png">
+<p class="uni-name">HSGS Nguyen Du - Dak Lak</p>
+</a></span>
+</div>
+</div>
+</div>
+</td><td class="user-points"><a href="https://olp.vnoi.info/contest/hsgs/submissions/hsgs47/">0</a></td><td class="user-penalty">0</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td colspan="4">Total AC</td>
+<td class="total-ac" id="A-total">6</td>
+<td class="total-ac" id="B-total">0</td>
+<td class="total-ac" id="C-total">16</td>
+<td class="total-ac" id="D-total">37</td>
+<td class="total-ac" id="E-total">4</td>
+<td class="total-ac" id="F-total">39</td>
+<td class="total-ac" id="G-total">41</td>
+<td class="total-ac" id="H-total">0</td>
+<td class="total-ac" id="I-total">15</td>
+<td class="total-ac" id="J-total">41</td>
+<td class="total-ac" id="K-total">11</td>
+<td class="total-ac" id="L-total">24</td>
+<td class="total-ac" id="M-total">1</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<table id="cell_legend" class="table" style="width: 10em; margin-left: 0">
+<thead>
+<tr>
+<th scope="col">Cell colours</th>
+</tr>
+</thead>
+<tbody>
+<tr class="first-solve">
+<td>Solved first</td>
+</tr>
+<tr class="full-score">
+<td>Solved</td>
+</tr>
+<tr class="failed-score">
+<td>Tried, incorrect</td>
+</tr>
+<tr class="pending">
+<td>Tried, pending</td>
+</tr>
+<tr>
+<td>Untried</td>
+</tr>
+</tbody>
+</table>
+</div>
+</main>
+<script type="text/javascript" src="./hsgs-scoreboard_files/mathjax_config.js"></script>
+<script type="text/javascript" src="./hsgs-scoreboard_files/tex-chtml.min.js"></script>
+<script type="text/javascript">
+    MathJax.typesetPromise().then(function () {
+        $('.tex-image').hide();
+        $('.tex-text').show();
+    });
+</script>
+<footer>
+<span id="footer-content">
+<br>
+proudly powered by <a style="color: #808080" href="https://dmoj.ca/"><b>DMOJ</b></a> |
+follow us on <a style="color: #808080" href="https://github.com/VNOI-Admin/OJ"><b>Github</b></a> and <a style="color: #808080" href="https://www.facebook.com/vnoi.wiki"><b>Facebook</b></a>
+<form id="set_language" action="https://olp.vnoi.info/i18n/setlang/" method="post" style="display: inline">
+<input type="hidden" name="csrfmiddlewaretoken" value="ecd7p9xGmh6nbUWdDhnSgo3T62S7hvwwtAaNyflBW7ORHx4NKXK3KUPrd1eNx8Lk"> <input name="next" type="hidden" value="/contest/hsgs/ranking/">
+<input name="language" type="hidden" value="en">
+</form>
+</span>
+</footer>
+</div>
+
+</body></html>
