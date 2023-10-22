@@ -12,12 +12,10 @@
       contents:
         - title: Scoreboard
           url: 2023/southern/scoreboard.html
-    - type: Southern
+    - type: Central
       contents:
         - title: Scoreboard
           url: 2023/central/scoreboard.html
-        - title: Problems
-          url: 2023/central/problems.pdf
         - title: Upsolve
           url: https://oj.vnoi.info/contest/icpc23_mt
 - year: 2022
