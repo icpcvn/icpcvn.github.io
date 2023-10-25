@@ -116,10 +116,14 @@
       contents:
         - title: Full information
           url: https://cantho20.kattis.com
+        - title: Problems
+          url: 2020/regional/problems.pdf
     - type: National
       contents:
         - title: Full information
           url: https://vietnam-national20.kattis.com
+        - title: Problems
+          url: 2020/national/problems.pdf
     - type: Southern
       contents:
         - title: Scoreboard
@@ -138,12 +142,16 @@
       contents:
         - title: Full information
           url: https://danang19.kattis.com
+        - title: Problems
+          url: 2019/regional/problems.pdf
         - title: Editorial
           url: 2019/regional/Editorial.pdf
     - type: National
       contents:
         - title: Full information
           url: https://vietnam-national19.kattis.com
+        - title: Problems
+          url: 2019/national/problems.pdf
         - title: Editorial
           url: 2019/national/editorial.pdf
     - type: Southern
@@ -170,12 +178,16 @@
       contents:
         - title: Full information
           url: https://hanoi18.kattis.com
+        - title: Problems
+          url: 2018/regional/problems.pdf
         - title: Editorial
           url: 2018/regional/Editorial.pdf
     - type: National
       contents:
         - title: Full information
           url: https://vietnam-national18.kattis.com
+        - title: Problems
+          url: 2018/national/problems.pdf
         - title: Editorial
           url: 2018/national/Editorial.pdf
     - type: Northern
@@ -208,12 +220,16 @@
       contents:
         - title: Full information
           url: https://hochiminh17.kattis.com
+        - title: Problems
+          url: 2017/regional/problems.pdf
         - title: Editorial
           url: 2017/regional/Editorial.pdf
     - type: National
       contents:
         - title: Full information
           url: https://vietnam-national17.kattis.com
+        - title: Problems
+          url: 2017/national/problems.pdf
         - title: Editorial
           url: 2017/national/Editorial.pdf
     - type: Northern
