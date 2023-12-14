@@ -1,5 +1,13 @@
 - year: 2023
   contests:
+    - type: Regional
+      contents:
+        - title: Scoreboard
+          url: 2023/regional/scoreboard.html
+        - title: Problems
+          url: 2023/regional/problems.pdf
+        - title: Upsolve
+          url: https://oj.vnoi.info/contest/icpc23_regional
     - type: National
       contents:
         - title: Scoreboard
