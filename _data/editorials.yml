@@ -1,3 +1,19 @@
+- year: 2024
+  contests:
+    - type: Southern
+      contents:
+        - title: Scoreboard
+          url: 2024/southern/scoreboard.htm
+        - title: Problems
+          url: 2024/southern/problems.pdf
+    - type: Central
+      contents:
+        - title: Scoreboard
+          url: 2024/central/scoreboard.htm
+        - title: Problems
+          url: 2024/central/problems.pdf
+        - title: Upsolve
+          url: https://oj.vnoi.info/contest/icpc24_mt
 - year: 2023
   contests:
     - type: Regional

@@ -1,0 +1,614 @@
+:root {
+    /** Specify the BG color in one place. **/
+    --background-color: white;
+    --text-color: black;
+    /** WCAG fixes begin **/
+    --btn-info-bg: #008297;
+    /** WCAG fixes end **/
+}
+
+/** WCAG fixes start **/
+.btn-info {
+    background: var(--btn-info-bg);
+}
+.btn-primary {
+    background-color: #0072ed;
+}
+.btn-success {
+    background: #0a8927;
+}
+.card-body > ul > li > a {
+    color: #0072ed;
+}
+/** WCAG fixes end **/
+
+body {
+    color: var(--text-color);
+    background-color: var(--background-color);
+    font-family: Roboto, sans-serif;
+    padding-bottom: 4em;
+    padding-top: 4.5rem;
+}
+
+/* has no menu */
+body.static {
+    padding-top: 1rem;
+}
+
+/* menu */
+#menuDefault ul li.nav-item {
+    white-space: nowrap;
+}
+
+#djlogo {
+    width: 93px; height: 196px;
+}
+
+
+.submitform {
+    max-width: 450px;
+}
+.clarificationform {
+    max-width: 800px;
+}
+
+.disabled, .dropdown-disabled {
+    color: silver !important;
+}
+
+.unseen {
+    font-weight: bold;
+}
+
+.data-table .ignore, table td.ignore {
+    text-decoration: line-through;
+}
+
+.probid, .langid { font-variant: small-caps; }
+
+.badge-testcase {
+    width: 20px;
+    margin-right: 1px;
+}
+
+.sol {
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+.sol_correct, .compile-successful     { color: green;  }
+.sol_incorrect, .compile-unsuccessful { color: red;    }
+.sol_queued       { color: gray;   }
+
+.judgetime      { font-size: smaller; font-style: italic; }
+.testcases_prev { font-size: xx-small; }
+.prevsubmit     { color: #696969; }
+
+.output_text {
+    border-top: 1px dotted #C0C0C0;
+    border-bottom: 1px dotted #C0C0C0;
+    background-color: #FAFAFA;
+    margin: 0;
+    padding: 5px;
+    font-family: monospace;
+    white-space: pre;
+}
+
+kbd {
+    background-color: #FAFAFA;
+    color: black;
+}
+
+.teamid { font-family: monospace; }
+.filename, .hostname { font-family: monospace; }
+
+.nodata {
+    color: #767676;
+    font-style: italic;
+}
+
+a.collapse-link { color: black; text-decoration: none; }
+
+table.lcsdiff {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+table.lcsdiff td.linenr {
+    background-color: darkgray;
+    text-align: right;
+    border-right: solid 1px black;
+    padding-right: 7px;
+}
+
+ins {
+    background: #dfd;
+    text-decoration: none;
+}
+del {
+    background: #fdd;
+    text-decoration: none;
+}
+
+
+.run h4 {
+    font-size: 1.25rem;
+    padding-top: 1rem;
+}
+
+.run h5 {
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding-top: 1.2rem;
+}
+
+.source-tab {
+    border-bottom: 1px solid #dee2e6;
+    border-right: 1px solid #dee2e6;
+    border-left: 1px solid #dee2e6;
+    padding: 0.5rem;
+}
+
+#lastmod {
+    position: absolute; right: 1ex; margin-top: 1em;
+}
+#lastmod, #lastmod a {
+    font-size: x-small;
+    color: gray;
+    text-align: right;
+}
+
+.center { margin: 0px auto; }
+
+.scoreboard {
+    border-collapse: collapse;
+    clear: both;
+}
+.scoreboard td {
+    font-size: small;
+    vertical-align: middle;
+    text-align: center;
+}
+.scoreboard td div {
+    width: 4em;
+    font-size: 120%;
+    display: inline-block;
+}
+.scoreboard td div span {
+    font-weight: normal;
+    font-size: 70%;
+    display: block;
+}
+.scoreboard tr {
+    border-bottom: 1px solid black;
+    height: 42px;
+}
+.scoreboard td, .scoreboard th {
+    border-right: 1px solid silver;
+    padding: 0px;
+}
+.scoreboard td.score_cell {
+    min-width: 4.2em;
+    border-right: none;
+}
+.scoreboard a {
+    display: block;
+    padding: 2px 1px 2px 1px;
+    text-decoration: none;
+    color: black;
+}
+
+.scoreboard .scoretn {
+    padding: 0px 5px 0px;
+    text-align: right;
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.forceWidth {
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+.toolong:after {
+    content: "";
+    width: 30%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+.scoreboard .scoreaf { white-space: nowrap; border: 0; text-align: center; }
+.scoreboard .scoreaf img { vertical-align: middle; }
+.univ {
+    font-size: 80%;
+    font-weight: normal;
+    color: dimgrey;
+}
+
+img.affiliation-logo {
+    height: 32px;
+    width: 32px;
+    padding-left: 2px;
+}
+
+.scoreheader {
+    font-variant: small-caps;
+    border-bottom: 2px solid black;
+    white-space: nowrap;
+}
+.scoreheader th {
+    text-align: center;
+    box-shadow: -1px 0px 0px 0px silver inset,
+                0px 2px 0px 0px black;
+    border: none;
+    background: var(--background-color);
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+
+.problempoints {
+    font-size: smaller;
+    font-weight: normal;
+    color: #303030;
+    padding-left: 3pt;
+    padding-right: 3pt;
+}
+
+.score_correct   { background: #60e760; }
+.score_first     { background: #1daa1d !important; }
+.score_pending   { background: #6666FF; }
+.score_incorrect { background: #e87272; }
+
+.gold-medal   { background-color: #EEC710 }
+.silver-medal { background-color: #AAA }
+.bronze-medal { background-color: #C08E55 }
+
+#scoresolv,#scoretotal { width: 2.5em; }
+.scorenc,.scorett,.scorepl { text-align: center; width: 2ex; }
+.scorenc { font-weight: bold; }
+td.scorenc { border-color: silver; border-right: 0; }
+
+.scoreprob { width: 3.0em; vertical-align: middle; }
+.scoreaffil { text-align: center; }
+
+.scoresummary {
+    border-top: 2px solid black;
+    border-bottom: none;
+    font-variant: small-caps;
+}
+.scorethisisme  {
+    background: #ffff99;
+}
+
+.scorelegend {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.scorelegend td, .scorelegend th {
+    text-align: center;
+    width: 25ex;
+}
+
+#teamscoresummary { margin-top: 2.5em; }
+
+/* between different sortorder-categories, print a thick line */
+.sortorderswitch { border-top: 2px solid black; }
+
+.filterbox {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.filterbox label {
+    font-size: smaller;
+    color: gray;
+    margin: 0 0 0 1rem;
+}
+.filterbox .form-control {
+    width: auto;
+}
+
+.circle {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 1px solid black;
+    display: inline-block;
+}
+
+.heart {
+    padding: .3em;
+    cursor: pointer;
+}
+
+.heart.fas {
+    color: red;
+}
+
+.countryflag {
+    height: 30px;
+    width: 40px;
+    border-radius: 8px;
+    padding: 2px;
+}
+
+.select2 img.countryflag {
+    height: 25px;
+    width: auto;
+}
+
+table.rejudgetable td {
+    text-align: center;
+    padding: .5rem;
+}
+table.rejudgetable td,th {
+    padding: .5rem;
+}
+table.rejudgetable td.changed {
+    background-color: #fdd;
+    font-weight: bold;
+}
+table.rejudgetable td.identical {
+    background-color: #dfd;
+}
+table.rejudgetable td.zero {
+    background-color: #f0f8ff;
+}
+
+tr.ignore td, td.ignore, span.ignore {
+    text-decoration: line-through;
+}
+
+.clarification-subject-form, .clarification-queue-form {
+    display: none;
+}
+
+.form-inline {
+    display: inline;
+}
+
+.input-group-text {
+    font-size: small;
+    width: 3em;
+}
+
+.card-header .fa {
+    transition: .5s transform ease-in-out;
+}
+.card-header .collapsed .fa {
+    transform: rotate(90deg);
+}
+
+.banner {
+    width: 98%;
+    height: auto;
+    display: block;
+    margin-bottom: 2rem;
+}
+
+#teampicture {
+    width: 100%;
+    border: 1px solid black;
+}
+
+.problem-list h2,h3,h4 {
+    text-align: center;
+}
+
+.problem-list h2 {
+    font-size: 1.17em;
+}
+
+.problem-list h3 {
+    font-size: 1.12em
+}
+
+.problem-list h4 {
+    font-size: .83em;
+}
+
+#teamwelcome {
+    padding-top: 3rem;
+}
+#teamwelcometeam {
+    font-weight: bold;
+}
+#contestnotstarted {
+    color: silver;
+    margin-top: .2ex;
+    font-weight: normal;
+}
+
+.teamoverview {
+    border-top: solid 1px darkgray;
+    border-bottom: solid 1px darkgray;
+    background-color: #c4d8ff;
+    margin-top: 2ex;
+    padding-left: 1ex;
+    font-size: 1.17em;
+    text-align: center;
+}
+
+.ajax-loader {
+    -webkit-animation: spin 4s linear infinite;
+    -moz-animation: spin 4s linear infinite;
+    animation: spin 4s linear infinite;
+}
+
+@-moz-keyframes spin {
+    100% {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+.scrollable-menu {
+    height: auto;
+    max-height: 500px;
+    overflow-x: hidden;
+}
+
+.error-template {
+    padding: 40px 15px;
+    text-align: center;
+}
+
+.problem-stats {
+    padding-top: 10px;
+}
+
+.problem-stats .problem-stats-item {
+    display: inline-block;
+    margin-right: 3px;
+    width: 10px;
+    height: 10px;
+    border-radius: 2px;
+    box-shadow: inset 0 0 0 1px rgba(27, 31, 35, .04);
+}
+
+.problem-stats-item.correct-0 {
+    background-color: #eeeeee;
+}
+
+.problem-stats-item.correct-1 {
+    background-color: #dcffe4;
+}
+
+.problem-stats-item.correct-2 {
+    background-color: #bef5cb;
+}
+
+.problem-stats-item.correct-3 {
+    background-color: #85e89d;
+}
+
+.problem-stats-item.correct-4 {
+    background-color: #34d058;
+}
+
+.problem-stats-item.correct-5 {
+    background-color: #28a745;
+}
+
+.problem-stats-item.correct-6 {
+    background-color: #22863a;
+}
+
+.problem-stats-item.correct-7 {
+    background-color: #176f2c;
+}
+
+.problem-stats-item.correct-8 {
+    background-color: #165c26;
+}
+
+.problem-stats-item.correct-9 {
+    background-color: #144620;
+}
+
+.problem-stats-item.incorrect-0 {
+    background-color: #eeeeee;
+}
+
+.problem-stats-item.incorrect-1 {
+    background-color: #ffdce0;
+}
+
+.problem-stats-item.incorrect-2 {
+    background-color: #fdaeb7;
+}
+
+.problem-stats-item.incorrect-3 {
+    background-color: #f97583;
+}
+
+.problem-stats-item.incorrect-4 {
+    background-color: #ea4a5a;
+}
+
+.problem-stats-item.incorrect-5 {
+    background-color: #d73a49;
+}
+
+.problem-stats-item.incorrect-6 {
+    background-color: #cb2431;
+}
+
+.problem-stats-item.incorrect-7 {
+    background-color: #b31d28;
+}
+
+.problem-stats-item.incorrect-8 {
+    background-color: #9e1c23;
+}
+
+.problem-stats-item.incorrect-9 {
+    background-color: #86181d;
+}
+
+.problem-stats-item.frozen-0 {
+    background-color: #eeeeee;
+}
+
+.problem-stats-item.frozen-1 {
+    background-color: #dbedff;
+}
+
+.problem-stats-item.frozen-2 {
+    background-color: #c8e1ff;
+}
+
+.problem-stats-item.frozen-3 {
+    background-color: #79b8ff;
+}
+
+.problem-stats-item.frozen-4 {
+    background-color: #2188ff;
+}
+
+.problem-stats-item.frozen-5 {
+    background-color: #0366d6;
+}
+
+.problem-stats-item.frozen-6 {
+    background-color: #005cc5;
+}
+
+.problem-stats-item.frozen-7 {
+    background-color: #044289;
+}
+
+.problem-stats-item.frozen-8 {
+    background-color: #032f62;
+}
+
+.problem-stats-item.frozen-9 {
+    background-color: #05264c;
+}
+
+.select_readonly {
+    background-color: #e9ecef !important;
+    opacity: 1;
+}
+
+.problem-badge {
+    font-size: 100%;
+}
+
+.tooltip .tooltip-inner {
+    max-width: 500px;
+}
