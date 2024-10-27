@@ -14,6 +14,14 @@
           url: 2024/central/problems.pdf
         - title: Upsolve
           url: https://oj.vnoi.info/contest/icpc24_mt
+    - type: Northern
+      contents:
+        - title: Scoreboard
+          url: 2024/northern/scoreboard.htm
+        - title: Problems
+          url: 2024/northern/problems.pdf
+        - title: Upsolve
+          url: https://oj.vnoi.info/contest/icpc24_mb
 - year: 2023
   contests:
     - type: Regional
