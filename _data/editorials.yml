@@ -1,5 +1,23 @@
 - year: 2024
   contests:
+    - type: Regional
+      contents:
+        - title: Scoreboard
+          url: 2024/regional/scoreboard.html
+        - title: Scoreboard (HSGS)
+          url: 2024/regional/scoreboard-hsgs.html
+        - title: Problems
+          url: 2024/regional/problems.pdf
+        - title: Upsolve
+          url: https://oj.vnoi.info/contest/icpc24_regional
+    - type: National
+      contents:
+        - title: Scoreboard
+          url: 2024/national/scoreboard.html
+        - title: Problems
+          url: 2024/national/problems.pdf
+        - title: Upsolve
+          url: https://oj.vnoi.info/contest/icpc24_national
     - type: Southern
       contents:
         - title: Scoreboard
@@ -22,14 +40,6 @@
           url: 2024/northern/problems.pdf
         - title: Upsolve
           url: https://oj.vnoi.info/contest/icpc24_mb
-    - type: National
-      contents:
-        - title: Scoreboard
-          url: 2024/national/scoreboard.html
-        - title: Problems
-          url: 2024/national/problems.pdf
-        - title: Upsolve
-          url: https://oj.vnoi.info/contest/icpc24_national
 - year: 2023
   contests:
     - type: Regional

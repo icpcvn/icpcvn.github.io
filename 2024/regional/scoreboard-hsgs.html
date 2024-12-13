@@ -1,0 +1,1331 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>[HSGS] The 2024 ICPC Asia Hanoi Regional Contest Rankings - VNOJ: VNOI Online Judge</title>
+    
+        <meta name="description" property="og:description" content="None">
+    <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicons-->
+    <link rel="apple-touch-icon" sizes="57x57" href="https://icpc.vnoi.info/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="https://icpc.vnoi.info/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="https://icpc.vnoi.info/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="https://icpc.vnoi.info/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="https://icpc.vnoi.info/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="https://icpc.vnoi.info/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="https://icpc.vnoi.info/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="https://icpc.vnoi.info/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://icpc.vnoi.info/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="https://icpc.vnoi.info/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://icpc.vnoi.info/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="https://icpc.vnoi.info/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="https://icpc.vnoi.info/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="https://icpc.vnoi.info/manifest.json">
+    <meta name="msapplication-TileColor" content="#231F20">
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+    <meta name="theme-color" content="#231F20">
+        <meta property="og:image" content="http://icpc.vnoi.info/logo.png">
+    <meta property="og:site_name" content="VNOJ: VNOI Online Judge">
+    <meta property="og:url" content="http://oj.vnoi.info/contest/hsgs_icpc/ranking/">
+
+<link rel="stylesheet" href="./scoreboard-hsgs_files/output.78e624d11502.css" type="text/css">    <link rel="canonical" href="http://oj.vnoi.info/contest/hsgs_icpc/ranking/">
+<style>
+    .gold-medal {
+        background-color: #eec710;
+    }
+
+    .silver-medal {
+        background-color: #aaa;
+    }
+
+    .bronze-medal {
+        background-color: #c08e55;
+    }
+
+    .first-solve {
+        background-color: #1daa1d !important;
+    }
+
+    .full-score {
+        color: black;
+        background-color: #60e760;
+    }
+
+    .failed-score {
+        color: black;
+        background-color: #e87272;
+    }
+
+    .pending {
+        background-color: #6666ff;
+    }
+
+    .failed-score a, .full-score a, .pending a {
+        color: black;
+    }
+
+    .solving-time {
+        display: none;
+    }
+
+    .solving-time-minute {
+        color: black;
+        font-size: 1.25em;
+        padding-bottom: -0.75em;
+    }
+
+    span.rating.top-team::after {
+        content: attr(data-user-tag);
+        font-size: 0.75em;
+        padding: 0.25em;
+        margin-left: 0.5em;
+        background-color: #FFC008;
+        border-radius: 2px;
+        color: black;
+    }
+</style>
+    <style>
+        .select2-selection__arrow {
+            display: none;
+        }
+
+        .select2-selection__rendered {
+            cursor: text;
+            overflow: initial !important
+        }
+
+        .select2-results__option {
+            white-space: nowrap;
+        }
+
+        #search-contest, #search-contest + .select2 {
+            margin-top: 0.5em;
+        }
+
+        #search-contest {
+            width: 200px;
+            height: 2.3em;
+        }
+
+        .filter-checklist-button {
+            float: right;
+        }
+
+        .select-container {
+            display: flex;
+            gap: 2em;
+        }
+    </style>
+
+<script src="./scoreboard-hsgs_files/output.cdb3460466a3.js"></script>    <script type="text/javascript">
+        $(function () {
+            var url = '/contest/hsgs_icpc/participations/__username__';
+            var placeholder = $('#search-contest').replaceWith($('<select>').attr({
+                id: 'search-contest'
+            })).attr('placeholder');
+
+            $('#search-contest').select2({
+                theme: 'dmoj',
+                placeholder: placeholder,
+                ajax: {
+                    url: '/widgets/select2/contest_users/hsgs_icpc',
+                    delay: 300
+                },
+                minimumInputLength: 1,
+                templateResult: function (data) {
+                    return $('<span>')
+                        .append($('<img>', {
+                            class: 'user-search-image',
+                            src: data.gravatar_url,
+                            width: 24,
+                            height: 24,
+                        }))
+                        .append($('<span>', {
+                            class: data.display_rank + ' user-search-name',
+                        }).text(data.text));
+                }
+            }).on('change', function () {
+                window.location.href = url.replace('__username__', $(this).val());
+            });
+
+            $('#show-personal-info-checkbox').click(function () {
+                $('.personal-info').toggle();
+                localStorage.setItem('show-personal-info', $('.personal-info').is(':visible') ? 'true' : 'false');
+            });
+
+            if (localStorage.getItem('show-personal-info') == 'true') {
+                $('.personal-info').show();
+                $('#show-personal-info-checkbox').prop('checked', true);
+            }
+
+
+            $('#show-virtual-participations-checkbox').click(function () {
+                const parser = new URL(window.location.href);
+                parser.searchParams.set('show_virtual', 'true');
+                window.location.href = parser.href;
+            });
+
+            var contest_key = 'hsgs_icpc';
+
+            $("a#cache_alert").click(function () {
+                var $closer = $(this);
+                $closer.parent().hide();
+                localStorage.setItem(`hide-cache-alert-${contest_key}`, 'true');
+            });
+
+            if (localStorage.getItem(`hide-cache-alert-${contest_key}`) == 'true') {
+                $("a#cache_alert").click();
+            }
+
+            $("a#frozen_alert").click(function () {
+                var $closer = $(this);
+                $closer.parent().hide();
+                localStorage.setItem(`hide-frozen-alert-${contest_key}`, 'true');
+            });
+
+            if (localStorage.getItem(`hide-frozen-alert-${contest_key}`) == 'true') {
+                $("a#frozen_alert").click();
+            }
+
+            // hack to keep scroll position after selecting option
+            // https://stackoverflow.com/questions/55045146/select2-do-not-scroll-on-selection
+            // scrollAfterSelect is only available after v4.0.6
+            $(function() {
+                $('#org-check-list').select2({
+                    theme: 'dmoj',
+                    multiple: true,
+                    closeOnSelect: false,
+                    placeholder: 'Search organizations',
+                });
+
+                var selection = $('#org-check-list').data().select2.selection;
+                var results = $('#org-check-list').data().select2.results;
+
+                $('#org-check-list').on('select2:selecting', function(e) {
+                    let id = e.params.args.data.id;
+                    let val = $(e.target).val().concat([id]);
+                    $(e.target).val(val).trigger('change');
+
+                    if (selection.$search.val() != '') {
+                        selection.$search.val('');
+                        selection.trigger('query', {});
+                    } else {
+                        results.setClasses();
+                    }
+
+                    return false;
+                });
+
+                $('#org-check-list').on('select2:unselecting', function(e) {
+                    let id = e.params.args.data.id;
+                    let val = $(e.target).val().filter(function(v) { return v != id; });
+                    $(e.target).val(val).trigger('change');
+
+                    if (selection.$search.val() != '') {
+                        selection.$search.val('');
+                        selection.trigger('query', {});
+                    } else {
+                        results.setClasses();
+                    }
+
+                    return false;
+                });
+
+                $('#org-check-list').data().select2.toggleDropdown = function () {
+                    selection.$search.trigger('focus');
+
+                    if (!this.isOpen()) {
+                        this.open();
+                    }
+                }
+
+                $('#filter-by-organization-button').click(function () {
+                    $('#org-check-list-wrapper').toggle();
+                    $('#org-check-list').select2('open');
+                });
+            });
+
+            $(function() {
+                $('#tag-check-list').select2({
+                    theme: 'dmoj',
+                    multiple: true,
+                    closeOnSelect: false,
+                    placeholder: 'Filter by tag',
+                });
+
+                const selection = $('#tag-check-list').data().select2.selection;
+                const results = $('#tag-check-list').data().select2.results;
+
+                $('#tag-check-list').on('select2:selecting', function(e) {
+                    let id = e.params.args.data.id;
+                    let val = $(e.target).val().concat([id]);
+                    $(e.target).val(val).trigger('change');
+
+                    if (selection.$search.val() != '') {
+                        selection.$search.val('');
+                        selection.trigger('query', {});
+                    } else {
+                        results.setClasses();
+                    }
+
+                    return false;
+                });
+
+                $('#tag-check-list').on('select2:unselecting', function(e) {
+                    const id = e.params.args.data.id;
+                    const val = $(e.target).val().filter(function(v) { return v != id; });
+                    $(e.target).val(val).trigger('change');
+
+                    if (selection.$search.val() != '') {
+                        selection.$search.val('');
+                        selection.trigger('query', {});
+                    } else {
+                        results.setClasses();
+                    }
+
+                    return false;
+                });
+            })
+
+            if (localStorage.getItem(`filter-cleared-${contest_key}`) === null) {
+                localStorage.setItem(`filter-cleared-${contest_key}`, 'true');
+            }
+
+            if (localStorage.getItem(`filter-selected-orgs-${contest_key}`) === null) {
+                localStorage.setItem(`filter-selected-orgs-${contest_key}`, JSON.stringify([]));
+            }
+
+            if (localStorage.getItem(`filter-selected-tags-${contest_key}`) === null) {
+                localStorage.setItem(`filter-selected-tags-${contest_key}`, JSON.stringify([]));
+            }
+
+            $('#apply-organization-filter').click(function () {
+                $('#org-check-list-wrapper').hide();
+
+                const selected_orgs = [];
+                $('#org-check-list').val().forEach(function (el) {
+                    selected_orgs.push(el.trim());
+                });
+                let selected_tags = $('#tag-check-list').val().map(x => x.trim());
+                localStorage.setItem(`filter-selected-orgs-${contest_key}`, JSON.stringify(selected_orgs));
+                localStorage.setItem(`filter-selected-tags-${contest_key}`, JSON.stringify(selected_tags));
+                window.applyRankingFilter();
+            });
+
+            $('#clear-organization-filter').click(function () {
+                $('#org-check-list').val(null).trigger('change');
+                $('#tag-check-list').val(null).trigger('change');
+                $('#apply-organization-filter').click();
+            });
+
+            // hide checklist by clicking outside
+            $(document).mouseup(function (e) {
+                e.stopPropagation();
+
+                // if clicked on the filter button
+                // then this function should not do anything
+                if ($('#filter-by-organization-button').has(e.target).length !== 0) {
+                    return;
+                }
+
+                if ($('#select2-org-check-list-results').has(e.target).length !== 0 || $('#select2-tag-check-list-results').has(e.target).length !== 0) {
+                    return;
+                }
+
+                if ($(e.target).attr('id') && $(e.target).attr('id').startsWith('select2-org-check-list-result')) {
+                    return;
+                }
+
+                if ($(e.target).attr('id') && $(e.target).attr('id').startsWith('select2-tag-check-list-result')) {
+                    return;
+                }
+
+                // check if the clicked area is the checklist or not
+                if ($('#org-dropdown-check-list').has(e.target).length === 0) {
+                    $('#apply-organization-filter').click();
+                }
+            });
+
+            window.getOrganizationCodes = function () {
+                let org_list = []
+
+                $('#ranking-table > tbody > *').each(function () {
+                    let org_anchor = $(this).find("div > div > .personal-info > .organization > a")[0];
+
+                    if (org_anchor) {
+                        org_list.push(org_anchor.text);
+                    }
+                });
+
+                org_list.sort();
+                org_list.push("Other");
+
+                org_list = new Set(org_list);
+
+                let org_options = $('#org-check-list');
+                org_options.empty();
+
+                org_list.forEach(function (org) {
+                    org_options.append(
+                        `<option value="${org}">${org}</option>`
+                    );
+                });
+            };
+
+            window.getOrganizationCodes();
+
+            window.getTagNamesAndSetTopTag = function () {
+                const tags = [];
+                $('#ranking-table > tbody > tr[id] > td span').each(function () {
+                    let row = $(this);
+
+                    const user_tag = row.data('user-tag');
+
+                    if (user_tag == undefined || user_tag == 'None') {
+                        return;
+                    }
+
+                    if (tags.findIndex(x => x == user_tag) == -1) {
+                        row.addClass('top-team');
+                        tags.push(user_tag);
+                    }
+                });
+
+                let tag_options = $('#tag-check-list');
+                tag_options.empty();
+                tags.sort();
+                tags.forEach(function (tag) {
+                    tag_options.append(
+                        `<option value="${tag}">${tag}</option>`
+                    );
+                });
+            }
+            window.getTagNamesAndSetTopTag();
+
+            window.addMedalIndicator = function () {
+                let orgs_with_medal = new Set();
+                let medal_given = 0;
+                $('#ranking-table > tbody > tr[id]').each(function (index) {
+                    let is_medalist = false;
+                    let org_anchor = $(this).find("div > div > .personal-info > .organization > a")[0];
+                    if (!org_anchor) {
+                        is_medalist = true;
+                    } else {
+                        let org = $(org_anchor).attr('href');
+                        if (!orgs_with_medal.has(org)) {
+                            orgs_with_medal.add(org);
+                            is_medalist = true;
+                        }
+                    }
+
+                    if (is_medalist) {
+                        medal_given += 1;
+                        if (medal_given <= 4) {
+                            $(this).children(":first").addClass('gold-medal');
+                        } else if (medal_given <= 8) {
+                            $(this).children(":first").addClass('silver-medal');
+                        } else if (medal_given <= 12) {
+                            $(this).children(":first").addClass('bronze-medal');
+                        }
+
+                        if (medal_given == 12) return false;
+                    }
+                });
+            }
+
+                window.addMedalIndicator();
+
+            function extractCurrentAbsRank(row_text) {
+                let paren_surround_text = row_text.match(/\(([^)]+)\)/);
+                let current_abs_rank
+                    = (paren_surround_text !== null)
+                    ? paren_surround_text[1]
+                    : row_text;
+                return current_abs_rank;
+            }
+
+            window.clearRankingFilter = function () {
+                if (localStorage.getItem(`filter-cleared-${contest_key}`) == 'true') {
+                    return;
+                }
+
+                $('#ranking-table > tbody > tr[id]').each(function () {
+                    $(this).show();
+                    $(this).find("td")[0].innerHTML = extractCurrentAbsRank($(this).find("td")[0].innerText);
+                });
+
+                localStorage.setItem(`filter-cleared-${contest_key}`, 'true');
+            };
+
+            window.applyRankingFilter = function () {
+                let counter = 0;
+                let previous_abs_rank = -1;
+                let selected_orgs = JSON.parse(localStorage.getItem(`filter-selected-orgs-${contest_key}`));
+                let selected_tags = JSON.parse(localStorage.getItem(`filter-selected-tags-${contest_key}`));
+
+                if (!selected_orgs.length && !selected_tags.length) {
+                    window.clearRankingFilter();
+                    return;
+                }
+
+                $('#ranking-table > tbody > tr[id]').each(function () {
+                    let row = $(this);
+
+                    let org_anchor = row.find("div > div > .personal-info > .organization > a")[0];
+                    let org = org_anchor ? org_anchor.text : 'Other';
+                    let tag_anchor = row.find("span")[0];
+                    let tag = tag_anchor ? tag_anchor.dataset.userTag : 'Other'
+
+                    let should_show_org = selected_orgs.length == 0;
+                    selected_orgs.forEach(function (selected_org) {
+                        if (selected_org === org.trim()) {
+                            should_show_org = true;
+                        }
+                    });
+                    let should_show_tag = selected_tags.length == 0;
+                    selected_tags.forEach(function (selected_tag) {
+                        if (selected_tag === tag.trim()) {
+                            should_show_tag = true;
+                        }
+                    });
+
+
+                    if (!should_show_org || !should_show_tag) {
+                        row.hide();
+                        return;
+                    }
+
+                    row.show();
+                    let current_abs_rank = extractCurrentAbsRank(row.find("td")[0].innerText);
+
+                    if (previous_abs_rank == -1 || previous_abs_rank != current_abs_rank) {
+                        ++counter;
+                    }
+
+                    row.find("td")[0].innerHTML = `${counter}<br>(${current_abs_rank})`;
+                    previous_abs_rank = current_abs_rank;
+                });
+
+                if (counter > 0) {
+                    localStorage.setItem(`filter-cleared-${contest_key}`, 'false');
+                }
+            };
+
+                window.applyRankingFilter();
+
+            window.restoreChecklistOptions = function () {
+                let selected_orgs = JSON.parse(localStorage.getItem(`filter-selected-orgs-${contest_key}`));
+                $('#org-check-list').val(selected_orgs).trigger('change');
+                let selected_tags = JSON.parse(localStorage.getItem(`filter-selected-tags-${contest_key}`));
+                $('#tag-check-list').val(selected_tags).trigger('change');
+            };
+
+            window.restoreChecklistOptions();
+
+            window.applyFavoriteUsers = function() {
+                let fav_users = localStorage.getItem(`favorite-users-${contest_key}`)?.split(',');
+                if (!fav_users) return;
+
+                let index = 0;
+                let table_body = $('#ranking-table > tbody').get(0);
+
+                $('#ranking-table > tbody > .favorite').each(function () {
+                    this.remove();
+                });
+
+                $('#ranking-table > tbody > tr[id]:not(.favorite)').each(function () {
+                    let row = $(this);
+                    let user_name = row.find(".user-name > .info-container > div > span > a")[0].text.trim();
+                    let fav_button = row.find('.user-name > .info-container > div > i').get(0);
+
+                    if (!fav_users.includes(user_name)) {
+                        fav_button.classList.add('fa-heart-o');
+                        return;
+                    }
+
+                    fav_button.classList.remove('fa-heart-o');
+
+                    let new_row = row.clone();
+                    new_row.addClass('favorite');
+                    table_body.insertBefore(new_row.get(0), table_body.children[index++]);
+                });
+
+                $(table_body.children[index - 1]).css('border-bottom', 'thick solid black');
+            }
+
+            window.applyFavoriteUsers();
+
+            $(document).ready(() => {
+                $('#ranking-table').on('click', '.fav-button', function() {
+                    let is_fav = !this.classList.contains('fa-heart-o');
+                    let user_name = $(this.parentNode).find('span > a')[0].textContent.trim();
+                    let fav_users = localStorage.getItem(`favorite-users-${contest_key}`)?.split(',');
+                    if (!fav_users) fav_users = [];
+
+                    if (!is_fav) {
+                        fav_users.push(user_name);
+                        this.classList.remove('fa-heart-o');
+                    } else {
+                        this.classList.add('fa-heart-o');
+
+                        // https://stackoverflow.com/a/3954451
+                        let id = fav_users.indexOf(user_name);
+                        if (id !== -1) {
+                            fav_users.splice(id, 1);
+                        }
+                    }
+
+                    localStorage.setItem(`favorite-users-${contest_key}`, fav_users);
+                    window.applyFavoriteUsers();
+                });
+            });
+
+            window.enableAdminOperations = function () {
+                $('a.disqualify-participation').click(function (e) {
+                    e.preventDefault();
+                    if (e.ctrlKey || e.metaKey || confirm('Are you sure you want to disqualify this participation?'))
+                        $(this).closest('form').submit();
+                })
+                $('a.un-disqualify-participation').click(function (e) {
+                    e.preventDefault();
+                    if (e.ctrlKey || e.metaKey || confirm('Are you sure you want to un\u002Ddisqualify this participation?'))
+                        $(this).closest('form').submit();
+                })
+            };
+
+            window.enableAdminOperations();
+
+            function replaceOrgImageWithName (el) {
+                const siblingEl = el.nextSibling;
+                el.style.display = "none";
+                siblingEl.classList = "";
+            }
+
+            window.loadOrgLogo = function () {
+                const allImg = $('.uni-logo');
+                allImg.each((i, el) => {
+                    if (el.src == window.location.href) {
+                        replaceOrgImageWithName(el);
+                    }
+                })
+            }
+            window.loadOrgLogo();
+        });
+
+            $.fn.ignore = function(sel) {
+                return this.clone().find(sel || '>*').remove().end();
+            };
+
+            function download_table_as_csv() {
+                function clean_text(text) {
+                    // Remove new line and leading/trailing spaces
+                    text = text.replace(/(\r\n|\n|\r)/gm, '').trim();
+                    // Escape double-quote with double-double-quote
+                    text = text.replace(/"/g, '""');
+
+                    return '"' + text + '"';
+                }
+
+                var csv = [];
+
+                $('#ranking-table thead tr').each(function () {
+                    var header = [];
+                    $(this).find('th').each(function () {
+                        var $col = $(this);
+
+                        if ($col.hasClass('rating-column')) {
+                            // Skip rating
+                            return;
+                        } else if ($col.hasClass('rank')) {
+                            // Rank
+                            header.push(clean_text($col.text()));
+                        } else if ($col.hasClass('username')) {
+                            // Username and Full name
+                            header.push(clean_text('Username'));
+                            header.push(clean_text('Full Name'));
+                        } else {
+                            // Point
+                            var name = $col.find('.problem-code').text();
+                            if (name == '') {
+                                name = $col.text();
+                            }
+                            header.push(clean_text(name));
+                        }
+                    });
+                    csv.push(header.join(','));
+                });
+
+                $('#ranking-table tbody tr').each(function () {
+                    // Skip hidden row (due to filtering)
+                    if ($(this).is(':hidden')) {
+                        return;
+                    }
+
+                    var row_data = [];
+                    $(this).find('td').each(function () {
+                        var $col = $(this);
+
+                        if ($col.hasClass('rating-column')) {
+                            // Skip rating
+                            return;
+                        } else if ($col.hasClass('user-name')) {
+                            // Username and Full name
+                            row_data.push(clean_text($col.find('.rating').first().text()));
+                            row_data.push(clean_text($($col.find('.personal-info')[1]).text()));
+                        } else {
+                            // Point or rank
+                            row_data.push(clean_text($col.ignore('.solving-time').text()));
+                        }
+                    });
+                    csv.push(row_data.join(','));
+                });
+
+                var csv_string = csv.join('\n');
+                var filename = 'ranking_hsgs_icpc_' + moment().format('YYYY-MM-DD-HH-mm-ss') + '.csv';
+                var link = document.createElement('a');
+                link.style.display = 'none';
+                link.setAttribute('target', '_blank');
+                link.setAttribute('href', 'data:text/csv;charset=utf-8,\uFEFF' + encodeURIComponent(csv_string));
+                link.setAttribute('download', filename);
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+            }
+    </script>
+<script type="text/javascript">
+    $(function () {
+        $('.leaving-forever').click(function () {
+            return confirm('Are you sure you want to leave?' + '\n' +
+                'You cannot come back to a virtual participation. You will have to start a new one.');
+        });
+
+
+
+        $('.register-warning').click(function () {
+            return confirm('Are you sure you want to register?');
+        });
+    });
+</script>    <script>
+        $(function () {
+            $('#search-handle').replaceWith($('<select>').attr({
+                id: 'search-handle',
+                name: 'handle',
+                onchange: 'form.submit()'
+            }));
+            var in_user_redirect = false;
+            $('#search-handle').select2({
+                theme: 'dmoj',
+                placeholder: 'Search by handle...',
+                ajax: {
+                    url: '/widgets/select2/user_search',
+                    delay: 300
+                },
+                minimumInputLength: 1,
+                templateResult: function (data, container) {
+                    return $('<span>')
+                        .append($('<img>', {
+                            'class': 'user-search-image', src: data.gravatar_url,
+                            width: 24, height: 24
+                        }))
+                        .append($('<span>', {'class': data.display_rank + ' user-search-name'}).text(data.text));
+                }
+            }).on('select2:selecting', function () {
+                return !in_user_redirect;
+            });
+
+            var $last = null;
+            $(window).on('hashchange', function () {
+                var hash = window.location.hash;
+                if (hash.startsWith('#!')) {
+                    var $user = $('#user-' + hash.substring(2)).addClass('highlight');
+                    if ($user) {
+                        $(document).scrollTop($user.position().top - 50);
+                        if ($last !== null) $last.removeClass('highlight');
+                        $last = $user;
+                    }
+                }
+            }).trigger('hashchange');
+        });
+    </script>
+        <script>
+            window.event_dispatcher = new WSEventDispatcher(
+                'ws://icpc.vnoi.info/event/',
+                '/channels/',
+                1733951250108
+            );
+        </script>
+
+        <script>window.user = {};</script>
+
+
+    <script>
+        function submmit_language(lang) {
+            if (lang != "en" ) {
+                $("input[name=language]").val(lang)
+                $("#set_language").submit()
+            }
+        }
+    </script>
+    <noscript>
+        <style>
+            #content {
+                margin: 80px auto auto;
+            }
+
+            #navigation {
+                top: 27px;
+            }
+        </style>
+    </noscript>
+<style type="text/css">.CtxtMenu_InfoClose {  top:.2em; right:.2em;}
+.CtxtMenu_InfoContent {  overflow:auto; text-align:left; font-size:80%;  padding:.4em .6em; border:1px inset; margin:1em 0px;  max-height:20em; max-width:30em; background-color:#EEEEEE;  white-space:normal;}
+.CtxtMenu_Info.CtxtMenu_MousePost {outline:none;}
+.CtxtMenu_Info {  position:fixed; left:50%; width:auto; text-align:center;  border:3px outset; padding:1em 2em; background-color:#DDDDDD;  color:black;  cursor:default; font-family:message-box; font-size:120%;  font-style:normal; text-indent:0; text-transform:none;  line-height:normal; letter-spacing:normal; word-spacing:normal;  word-wrap:normal; white-space:nowrap; float:none; z-index:201;  border-radius: 15px;                     /* Opera 10.5 and IE9 */  -webkit-border-radius:15px;               /* Safari and Chrome */  -moz-border-radius:15px;                  /* Firefox */  -khtml-border-radius:15px;                /* Konqueror */  box-shadow:0px 10px 20px #808080;         /* Opera 10.5 and IE9 */  -webkit-box-shadow:0px 10px 20px #808080; /* Safari 3 & Chrome */  -moz-box-shadow:0px 10px 20px #808080;    /* Forefox 3.5 */  -khtml-box-shadow:0px 10px 20px #808080;  /* Konqueror */  filter:progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color="gray", Positive="true"); /* IE */}
+</style><style type="text/css">.CtxtMenu_MenuClose {  position:absolute;  cursor:pointer;  display:inline-block;  border:2px solid #AAA;  border-radius:18px;  -webkit-border-radius: 18px;             /* Safari and Chrome */  -moz-border-radius: 18px;                /* Firefox */  -khtml-border-radius: 18px;              /* Konqueror */  font-family: "Courier New", Courier;  font-size:24px;  color:#F0F0F0}
+.CtxtMenu_MenuClose span {  display:block; background-color:#AAA; border:1.5px solid;  border-radius:18px;  -webkit-border-radius: 18px;             /* Safari and Chrome */  -moz-border-radius: 18px;                /* Firefox */  -khtml-border-radius: 18px;              /* Konqueror */  line-height:0;  padding:8px 0 6px     /* may need to be browser-specific */}
+.CtxtMenu_MenuClose:hover {  color:white!important;  border:2px solid #CCC!important}
+.CtxtMenu_MenuClose:hover span {  background-color:#CCC!important}
+.CtxtMenu_MenuClose:hover:focus {  outline:none}
+</style><style type="text/css">.CtxtMenu_Menu {  position:absolute;  background-color:white;  color:black;  width:auto; padding:5px 0px;  border:1px solid #CCCCCC; margin:0; cursor:default;  font: menu; text-align:left; text-indent:0; text-transform:none;  line-height:normal; letter-spacing:normal; word-spacing:normal;  word-wrap:normal; white-space:nowrap; float:none; z-index:201;  border-radius: 5px;                     /* Opera 10.5 and IE9 */  -webkit-border-radius: 5px;             /* Safari and Chrome */  -moz-border-radius: 5px;                /* Firefox */  -khtml-border-radius: 5px;              /* Konqueror */  box-shadow:0px 10px 20px #808080;         /* Opera 10.5 and IE9 */  -webkit-box-shadow:0px 10px 20px #808080; /* Safari 3 & Chrome */  -moz-box-shadow:0px 10px 20px #808080;    /* Forefox 3.5 */  -khtml-box-shadow:0px 10px 20px #808080;  /* Konqueror */}
+.CtxtMenu_MenuItem {  padding: 1px 2em;  background:transparent;}
+.CtxtMenu_MenuArrow {  position:absolute; right:.5em; padding-top:.25em; color:#666666;  font-family: null; font-size: .75em}
+.CtxtMenu_MenuActive .CtxtMenu_MenuArrow {color:white}
+.CtxtMenu_MenuArrow.CtxtMenu_RTL {left:.5em; right:auto}
+.CtxtMenu_MenuCheck {  position:absolute; left:.7em;  font-family: null}
+.CtxtMenu_MenuCheck.CtxtMenu_RTL { right:.7em; left:auto }
+.CtxtMenu_MenuRadioCheck {  position:absolute; left: .7em;}
+.CtxtMenu_MenuRadioCheck.CtxtMenu_RTL {  right: .7em; left:auto}
+.CtxtMenu_MenuInputBox {  padding-left: 1em; right:.5em; color:#666666;  font-family: null;}
+.CtxtMenu_MenuInputBox.CtxtMenu_RTL {  left: .1em;}
+.CtxtMenu_MenuComboBox {  left:.1em; padding-bottom:.5em;}
+.CtxtMenu_MenuSlider {  left: .1em;}
+.CtxtMenu_SliderValue {  position:absolute; right:.1em; padding-top:.25em; color:#333333;  font-size: .75em}
+.CtxtMenu_SliderBar {  outline: none; background: #d3d3d3}
+.CtxtMenu_MenuLabel {  padding: 1px 2em 3px 1.33em;  font-style:italic}
+.CtxtMenu_MenuRule {  border-top: 1px solid #DDDDDD;  margin: 4px 3px;}
+.CtxtMenu_MenuDisabled {  color:GrayText}
+.CtxtMenu_MenuActive {  background-color: #606872;  color: white;}
+.CtxtMenu_MenuDisabled:focus {  background-color: #E8E8E8}
+.CtxtMenu_MenuLabel:focus {  background-color: #E8E8E8}
+.CtxtMenu_ContextMenu:focus {  outline:none}
+.CtxtMenu_ContextMenu .CtxtMenu_MenuItem:focus {  outline:none}
+.CtxtMenu_SelectionMenu {  position:relative; float:left;  border-bottom: none; -webkit-box-shadow:none; -webkit-border-radius:0px; }
+.CtxtMenu_SelectionItem {  padding-right: 1em;}
+.CtxtMenu_Selection {  right: 40%; width:50%; }
+.CtxtMenu_SelectionBox {  padding: 0em; max-height:20em; max-width: none;  background-color:#FFFFFF;}
+.CtxtMenu_SelectionDivider {  clear: both; border-top: 2px solid #000000;}
+.CtxtMenu_Menu .CtxtMenu_MenuClose {  top:-10px; left:-10px}
+</style><style id="MJX-CHTML-styles">
+mjx-container[jax="CHTML"] {
+  line-height: 0;
+}
+
+mjx-container [space="1"] {
+  margin-left: .111em;
+}
+
+mjx-container [space="2"] {
+  margin-left: .167em;
+}
+
+mjx-container [space="3"] {
+  margin-left: .222em;
+}
+
+mjx-container [space="4"] {
+  margin-left: .278em;
+}
+
+mjx-container [space="5"] {
+  margin-left: .333em;
+}
+
+mjx-container [rspace="1"] {
+  margin-right: .111em;
+}
+
+mjx-container [rspace="2"] {
+  margin-right: .167em;
+}
+
+mjx-container [rspace="3"] {
+  margin-right: .222em;
+}
+
+mjx-container [rspace="4"] {
+  margin-right: .278em;
+}
+
+mjx-container [rspace="5"] {
+  margin-right: .333em;
+}
+
+mjx-container [size="s"] {
+  font-size: 70.7%;
+}
+
+mjx-container [size="ss"] {
+  font-size: 50%;
+}
+
+mjx-container [size="Tn"] {
+  font-size: 60%;
+}
+
+mjx-container [size="sm"] {
+  font-size: 85%;
+}
+
+mjx-container [size="lg"] {
+  font-size: 120%;
+}
+
+mjx-container [size="Lg"] {
+  font-size: 144%;
+}
+
+mjx-container [size="LG"] {
+  font-size: 173%;
+}
+
+mjx-container [size="hg"] {
+  font-size: 207%;
+}
+
+mjx-container [size="HG"] {
+  font-size: 249%;
+}
+
+mjx-container [width="full"] {
+  width: 100%;
+}
+
+mjx-box {
+  display: inline-block;
+}
+
+mjx-block {
+  display: block;
+}
+
+mjx-itable {
+  display: inline-table;
+}
+
+mjx-row {
+  display: table-row;
+}
+
+mjx-row > * {
+  display: table-cell;
+}
+
+mjx-mtext {
+  display: inline-block;
+}
+
+mjx-mstyle {
+  display: inline-block;
+}
+
+mjx-merror {
+  display: inline-block;
+  color: red;
+  background-color: yellow;
+}
+
+mjx-mphantom {
+  visibility: hidden;
+}
+
+_::-webkit-full-page-media, _:future, :root mjx-container {
+  will-change: opacity;
+}
+
+mjx-assistive-mml {
+  position: absolute !important;
+  top: 0px;
+  left: 0px;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 1px 0px 0px 0px !important;
+  border: 0px !important;
+  display: block !important;
+  width: auto !important;
+  overflow: hidden !important;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+mjx-assistive-mml[display="block"] {
+  width: 100% !important;
+}
+
+mjx-c::before {
+  display: block;
+  width: 0;
+}
+
+.MJX-TEX {
+  font-family: MJXZERO, MJXTEX;
+}
+
+.TEX-B {
+  font-family: MJXZERO, MJXTEX-B;
+}
+
+.TEX-I {
+  font-family: MJXZERO, MJXTEX-I;
+}
+
+.TEX-MI {
+  font-family: MJXZERO, MJXTEX-MI;
+}
+
+.TEX-BI {
+  font-family: MJXZERO, MJXTEX-BI;
+}
+
+.TEX-S1 {
+  font-family: MJXZERO, MJXTEX-S1;
+}
+
+.TEX-S2 {
+  font-family: MJXZERO, MJXTEX-S2;
+}
+
+.TEX-S3 {
+  font-family: MJXZERO, MJXTEX-S3;
+}
+
+.TEX-S4 {
+  font-family: MJXZERO, MJXTEX-S4;
+}
+
+.TEX-A {
+  font-family: MJXZERO, MJXTEX-A;
+}
+
+.TEX-C {
+  font-family: MJXZERO, MJXTEX-C;
+}
+
+.TEX-CB {
+  font-family: MJXZERO, MJXTEX-CB;
+}
+
+.TEX-FR {
+  font-family: MJXZERO, MJXTEX-FR;
+}
+
+.TEX-FRB {
+  font-family: MJXZERO, MJXTEX-FRB;
+}
+
+.TEX-SS {
+  font-family: MJXZERO, MJXTEX-SS;
+}
+
+.TEX-SSB {
+  font-family: MJXZERO, MJXTEX-SSB;
+}
+
+.TEX-SSI {
+  font-family: MJXZERO, MJXTEX-SSI;
+}
+
+.TEX-SC {
+  font-family: MJXZERO, MJXTEX-SC;
+}
+
+.TEX-T {
+  font-family: MJXZERO, MJXTEX-T;
+}
+
+.TEX-V {
+  font-family: MJXZERO, MJXTEX-V;
+}
+
+.TEX-VB {
+  font-family: MJXZERO, MJXTEX-VB;
+}
+
+mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
+  font-family: MJXZERO, MJXTEX-S1, MJXTEX-S4, MJXTEX, MJXTEX-A ! important;
+}
+
+@font-face /* 0 */ {
+  font-family: MJXZERO;
+  src: url("https://icpc.vnoi.info/static/vnoj/mathjax/output/chtml/fonts/woff-v2/MathJax_Zero.woff") format("woff");
+}
+
+@font-face /* 1 */ {
+  font-family: MJXTEX;
+  src: url("https://icpc.vnoi.info/static/vnoj/mathjax/output/chtml/fonts/woff-v2/MathJax_Main-Regular.woff") format("woff");
+}
+
+@font-face /* 2 */ {
+  font-family: MJXTEX-B;
+  src: url("https://icpc.vnoi.info/static/vnoj/mathjax/output/chtml/fonts/woff-v2/MathJax_Main-Bold.woff") format("woff");
+}
+
+@font-face /* 3 */ {
+  font-family: MJXTEX-I;
+  src: url("https://icpc.vnoi.info/static/vnoj/mathjax/output/chtml/fonts/woff-v2/MathJax_Math-Italic.woff") format("woff");
+}
+
+@font-face /* 4 */ {
+  font-family: MJXTEX-MI;
+  src: url("https://icpc.vnoi.info/static/vnoj/mathjax/output/chtml/fonts/woff-v2/MathJax_Main-Italic.woff") format("woff");
+}
+
+@font-face /* 5 */ {
+  font-family: MJXTEX-BI;
+  src: url("https://icpc.vnoi.info/static/vnoj/mathjax/output/chtml/fonts/woff-v2/MathJax_Math-BoldItalic.woff") format("woff");
+}
+
+@font-face /* 6 */ {
+  font-family: MJXTEX-S1;
+  src: url("https://icpc.vnoi.info/static/vnoj/mathjax/output/chtml/fonts/woff-v2/MathJax_Size1-Regular.woff") format("woff");
+}
+
+@font-face /* 7 */ {
+  font-family: MJXTEX-S2;
+  src: url("https://icpc.vnoi.info/static/vnoj/mathjax/output/chtml/fonts/woff-v2/MathJax_Size2-Regular.woff") format("woff");
+}
+
+@font-face /* 8 */ {
+  font-family: MJXTEX-S3;
+  src: url("https://icpc.vnoi.info/static/vnoj/mathjax/output/chtml/fonts/woff-v2/MathJax_Size3-Regular.woff") format("woff");
+}
+
+@font-face /* 9 */ {
+  font-family: MJXTEX-S4;
+  src: url("https://icpc.vnoi.info/static/vnoj/mathjax/output/chtml/fonts/woff-v2/MathJax_Size4-Regular.woff") format("woff");
+}
+
+@font-face /* 10 */ {
+  font-family: MJXTEX-A;
+  src: url("https://icpc.vnoi.info/static/vnoj/mathjax/output/chtml/fonts/woff-v2/MathJax_AMS-Regular.woff") format("woff");
+}
+
+@font-face /* 11 */ {
+  font-family: MJXTEX-C;
+  src: url("https://icpc.vnoi.info/static/vnoj/mathjax/output/chtml/fonts/woff-v2/MathJax_Calligraphic-Regular.woff") format("woff");
+}
+
+@font-face /* 12 */ {
+  font-family: MJXTEX-CB;
+  src: url("https://icpc.vnoi.info/static/vnoj/mathjax/output/chtml/fonts/woff-v2/MathJax_Calligraphic-Bold.woff") format("woff");
+}
+
+@font-face /* 13 */ {
+  font-family: MJXTEX-FR;
+  src: url("https://icpc.vnoi.info/static/vnoj/mathjax/output/chtml/fonts/woff-v2/MathJax_Fraktur-Regular.woff") format("woff");
+}
+
+@font-face /* 14 */ {
+  font-family: MJXTEX-FRB;
+  src: url("https://icpc.vnoi.info/static/vnoj/mathjax/output/chtml/fonts/woff-v2/MathJax_Fraktur-Bold.woff") format("woff");
+}
+
+@font-face /* 15 */ {
+  font-family: MJXTEX-SS;
+  src: url("https://icpc.vnoi.info/static/vnoj/mathjax/output/chtml/fonts/woff-v2/MathJax_SansSerif-Regular.woff") format("woff");
+}
+
+@font-face /* 16 */ {
+  font-family: MJXTEX-SSB;
+  src: url("https://icpc.vnoi.info/static/vnoj/mathjax/output/chtml/fonts/woff-v2/MathJax_SansSerif-Bold.woff") format("woff");
+}
+
+@font-face /* 17 */ {
+  font-family: MJXTEX-SSI;
+  src: url("https://icpc.vnoi.info/static/vnoj/mathjax/output/chtml/fonts/woff-v2/MathJax_SansSerif-Italic.woff") format("woff");
+}
+
+@font-face /* 18 */ {
+  font-family: MJXTEX-SC;
+  src: url("https://icpc.vnoi.info/static/vnoj/mathjax/output/chtml/fonts/woff-v2/MathJax_Script-Regular.woff") format("woff");
+}
+
+@font-face /* 19 */ {
+  font-family: MJXTEX-T;
+  src: url("https://icpc.vnoi.info/static/vnoj/mathjax/output/chtml/fonts/woff-v2/MathJax_Typewriter-Regular.woff") format("woff");
+}
+
+@font-face /* 20 */ {
+  font-family: MJXTEX-V;
+  src: url("https://icpc.vnoi.info/static/vnoj/mathjax/output/chtml/fonts/woff-v2/MathJax_Vector-Regular.woff") format("woff");
+}
+
+@font-face /* 21 */ {
+  font-family: MJXTEX-VB;
+  src: url("https://icpc.vnoi.info/static/vnoj/mathjax/output/chtml/fonts/woff-v2/MathJax_Vector-Bold.woff") format("woff");
+}
+</style></head>
+<body class="window-visible">
+<svg width="0" height="0" style="display: block">
+    <defs>
+        <clippath id="rating-clip"><circle cx="8" cy="8" r="7"></circle></clippath>
+    </defs>
+</svg>
+<nav id="navigation" class="unselectable">
+    <div id="nav-container">
+        <a id="navicon" href="javascript:void(0)"><i class="fa fa-bars"></i></a>
+        <ul id="nav-list">
+                <li class="home-nav-element"><a href="https://icpc.vnoi.info/">    <img src="./scoreboard-hsgs_files/logo.svg" alt="VNOJ" width="130" height="40" onerror="this.src=&quot;/static/icons/logo.png&quot;; this.onerror=null" style="border: none; padding-top: 4px">
+</a></li>
+                <li class="home-nav-element"><span class="nav-divider"></span></li>
+                <li class="home-menu-item"><a href="https://icpc.vnoi.info/" class="nav-home">Home</a></li>
+                    <li>
+                        <a href="https://icpc.vnoi.info/contests/" class="nav-contest active">
+                            Contests
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://icpc.vnoi.info/about/" class="nav-about">
+                            About
+                                <div class="nav-expand">&gt;</div>
+                        </a>
+<ul>                    <li>
+                        <a href="https://icpc.vnoi.info/status/" class="nav-status">
+                            Judges
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/VNOI-Admin/OJ" class="nav-github">
+                            Github
+                        </a>
+                    </li>
+</ul>                    </li>
+        </ul>
+
+        <span id="user-links">
+
+            <a href="https://icpc.vnoi.info/tickets/new?issue_url=http%3A//icpc.vnoi.info/contest/hsgs_icpc/ranking/" style="margin-right: 5px;">
+                <span title="Report issue">
+                    <i class="fa fa-exclamation-triangle" style="color: yellow;"></i>
+                </span>
+            </a>
+            <a id="flag_vi" href="https://icpc.vnoi.info/contest/hsgs_icpc/ranking/#" onclick="submmit_language(&#39;vi&#39;)" style="margin-right: 5px; margin-top: 4px;">
+                <img src="./scoreboard-hsgs_files/vi_flag.svg" alt="VI" height="24">
+            </a>
+            <a id="flag_en" href="https://icpc.vnoi.info/contest/hsgs_icpc/ranking/#" onclick="submmit_language(&#39;en&#39;)" style="margin-right: 5px; margin-top: 4px;">
+                <img src="./scoreboard-hsgs_files/gb_flag.svg" alt="EN" height="24">
+            </a>
+                <span class="anon">
+                    <a href="https://icpc.vnoi.info/accounts/login/?next=/contest/hsgs_icpc/ranking/"><b>Log in</b></a>
+                    &nbsp;or&nbsp;
+                    <a href="https://icpc.vnoi.info/accounts/register/"><b>Sign up</b></a>
+                </span>
+        </span>
+    </div>
+    <div id="nav-shadow"></div>
+</nav>
+<div id="page-container">
+    <noscript>
+        <div id="noscript">This site works best with JavaScript enabled.</div>
+    </noscript>
+    <br>
+    <main id="content">
+
+<div class="tabs">
+        <h2>[HSGS] The 2024 ICPC Asia Hanoi Regional Contest</h2>
+    <ul>
+        <li class="tab"><a href="https://icpc.vnoi.info/contest/hsgs_icpc"><i class="tab-icon fa fa-info-circle"></i> Info</a></li>
+
+            <li class="tab"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/stats"><i class="tab-icon fa fa-pie-chart"></i> Statistics</a></li>
+
+
+                <li class="tab active"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/ranking/"><i class="tab-icon fa fa-bar-chart"></i> Rankings</a></li>
+
+            <li class="tab"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/"><i class="tab-icon fa fa-bar-chart"></i> Submissions</a></li>
+
+
+    </ul>
+</div>        <div id="content-body">    
+    <div id="common-content">
+        <div id="content-left" class="users">
+    <div style="margin-bottom: 1.25em">
+            <div id="org-dropdown-check-list">
+                <button id="filter-by-organization-button" class="inline-button">
+                    <i class="tab-icon fa fa-filter"></i>
+                    <b>Filter</b>
+                </button>
+
+                <div id="org-check-list-wrapper">
+                    <div style="margin-bottom: 30px;">
+                        <button id="apply-organization-filter" class="inline-button filter-checklist-button">Apply</button>
+                        <button id="clear-organization-filter" class="inline-button filter-checklist-button">Clear</button>
+                    </div>
+                    <div style="display: flex; gap: 2em;">
+                        <select id="org-check-list" name="orgs[]" multiple="" tabindex="-1" class="select2-hidden-accessible" aria-hidden="true"><option value="THPT Chuyên Amsterdam Hà Nội">THPT Chuyên Amsterdam Hà Nội</option><option value="THPT Chuyên Hoàng Lê Kha Tây Ninh">THPT Chuyên Hoàng Lê Kha Tây Ninh</option><option value="THPT Chuyên Hà Tĩnh">THPT Chuyên Hà Tĩnh</option><option value="THPT Chuyên Hùng Vương Bình Dương">THPT Chuyên Hùng Vương Bình Dương</option><option value="THPT Chuyên Hạ Long Quảng Ninh">THPT Chuyên Hạ Long Quảng Ninh</option><option value="THPT Chuyên Khoa học Tự nhiên Đại học Quốc gia Hà Nội">THPT Chuyên Khoa học Tự nhiên Đại học Quốc gia Hà Nội</option><option value="THPT Chuyên Lào Cai">THPT Chuyên Lào Cai</option><option value="THPT Chuyên Lê Hồng Phong Nam Định">THPT Chuyên Lê Hồng Phong Nam Định</option><option value="THPT Chuyên Lê Hồng Phong Thành phố Hồ Chí Minh">THPT Chuyên Lê Hồng Phong Thành phố Hồ Chí Minh</option><option value="THPT Chuyên Lê Quý Đôn Bình Định">THPT Chuyên Lê Quý Đôn Bình Định</option><option value="THPT Chuyên Lê Quý Đôn Đà Nẵng">THPT Chuyên Lê Quý Đôn Đà Nẵng</option><option value="THPT Chuyên Lê Thánh Tông Quảng Nam">THPT Chuyên Lê Thánh Tông Quảng Nam</option><option value="THPT Chuyên Nguyễn Huệ Hà Nội">THPT Chuyên Nguyễn Huệ Hà Nội</option><option value="THPT Chuyên Sư phạm Hà Nội">THPT Chuyên Sư phạm Hà Nội</option><option value="THPT Chuyên Thăng Long Đà Lạt">THPT Chuyên Thăng Long Đà Lạt</option><option value="THPT Chuyên Trần Phú Hải Phòng">THPT Chuyên Trần Phú Hải Phòng</option><option value="THPT Chuyên Trần Đại Nghĩa Thành phố Hồ Chí Minh">THPT Chuyên Trần Đại Nghĩa Thành phố Hồ Chí Minh</option><option value="THPT Chuyên Đại học Quốc Gia Thành phố Hồ Chí Minh">THPT Chuyên Đại học Quốc Gia Thành phố Hồ Chí Minh</option><option value="THPT Gia Định Thành phố Hồ Chí Minh">THPT Gia Định Thành phố Hồ Chí Minh</option><option value="Trường THPT Chi Lăng Gia Lai">Trường THPT Chi Lăng Gia Lai</option><option value="Other">Other</option></select><span class="select2 select2-container select2-container--dmoj" dir="ltr" style="width: auto;"><span class="selection"><span class="select2-selection select2-selection--multiple" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="-1"><ul class="select2-selection__rendered"><li class="select2-search select2-search--inline"><input class="select2-search__field" type="search" tabindex="0" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" role="textbox" aria-autocomplete="list" placeholder="Search organizations" style="width: 260px;"></li></ul></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                        <select id="tag-check-list" name="tags[]" multiple="" tabindex="-1" class="select2-hidden-accessible" aria-hidden="true"></select><span class="select2 select2-container select2-container--dmoj" dir="ltr" style="width: auto;"><span class="selection"><span class="select2-selection select2-selection--multiple" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="-1"><ul class="select2-selection__rendered"><li class="select2-search select2-search--inline"><input class="select2-search__field" type="search" tabindex="0" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" role="textbox" aria-autocomplete="list" placeholder="Filter by tag" style="width: 260px;"></li></ul></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                    </div>
+                </div>
+            </div>
+            <input id="show-personal-info-checkbox" type="checkbox" style="vertical-align: bottom">
+            <label for="show-personal-info-checkbox" style="vertical-align: bottom">Show full name/organization</label>
+            <input id="show-virtual-participations-checkbox" type="checkbox" style="vertical-align: bottom">
+            <label for="show-virtual-participations-checkbox" style="vertical-align: bottom">Show virtual participations</label>
+    </div>
+
+            <div class="h-scrollable-table">
+    <table id="ranking-table" class="users-table table striped"><thead><tr><th class="header rank" style="width: 5%;">Rank</th><th class="header username">Username</th><th class="header points">Points</th><th class="penalty">Penalty</th><th class="points header"><a href="https://icpc.vnoi.info/problem/icpc_a">A            <div class="problem-code" style="display: none;">icpc_a</div></a></th><th class="points header"><a href="https://icpc.vnoi.info/problem/icpc_b">B            <div class="problem-code" style="display: none;">icpc_b</div></a></th><th class="points header"><a href="https://icpc.vnoi.info/problem/icpc_c">C            <div class="problem-code" style="display: none;">icpc_c</div></a></th><th class="points header"><a href="https://icpc.vnoi.info/problem/icpc_d">D            <div class="problem-code" style="display: none;">icpc_d</div></a></th><th class="points header"><a href="https://icpc.vnoi.info/problem/icpc_e">E            <div class="problem-code" style="display: none;">icpc_e</div></a></th><th class="points header"><a href="https://icpc.vnoi.info/problem/icpc_f">F            <div class="problem-code" style="display: none;">icpc_f</div></a></th><th class="points header"><a href="https://icpc.vnoi.info/problem/icpc_g">G            <div class="problem-code" style="display: none;">icpc_g</div></a></th><th class="points header"><a href="https://icpc.vnoi.info/problem/icpc_h">H            <div class="problem-code" style="display: none;">icpc_h</div></a></th><th class="points header"><a href="https://icpc.vnoi.info/problem/icpc_i">I            <div class="problem-code" style="display: none;">icpc_i</div></a></th><th class="points header"><a href="https://icpc.vnoi.info/problem/icpc_j">J            <div class="problem-code" style="display: none;">icpc_j</div></a></th><th class="points header"><a href="https://icpc.vnoi.info/problem/icpc_k">K            <div class="problem-code" style="display: none;">icpc_k</div></a></th><th class="points header"><a href="https://icpc.vnoi.info/problem/icpc_l">L            <div class="problem-code" style="display: none;">icpc_l</div></a></th><th class="points header"><a href="https://icpc.vnoi.info/problem/icpc_m">M            <div class="problem-code" style="display: none;">icpc_m</div></a></th></tr></thead><tbody><tr id="user-hsgs_hn19"><td class="gold-medal">1</td><td class="user-name"><div class="info-container"><div style="float:left"><i class="fav-button fa fa-heart fa-heart-o" aria-hidden="true"></i><span data-user-tag="None" class="rating rate-none user"><a href="https://icpc.vnoi.info/user/hsgs_hn19" style="display: inline-block;">Ring</a></span><div class="personal-info" style="display: block;"><span style="font-weight: 600; color: gray;"></span></div></div><div style="float:right"><div class="personal-info" style="text-align: right; display: block;"><span class="organization"><a href="https://icpc.vnoi.info/organization/olp768233896"><img class="uni-logo" src="https://icpc.vnoi.info/contest/hsgs_icpc/ranking/" style="display: none;"><p class="">THPT Chuyên Khoa học Tự nhiên Đại học Quốc gia Hà Nội</p></a></span></div></div></div></td><td class="user-points"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn19/">11</a></td><td class="user-penalty">1412</td><td></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn19/icpc_b/"><div class="solving-time-minute">200</div><div class="solving-time">03:20:16</div>1 try</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn19/icpc_c/"><div class="solving-time-minute">6</div><div class="solving-time">00:06:04</div>1 try</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn19/icpc_d/"><div class="solving-time-minute">21</div><div class="solving-time">00:21:05</div>4 tries</a></td><td class="failed-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn19/icpc_e/">3 tries</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn19/icpc_f/"><div class="solving-time-minute">29</div><div class="solving-time">00:29:50</div>2 tries</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn19/icpc_g/"><div class="solving-time-minute">3</div><div class="solving-time">00:03:18</div>1 try</a></td><td class="first-solve full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn19/icpc_h/"><div class="solving-time-minute">231</div><div class="solving-time">03:51:01</div>2 tries</a></td><td class="first-solve full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn19/icpc_i/"><div class="solving-time-minute">164</div><div class="solving-time">02:44:02</div>1 try</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn19/icpc_j/"><div class="solving-time-minute">271</div><div class="solving-time">04:31:17</div>1 try</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn19/icpc_k/"><div class="solving-time-minute">150</div><div class="solving-time">02:30:06</div>1 try</a></td><td class="first-solve full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn19/icpc_l/"><div class="solving-time-minute">41</div><div class="solving-time">00:41:36</div>2 tries</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn19/icpc_m/"><div class="solving-time-minute">136</div><div class="solving-time">02:16:26</div>3 tries</a></td></tr><tr id="user-hsgs_hn11"><td class="gold-medal">2</td><td class="user-name"><div class="info-container"><div style="float:left"><i class="fav-button fa fa-heart fa-heart-o" aria-hidden="true"></i><span data-user-tag="None" class="rating rate-none user"><a href="https://icpc.vnoi.info/user/hsgs_hn11" style="display: inline-block;">ND.LHP.J97Fanclub</a></span><div class="personal-info" style="display: block;"><span style="font-weight: 600; color: gray;"></span></div></div><div style="float:right"><div class="personal-info" style="text-align: right; display: block;"><span class="organization"><a href="https://icpc.vnoi.info/organization/olp896126864"><img class="uni-logo" src="https://icpc.vnoi.info/contest/hsgs_icpc/ranking/" style="display: none;"><p class="">THPT Chuyên Lê Hồng Phong Nam Định</p></a></span></div></div></div></td><td class="user-points"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn11/">9</a></td><td class="user-penalty">1024</td><td></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn11/icpc_b/"><div class="solving-time-minute">266</div><div class="solving-time">04:26:41</div>1 try</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn11/icpc_c/"><div class="solving-time-minute">7</div><div class="solving-time">00:07:15</div>1 try</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn11/icpc_d/"><div class="solving-time-minute">50</div><div class="solving-time">00:50:44</div>2 tries</a></td><td></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn11/icpc_f/"><div class="solving-time-minute">27</div><div class="solving-time">00:27:47</div>3 tries</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn11/icpc_g/"><div class="solving-time-minute">10</div><div class="solving-time">00:10:39</div>1 try</a></td><td></td><td></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn11/icpc_j/"><div class="solving-time-minute">165</div><div class="solving-time">02:45:06</div>1 try</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn11/icpc_k/"><div class="solving-time-minute">219</div><div class="solving-time">03:39:09</div>1 try</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn11/icpc_l/"><div class="solving-time-minute">79</div><div class="solving-time">01:19:01</div>1 try</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn11/icpc_m/"><div class="solving-time-minute">121</div><div class="solving-time">02:01:15</div>2 tries</a></td></tr><tr id="user-hsgs_hn18"><td>3</td><td class="user-name"><div class="info-container"><div style="float:left"><i class="fav-button fa fa-heart fa-heart-o" aria-hidden="true"></i><span data-user-tag="None" class="rating rate-none user"><a href="https://icpc.vnoi.info/user/hsgs_hn18" style="display: inline-block;">Matroid</a></span><div class="personal-info" style="display: block;"><span style="font-weight: 600; color: gray;"></span></div></div><div style="float:right"><div class="personal-info" style="text-align: right; display: block;"><span class="organization"><a href="https://icpc.vnoi.info/organization/olp768233896"><img class="uni-logo" src="https://icpc.vnoi.info/contest/hsgs_icpc/ranking/" style="display: none;"><p class="">THPT Chuyên Khoa học Tự nhiên Đại học Quốc gia Hà Nội</p></a></span></div></div></div></td><td class="user-points"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn18/">8</a></td><td class="user-penalty">487</td><td class="failed-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn18/icpc_a/">5 tries</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn18/icpc_b/"><div class="solving-time-minute">191</div><div class="solving-time">03:11:38</div>1 try</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn18/icpc_c/"><div class="solving-time-minute">20</div><div class="solving-time">00:20:58</div>1 try</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn18/icpc_d/"><div class="solving-time-minute">29</div><div class="solving-time">00:29:11</div>1 try</a></td><td class="failed-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn18/icpc_e/">3 tries</a></td><td class="first-solve full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn18/icpc_f/"><div class="solving-time-minute">10</div><div class="solving-time">00:10:47</div>1 try</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn18/icpc_g/"><div class="solving-time-minute">2</div><div class="solving-time">00:02:54</div>1 try</a></td><td></td><td></td><td class="first-solve full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn18/icpc_j/"><div class="solving-time-minute">84</div><div class="solving-time">01:24:37</div>1 try</a></td><td class="failed-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn18/icpc_k/">2 tries</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn18/icpc_l/"><div class="solving-time-minute">91</div><div class="solving-time">01:31:50</div>1 try</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn18/icpc_m/"><div class="solving-time-minute">60</div><div class="solving-time">01:00:19</div>1 try</a></td></tr><tr id="user-hsgs_dn01"><td class="gold-medal">4</td><td class="user-name"><div class="info-container"><div style="float:left"><i class="fav-button fa fa-heart fa-heart-o" aria-hidden="true"></i><span data-user-tag="None" class="rating rate-none user"><a href="https://icpc.vnoi.info/user/hsgs_dn01" style="display: inline-block;">LQDBinhDinh_TTD the next generation</a></span><div class="personal-info" style="display: block;"><span style="font-weight: 600; color: gray;"></span></div></div><div style="float:right"><div class="personal-info" style="text-align: right; display: block;"><span class="organization"><a href="https://icpc.vnoi.info/organization/olp382287506"><img class="uni-logo" src="https://icpc.vnoi.info/contest/hsgs_icpc/ranking/" style="display: none;"><p class="">THPT Chuyên Lê Quý Đôn Bình Định</p></a></span></div></div></div></td><td class="user-points"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_dn01/">8</a></td><td class="user-penalty">615</td><td></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_dn01/icpc_b/"><div class="solving-time-minute">222</div><div class="solving-time">03:42:02</div>3 tries</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_dn01/icpc_c/"><div class="solving-time-minute">6</div><div class="solving-time">00:06:48</div>1 try</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_dn01/icpc_d/"><div class="solving-time-minute">15</div><div class="solving-time">00:15:43</div>1 try</a></td><td></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_dn01/icpc_f/"><div class="solving-time-minute">27</div><div class="solving-time">00:27:37</div>1 try</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_dn01/icpc_g/"><div class="solving-time-minute">9</div><div class="solving-time">00:09:41</div>1 try</a></td><td></td><td></td><td class="failed-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_dn01/icpc_j/">1 try</a></td><td class="first-solve full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_dn01/icpc_k/"><div class="solving-time-minute">80</div><div class="solving-time">01:20:22</div>1 try</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_dn01/icpc_l/"><div class="solving-time-minute">72</div><div class="solving-time">01:12:04</div>1 try</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_dn01/icpc_m/"><div class="solving-time-minute">124</div><div class="solving-time">02:04:48</div>2 tries</a></td></tr><tr id="user-hsgs_dn06"><td class="gold-medal">5</td><td class="user-name"><div class="info-container"><div style="float:left"><i class="fav-button fa fa-heart fa-heart-o" aria-hidden="true"></i><span data-user-tag="None" class="rating rate-none user"><a href="https://icpc.vnoi.info/user/hsgs_dn06" style="display: inline-block;">98101116565656</a></span><div class="personal-info" style="display: block;"><span style="font-weight: 600; color: gray;"></span></div></div><div style="float:right"><div class="personal-info" style="text-align: right; display: block;"><span class="organization"><a href="https://icpc.vnoi.info/organization/olp468427237"><img class="uni-logo" src="https://icpc.vnoi.info/contest/hsgs_icpc/ranking/" style="display: none;"><p class="">THPT Chuyên Thăng Long Đà Lạt</p></a></span></div></div></div></td><td class="user-points"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_dn06/">8</a></td><td class="user-penalty">699</td><td></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_dn06/icpc_b/"><div class="solving-time-minute">209</div><div class="solving-time">03:29:24</div>1 try</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_dn06/icpc_c/"><div class="solving-time-minute">20</div><div class="solving-time">00:20:55</div>1 try</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_dn06/icpc_d/"><div class="solving-time-minute">27</div><div class="solving-time">00:27:17</div>1 try</a></td><td></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_dn06/icpc_f/"><div class="solving-time-minute">18</div><div class="solving-time">00:18:56</div>2 tries</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_dn06/icpc_g/"><div class="solving-time-minute">12</div><div class="solving-time">00:12:02</div>1 try</a></td><td></td><td></td><td class="failed-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_dn06/icpc_j/">1 try</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_dn06/icpc_k/"><div class="solving-time-minute">159</div><div class="solving-time">02:39:05</div>2 tries</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_dn06/icpc_l/"><div class="solving-time-minute">47</div><div class="solving-time">00:47:14</div>1 try</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_dn06/icpc_m/"><div class="solving-time-minute">147</div><div class="solving-time">02:27:36</div>2 tries</a></td></tr><tr id="user-hsgs_hn20"><td>6</td><td class="user-name"><div class="info-container"><div style="float:left"><i class="fav-button fa fa-heart fa-heart-o" aria-hidden="true"></i><span data-user-tag="None" class="rating rate-none user"><a href="https://icpc.vnoi.info/user/hsgs_hn20" style="display: inline-block;">Set</a></span><div class="personal-info" style="display: block;"><span style="font-weight: 600; color: gray;"></span></div></div><div style="float:right"><div class="personal-info" style="text-align: right; display: block;"><span class="organization"><a href="https://icpc.vnoi.info/organization/olp768233896"><img class="uni-logo" src="https://icpc.vnoi.info/contest/hsgs_icpc/ranking/" style="display: none;"><p class="">THPT Chuyên Khoa học Tự nhiên Đại học Quốc gia Hà Nội</p></a></span></div></div></div></td><td class="user-points"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn20/">8</a></td><td class="user-penalty">935</td><td></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn20/icpc_b/"><div class="solving-time-minute">212</div><div class="solving-time">03:32:12</div>4 tries</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn20/icpc_c/"><div class="solving-time-minute">27</div><div class="solving-time">00:27:31</div>2 tries</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn20/icpc_d/"><div class="solving-time-minute">50</div><div class="solving-time">00:50:38</div>4 tries</a></td><td class="failed-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn20/icpc_e/">2 tries</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn20/icpc_f/"><div class="solving-time-minute">23</div><div class="solving-time">00:23:56</div>4 tries</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn20/icpc_g/"><div class="solving-time-minute">29</div><div class="solving-time">00:29:15</div>1 try</a></td><td></td><td></td><td></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn20/icpc_k/"><div class="solving-time-minute">206</div><div class="solving-time">03:26:08</div>1 try</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn20/icpc_l/"><div class="solving-time-minute">82</div><div class="solving-time">01:22:26</div>1 try</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn20/icpc_m/"><div class="solving-time-minute">106</div><div class="solving-time">01:46:00</div>1 try</a></td></tr><tr id="user-hsgs_hcm10"><td class="silver-medal">7</td><td class="user-name"><div class="info-container"><div style="float:left"><i class="fav-button fa fa-heart fa-heart-o" aria-hidden="true"></i><span data-user-tag="None" class="rating rate-none user"><a href="https://icpc.vnoi.info/user/hsgs_hcm10" style="display: inline-block;">iCiBiDi</a></span><div class="personal-info" style="display: block;"><span style="font-weight: 600; color: gray;"></span></div></div><div style="float:right"><div class="personal-info" style="text-align: right; display: block;"><span class="organization"><a href="https://icpc.vnoi.info/organization/olp438588847"><img class="uni-logo" src="https://icpc.vnoi.info/contest/hsgs_icpc/ranking/" style="display: none;"><p class="">THPT Gia Định Thành phố Hồ Chí Minh</p></a></span></div></div></div></td><td class="user-points"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hcm10/">8</a></td><td class="user-penalty">943</td><td></td><td class="first-solve full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hcm10/icpc_b/"><div class="solving-time-minute">103</div><div class="solving-time">01:43:21</div>1 try</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hcm10/icpc_c/"><div class="solving-time-minute">26</div><div class="solving-time">00:26:40</div>1 try</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hcm10/icpc_d/"><div class="solving-time-minute">43</div><div class="solving-time">00:43:46</div>1 try</a></td><td></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hcm10/icpc_f/"><div class="solving-time-minute">20</div><div class="solving-time">00:20:28</div>2 tries</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hcm10/icpc_g/"><div class="solving-time-minute">8</div><div class="solving-time">00:08:09</div>1 try</a></td><td></td><td></td><td></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hcm10/icpc_k/"><div class="solving-time-minute">295</div><div class="solving-time">04:55:45</div>3 tries</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hcm10/icpc_l/"><div class="solving-time-minute">141</div><div class="solving-time">02:21:40</div>2 tries</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hcm10/icpc_m/"><div class="solving-time-minute">227</div><div class="solving-time">03:47:16</div>1 try</a></td></tr><tr id="user-hsgs_hn12"><td class="silver-medal">8</td><td class="user-name"><div class="info-container"><div style="float:left"><i class="fav-button fa fa-heart fa-heart-o" aria-hidden="true"></i><span data-user-tag="None" class="rating rate-none user"><a href="https://icpc.vnoi.info/user/hsgs_hn12" style="display: inline-block;">LQDDN.InscribedQuadrilateral</a></span><div class="personal-info" style="display: block;"><span style="font-weight: 600; color: gray;"></span></div></div><div style="float:right"><div class="personal-info" style="text-align: right; display: block;"><span class="organization"><a href="https://icpc.vnoi.info/organization/olp178318047"><img class="uni-logo" src="https://icpc.vnoi.info/contest/hsgs_icpc/ranking/" style="display: none;"><p class="">THPT Chuyên Lê Quý Đôn Đà Nẵng</p></a></span></div></div></div></td><td class="user-points"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn12/">8</a></td><td class="user-penalty">1079</td><td></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn12/icpc_b/"><div class="solving-time-minute">268</div><div class="solving-time">04:28:05</div>3 tries</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn12/icpc_c/"><div class="solving-time-minute">10</div><div class="solving-time">00:10:43</div>2 tries</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn12/icpc_d/"><div class="solving-time-minute">53</div><div class="solving-time">00:53:46</div>2 tries</a></td><td></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn12/icpc_f/"><div class="solving-time-minute">24</div><div class="solving-time">00:24:54</div>2 tries</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn12/icpc_g/"><div class="solving-time-minute">3</div><div class="solving-time">00:03:04</div>1 try</a></td><td></td><td class="failed-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn12/icpc_i/">1 try</a></td><td></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn12/icpc_k/"><div class="solving-time-minute">202</div><div class="solving-time">03:22:08</div>5 tries</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn12/icpc_l/"><div class="solving-time-minute">97</div><div class="solving-time">01:37:54</div>1 try</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn12/icpc_m/"><div class="solving-time-minute">162</div><div class="solving-time">02:42:39</div>5 tries</a></td></tr><tr id="user-hsgs_dn04"><td>9</td><td class="user-name"><div class="info-container"><div style="float:left"><i class="fav-button fa fa-heart fa-heart-o" aria-hidden="true"></i><span data-user-tag="None" class="rating rate-none user"><a href="https://icpc.vnoi.info/user/hsgs_dn04" style="display: inline-block;">LQDDN.SayGex</a></span><div class="personal-info" style="display: block;"><span style="font-weight: 600; color: gray;"></span></div></div><div style="float:right"><div class="personal-info" style="text-align: right; display: block;"><span class="organization"><a href="https://icpc.vnoi.info/organization/olp178318047"><img class="uni-logo" src="https://icpc.vnoi.info/contest/hsgs_icpc/ranking/" style="display: none;"><p class="">THPT Chuyên Lê Quý Đôn Đà Nẵng</p></a></span></div></div></div></td><td class="user-points"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_dn04/">7</a></td><td class="user-penalty">518</td><td></td><td></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_dn04/icpc_c/"><div class="solving-time-minute">11</div><div class="solving-time">00:11:43</div>1 try</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_dn04/icpc_d/"><div class="solving-time-minute">25</div><div class="solving-time">00:25:37</div>1 try</a></td><td class="failed-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_dn04/icpc_e/">1 try</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_dn04/icpc_f/"><div class="solving-time-minute">18</div><div class="solving-time">00:18:50</div>4 tries</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_dn04/icpc_g/"><div class="solving-time-minute">5</div><div class="solving-time">00:05:32</div>1 try</a></td><td></td><td></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_dn04/icpc_j/"><div class="solving-time-minute">184</div><div class="solving-time">03:04:30</div>1 try</a></td><td class="failed-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_dn04/icpc_k/">10 tries</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_dn04/icpc_l/"><div class="solving-time-minute">92</div><div class="solving-time">01:32:16</div>1 try</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_dn04/icpc_m/"><div class="solving-time-minute">123</div><div class="solving-time">02:03:44</div>1 try</a></td></tr><tr id="user-hsgs_dn03"><td>10</td><td class="user-name"><div class="info-container"><div style="float:left"><i class="fav-button fa fa-heart fa-heart-o" aria-hidden="true"></i><span data-user-tag="None" class="rating rate-none user"><a href="https://icpc.vnoi.info/user/hsgs_dn03" style="display: inline-block;">LQDDN.NxM</a></span><div class="personal-info" style="display: block;"><span style="font-weight: 600; color: gray;"></span></div></div><div style="float:right"><div class="personal-info" style="text-align: right; display: block;"><span class="organization"><a href="https://icpc.vnoi.info/organization/olp178318047"><img class="uni-logo" src="https://icpc.vnoi.info/contest/hsgs_icpc/ranking/" style="display: none;"><p class="">THPT Chuyên Lê Quý Đôn Đà Nẵng</p></a></span></div></div></div></td><td class="user-points"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_dn03/">7</a></td><td class="user-penalty">671</td><td></td><td class="failed-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_dn03/icpc_b/">5 tries</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_dn03/icpc_c/"><div class="solving-time-minute">15</div><div class="solving-time">00:15:33</div>1 try</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_dn03/icpc_d/"><div class="solving-time-minute">37</div><div class="solving-time">00:37:16</div>2 tries</a></td><td></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_dn03/icpc_f/"><div class="solving-time-minute">35</div><div class="solving-time">00:35:11</div>3 tries</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_dn03/icpc_g/"><div class="solving-time-minute">5</div><div class="solving-time">00:05:27</div>1 try</a></td><td></td><td></td><td class="failed-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_dn03/icpc_j/">2 tries</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_dn03/icpc_k/"><div class="solving-time-minute">181</div><div class="solving-time">03:01:07</div>8 tries</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_dn03/icpc_l/"><div class="solving-time-minute">80</div><div class="solving-time">01:20:10</div>1 try</a></td><td class="first-solve full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_dn03/icpc_m/"><div class="solving-time-minute">58</div><div class="solving-time">00:58:07</div>4 tries</a></td></tr><tr id="user-hsgs_hn17"><td class="silver-medal">11</td><td class="user-name"><div class="info-container"><div style="float:left"><i class="fav-button fa fa-heart fa-heart-o" aria-hidden="true"></i><span data-user-tag="None" class="rating rate-none user"><a href="https://icpc.vnoi.info/user/hsgs_hn17" style="display: inline-block;">PhatToNhuLai</a></span><div class="personal-info" style="display: block;"><span style="font-weight: 600; color: gray;"></span></div></div><div style="float:right"><div class="personal-info" style="text-align: right; display: block;"><span class="organization"><a href="https://icpc.vnoi.info/organization/olp993667958"><img class="uni-logo" src="https://icpc.vnoi.info/contest/hsgs_icpc/ranking/" style="display: none;"><p class="">THPT Chuyên Amsterdam Hà Nội</p></a></span></div></div></div></td><td class="user-points"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn17/">7</a></td><td class="user-penalty">773</td><td></td><td></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn17/icpc_c/"><div class="solving-time-minute">14</div><div class="solving-time">00:14:08</div>1 try</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn17/icpc_d/"><div class="solving-time-minute">48</div><div class="solving-time">00:48:35</div>2 tries</a></td><td></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn17/icpc_f/"><div class="solving-time-minute">22</div><div class="solving-time">00:22:59</div>1 try</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn17/icpc_g/"><div class="solving-time-minute">3</div><div class="solving-time">00:03:39</div>1 try</a></td><td></td><td></td><td></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn17/icpc_k/"><div class="solving-time-minute">263</div><div class="solving-time">04:23:06</div>5 tries</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn17/icpc_l/"><div class="solving-time-minute">91</div><div class="solving-time">01:31:31</div>1 try</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn17/icpc_m/"><div class="solving-time-minute">172</div><div class="solving-time">02:52:27</div>4 tries</a></td></tr><tr id="user-hsgs_hn13"><td class="silver-medal">12</td><td class="user-name"><div class="info-container"><div style="float:left"><i class="fav-button fa fa-heart fa-heart-o" aria-hidden="true"></i><span data-user-tag="None" class="rating rate-none user"><a href="https://icpc.vnoi.info/user/hsgs_hn13" style="display: inline-block;">FURINA</a></span><div class="personal-info" style="display: block;"><span style="font-weight: 600; color: gray;"></span></div></div><div style="float:right"><div class="personal-info" style="text-align: right; display: block;"><span class="organization"><a href="https://icpc.vnoi.info/organization/olp454839340"><img class="uni-logo" src="https://icpc.vnoi.info/contest/hsgs_icpc/ranking/" style="display: none;"><p class="">THPT Chuyên Hà Tĩnh</p></a></span></div></div></div></td><td class="user-points"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn13/">7</a></td><td class="user-penalty">849</td><td></td><td></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn13/icpc_c/"><div class="solving-time-minute">40</div><div class="solving-time">00:40:16</div>1 try</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn13/icpc_d/"><div class="solving-time-minute">67</div><div class="solving-time">01:07:48</div>3 tries</a></td><td></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn13/icpc_f/"><div class="solving-time-minute">78</div><div class="solving-time">01:18:35</div>1 try</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn13/icpc_g/"><div class="solving-time-minute">7</div><div class="solving-time">00:07:42</div>2 tries</a></td><td></td><td></td><td></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn13/icpc_k/"><div class="solving-time-minute">259</div><div class="solving-time">04:19:45</div>4 tries</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn13/icpc_l/"><div class="solving-time-minute">166</div><div class="solving-time">02:46:40</div>1 try</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn13/icpc_m/"><div class="solving-time-minute">112</div><div class="solving-time">01:52:04</div>1 try</a></td></tr><tr id="user-hsgs_dn02"><td class="bronze-medal">13</td><td class="user-name"><div class="info-container"><div style="float:left"><i class="fav-button fa fa-heart fa-heart-o" aria-hidden="true"></i><span data-user-tag="None" class="rating rate-none user"><a href="https://icpc.vnoi.info/user/hsgs_dn02" style="display: inline-block;">QN.LTT_Kiddo2k7</a></span><div class="personal-info" style="display: block;"><span style="font-weight: 600; color: gray;"></span></div></div><div style="float:right"><div class="personal-info" style="text-align: right; display: block;"><span class="organization"><a href="https://icpc.vnoi.info/organization/olp27925731"><img class="uni-logo" src="https://icpc.vnoi.info/contest/hsgs_icpc/ranking/" style="display: none;"><p class="">THPT Chuyên Lê Thánh Tông Quảng Nam</p></a></span></div></div></div></td><td class="user-points"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_dn02/">7</a></td><td class="user-penalty">936</td><td class="failed-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_dn02/icpc_a/">1 try</a></td><td></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_dn02/icpc_c/"><div class="solving-time-minute">23</div><div class="solving-time">00:23:12</div>2 tries</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_dn02/icpc_d/"><div class="solving-time-minute">43</div><div class="solving-time">00:43:02</div>4 tries</a></td><td></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_dn02/icpc_f/"><div class="solving-time-minute">54</div><div class="solving-time">00:54:28</div>3 tries</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_dn02/icpc_g/"><div class="solving-time-minute">10</div><div class="solving-time">00:10:35</div>1 try</a></td><td></td><td></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_dn02/icpc_j/"><div class="solving-time-minute">280</div><div class="solving-time">04:40:19</div>1 try</a></td><td></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_dn02/icpc_l/"><div class="solving-time-minute">140</div><div class="solving-time">02:20:15</div>2 tries</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_dn02/icpc_m/"><div class="solving-time-minute">166</div><div class="solving-time">02:46:05</div>5 tries</a></td></tr><tr id="user-hsgs_hn05"><td class="bronze-medal">14</td><td class="user-name"><div class="info-container"><div style="float:left"><i class="fav-button fa fa-heart fa-heart-o" aria-hidden="true"></i><span data-user-tag="None" class="rating rate-none user"><a href="https://icpc.vnoi.info/user/hsgs_hn05" style="display: inline-block;">CSP.marisa_fumo</a></span><div class="personal-info" style="display: block;"><span style="font-weight: 600; color: gray;"></span></div></div><div style="float:right"><div class="personal-info" style="text-align: right; display: block;"><span class="organization"><a href="https://icpc.vnoi.info/organization/olp422965679"><img class="uni-logo" src="https://icpc.vnoi.info/contest/hsgs_icpc/ranking/" style="display: none;"><p class="">THPT Chuyên Sư phạm Hà Nội</p></a></span></div></div></div></td><td class="user-points"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn05/">7</a></td><td class="user-penalty">1054</td><td></td><td></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn05/icpc_c/"><div class="solving-time-minute">11</div><div class="solving-time">00:11:02</div>1 try</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn05/icpc_d/"><div class="solving-time-minute">110</div><div class="solving-time">01:50:25</div>7 tries</a></td><td></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn05/icpc_f/"><div class="solving-time-minute">28</div><div class="solving-time">00:28:27</div>1 try</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn05/icpc_g/"><div class="solving-time-minute">6</div><div class="solving-time">00:06:55</div>1 try</a></td><td></td><td></td><td class="failed-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn05/icpc_j/">7 tries</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn05/icpc_k/"><div class="solving-time-minute">136</div><div class="solving-time">02:16:17</div>5 tries</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn05/icpc_l/"><div class="solving-time-minute">153</div><div class="solving-time">02:33:54</div>2 tries</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn05/icpc_m/"><div class="solving-time-minute">290</div><div class="solving-time">04:50:00</div>6 tries</a></td></tr><tr id="user-hsgs_hn14"><td>15</td><td class="user-name"><div class="info-container"><div style="float:left"><i class="fav-button fa fa-heart fa-heart-o" aria-hidden="true"></i><span data-user-tag="None" class="rating rate-none user"><a href="https://icpc.vnoi.info/user/hsgs_hn14" style="display: inline-block;">TonNgoKhong</a></span><div class="personal-info" style="display: block;"><span style="font-weight: 600; color: gray;"></span></div></div><div style="float:right"><div class="personal-info" style="text-align: right; display: block;"><span class="organization"><a href="https://icpc.vnoi.info/organization/olp993667958"><img class="uni-logo" src="https://icpc.vnoi.info/contest/hsgs_icpc/ranking/" style="display: none;"><p class="">THPT Chuyên Amsterdam Hà Nội</p></a></span></div></div></div></td><td class="user-points"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn14/">7</a></td><td class="user-penalty">1125</td><td></td><td></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn14/icpc_c/"><div class="solving-time-minute">20</div><div class="solving-time">00:20:45</div>1 try</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn14/icpc_d/"><div class="solving-time-minute">93</div><div class="solving-time">01:33:27</div>3 tries</a></td><td></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn14/icpc_f/"><div class="solving-time-minute">38</div><div class="solving-time">00:38:03</div>2 tries</a></td><td class="first-solve full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn14/icpc_g/"><div class="solving-time-minute">2</div><div class="solving-time">00:02:52</div>1 try</a></td><td></td><td></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn14/icpc_j/"><div class="solving-time-minute">279</div><div class="solving-time">04:39:16</div>4 tries</a></td><td class="failed-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn14/icpc_k/">5 tries</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn14/icpc_l/"><div class="solving-time-minute">173</div><div class="solving-time">02:53:46</div>1 try</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn14/icpc_m/"><div class="solving-time-minute">260</div><div class="solving-time">04:20:30</div>8 tries</a></td></tr><tr id="user-hsgs_hcm09"><td class="bronze-medal">16</td><td class="user-name"><div class="info-container"><div style="float:left"><i class="fav-button fa fa-heart fa-heart-o" aria-hidden="true"></i><span data-user-tag="None" class="rating rate-none user"><a href="https://icpc.vnoi.info/user/hsgs_hcm09" style="display: inline-block;">CHV_PHK</a></span><div class="personal-info" style="display: block;"><span style="font-weight: 600; color: gray;"></span></div></div><div style="float:right"><div class="personal-info" style="text-align: right; display: block;"><span class="organization"><a href="https://icpc.vnoi.info/organization/olp590977686"><img class="uni-logo" src="https://icpc.vnoi.info/contest/hsgs_icpc/ranking/" style="display: none;"><p class="">THPT Chuyên Hùng Vương Bình Dương</p></a></span></div></div></div></td><td class="user-points"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hcm09/">7</a></td><td class="user-penalty">1159</td><td></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hcm09/icpc_b/"><div class="solving-time-minute">285</div><div class="solving-time">04:45:32</div>5 tries</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hcm09/icpc_c/"><div class="solving-time-minute">66</div><div class="solving-time">01:06:51</div>2 tries</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hcm09/icpc_d/"><div class="solving-time-minute">171</div><div class="solving-time">02:51:55</div>1 try</a></td><td></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hcm09/icpc_f/"><div class="solving-time-minute">35</div><div class="solving-time">00:35:42</div>3 tries</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hcm09/icpc_g/"><div class="solving-time-minute">38</div><div class="solving-time">00:38:23</div>1 try</a></td><td></td><td></td><td></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hcm09/icpc_k/"><div class="solving-time-minute">89</div><div class="solving-time">01:29:34</div>1 try</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hcm09/icpc_l/"><div class="solving-time-minute">275</div><div class="solving-time">04:35:01</div>4 tries</a></td><td></td></tr><tr id="user-hsgs_hn21"><td>17</td><td class="user-name"><div class="info-container"><div style="float:left"><i class="fav-button fa fa-heart fa-heart-o" aria-hidden="true"></i><span data-user-tag="None" class="rating rate-none user"><a href="https://icpc.vnoi.info/user/hsgs_hn21" style="display: inline-block;">Category</a></span><div class="personal-info" style="display: block;"><span style="font-weight: 600; color: gray;"></span></div></div><div style="float:right"><div class="personal-info" style="text-align: right; display: block;"><span class="organization"><a href="https://icpc.vnoi.info/organization/olp768233896"><img class="uni-logo" src="https://icpc.vnoi.info/contest/hsgs_icpc/ranking/" style="display: none;"><p class="">THPT Chuyên Khoa học Tự nhiên Đại học Quốc gia Hà Nội</p></a></span></div></div></div></td><td class="user-points"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn21/">6</a></td><td class="user-penalty">321</td><td></td><td></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn21/icpc_c/"><div class="solving-time-minute">8</div><div class="solving-time">00:08:21</div>1 try</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn21/icpc_d/"><div class="solving-time-minute">34</div><div class="solving-time">00:34:47</div>1 try</a></td><td class="failed-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn21/icpc_e/">2 tries</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn21/icpc_f/"><div class="solving-time-minute">15</div><div class="solving-time">00:15:02</div>1 try</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn21/icpc_g/"><div class="solving-time-minute">11</div><div class="solving-time">00:11:50</div>1 try</a></td><td></td><td></td><td></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn21/icpc_k/"><div class="solving-time-minute">145</div><div class="solving-time">02:25:58</div>2 tries</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn21/icpc_l/"><div class="solving-time-minute">88</div><div class="solving-time">01:28:04</div>1 try</a></td><td class="failed-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn21/icpc_m/">17 tries</a></td></tr><tr id="user-hsgs_hcm04"><td class="bronze-medal">18</td><td class="user-name"><div class="info-container"><div style="float:left"><i class="fav-button fa fa-heart fa-heart-o" aria-hidden="true"></i><span data-user-tag="None" class="rating rate-none user"><a href="https://icpc.vnoi.info/user/hsgs_hcm04" style="display: inline-block;">TDN.(C12H12O4)n</a></span><div class="personal-info" style="display: block;"><span style="font-weight: 600; color: gray;"></span></div></div><div style="float:right"><div class="personal-info" style="text-align: right; display: block;"><span class="organization"><a href="https://icpc.vnoi.info/organization/olp98317075"><img class="uni-logo" src="https://icpc.vnoi.info/contest/hsgs_icpc/ranking/" style="display: none;"><p class="">THPT Chuyên Trần Đại Nghĩa Thành phố Hồ Chí Minh</p></a></span></div></div></div></td><td class="user-points"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hcm04/">6</a></td><td class="user-penalty">476</td><td></td><td></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hcm04/icpc_c/"><div class="solving-time-minute">33</div><div class="solving-time">00:33:31</div>1 try</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hcm04/icpc_d/"><div class="solving-time-minute">66</div><div class="solving-time">01:06:53</div>2 tries</a></td><td></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hcm04/icpc_f/"><div class="solving-time-minute">26</div><div class="solving-time">00:26:43</div>2 tries</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hcm04/icpc_g/"><div class="solving-time-minute">9</div><div class="solving-time">00:09:25</div>1 try</a></td><td></td><td></td><td></td><td class="failed-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hcm04/icpc_k/">4 tries</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hcm04/icpc_l/"><div class="solving-time-minute">89</div><div class="solving-time">01:29:35</div>1 try</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hcm04/icpc_m/"><div class="solving-time-minute">193</div><div class="solving-time">03:13:50</div>2 tries</a></td></tr><tr id="user-hsgs_hn06"><td>19</td><td class="user-name"><div class="info-container"><div style="float:left"><i class="fav-button fa fa-heart fa-heart-o" aria-hidden="true"></i><span data-user-tag="None" class="rating rate-none user"><a href="https://icpc.vnoi.info/user/hsgs_hn06" style="display: inline-block;">CSP.cirno_fumo</a></span><div class="personal-info" style="display: block;"><span style="font-weight: 600; color: gray;"></span></div></div><div style="float:right"><div class="personal-info" style="text-align: right; display: block;"><span class="organization"><a href="https://icpc.vnoi.info/organization/olp422965679"><img class="uni-logo" src="https://icpc.vnoi.info/contest/hsgs_icpc/ranking/" style="display: none;"><p class="">THPT Chuyên Sư phạm Hà Nội</p></a></span></div></div></div></td><td class="user-points"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn06/">6</a></td><td class="user-penalty">531</td><td></td><td></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn06/icpc_c/"><div class="solving-time-minute">10</div><div class="solving-time">00:10:03</div>1 try</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn06/icpc_d/"><div class="solving-time-minute">38</div><div class="solving-time">00:38:58</div>1 try</a></td><td class="failed-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn06/icpc_e/">3 tries</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn06/icpc_f/"><div class="solving-time-minute">21</div><div class="solving-time">00:21:50</div>2 tries</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn06/icpc_g/"><div class="solving-time-minute">13</div><div class="solving-time">00:13:17</div>1 try</a></td><td></td><td></td><td></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn06/icpc_k/"><div class="solving-time-minute">251</div><div class="solving-time">04:11:47</div>3 tries</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn06/icpc_l/"><div class="solving-time-minute">118</div><div class="solving-time">01:58:27</div>2 tries</a></td><td class="failed-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn06/icpc_m/">4 tries</a></td></tr><tr id="user-hsgs_hn07"><td>20</td><td class="user-name"><div class="info-container"><div style="float:left"><i class="fav-button fa fa-heart fa-heart-o" aria-hidden="true"></i><span data-user-tag="None" class="rating rate-none user"><a href="https://icpc.vnoi.info/user/hsgs_hn07" style="display: inline-block;">CSP.reimu_fumo</a></span><div class="personal-info" style="display: block;"><span style="font-weight: 600; color: gray;"></span></div></div><div style="float:right"><div class="personal-info" style="text-align: right; display: block;"><span class="organization"><a href="https://icpc.vnoi.info/organization/olp422965679"><img class="uni-logo" src="https://icpc.vnoi.info/contest/hsgs_icpc/ranking/" style="display: none;"><p class="">THPT Chuyên Sư phạm Hà Nội</p></a></span></div></div></div></td><td class="user-points"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn07/">6</a></td><td class="user-penalty">585</td><td></td><td></td><td class="first-solve full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn07/icpc_c/"><div class="solving-time-minute">5</div><div class="solving-time">00:05:57</div>1 try</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn07/icpc_d/"><div class="solving-time-minute">29</div><div class="solving-time">00:29:08</div>3 tries</a></td><td></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn07/icpc_f/"><div class="solving-time-minute">65</div><div class="solving-time">01:05:58</div>4 tries</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn07/icpc_g/"><div class="solving-time-minute">11</div><div class="solving-time">00:11:19</div>1 try</a></td><td></td><td></td><td></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn07/icpc_k/"><div class="solving-time-minute">223</div><div class="solving-time">03:43:08</div>2 tries</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn07/icpc_l/"><div class="solving-time-minute">112</div><div class="solving-time">01:52:23</div>2 tries</a></td><td class="failed-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn07/icpc_m/">25 tries</a></td></tr><tr id="user-hsgs_hcm03"><td>21</td><td class="user-name"><div class="info-container"><div style="float:left"><i class="fav-button fa fa-heart fa-heart-o" aria-hidden="true"></i><span data-user-tag="None" class="rating rate-none user"><a href="https://icpc.vnoi.info/user/hsgs_hcm03" style="display: inline-block;">HSG-HelloWorld</a></span><div class="personal-info" style="display: block;"><span style="font-weight: 600; color: gray;"></span></div></div><div style="float:right"><div class="personal-info" style="text-align: right; display: block;"><span class="organization"><a href="https://icpc.vnoi.info/organization/olp783613517"><img class="uni-logo" src="https://icpc.vnoi.info/contest/hsgs_icpc/ranking/" style="display: none;"><p class="">THPT Chuyên Đại học Quốc Gia Thành phố Hồ Chí Minh</p></a></span></div></div></div></td><td class="user-points"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hcm03/">6</a></td><td class="user-penalty">616</td><td class="failed-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hcm03/icpc_a/">1 try</a></td><td></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hcm03/icpc_c/"><div class="solving-time-minute">23</div><div class="solving-time">00:23:19</div>3 tries</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hcm03/icpc_d/"><div class="solving-time-minute">57</div><div class="solving-time">00:57:49</div>3 tries</a></td><td></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hcm03/icpc_f/"><div class="solving-time-minute">67</div><div class="solving-time">01:07:41</div>1 try</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hcm03/icpc_g/"><div class="solving-time-minute">7</div><div class="solving-time">00:07:27</div>1 try</a></td><td></td><td></td><td></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hcm03/icpc_k/"><div class="solving-time-minute">155</div><div class="solving-time">02:35:55</div>8 tries</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hcm03/icpc_l/"><div class="solving-time-minute">87</div><div class="solving-time">01:27:48</div>1 try</a></td><td class="failed-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hcm03/icpc_m/">34 tries</a></td></tr><tr id="user-hsgs_hn01"><td>22</td><td class="user-name"><div class="info-container"><div style="float:left"><i class="fav-button fa fa-heart fa-heart-o" aria-hidden="true"></i><span data-user-tag="None" class="rating rate-none user"><a href="https://icpc.vnoi.info/user/hsgs_hn01" style="display: inline-block;">CLC PALMER</a></span><div class="personal-info" style="display: block;"><span style="font-weight: 600; color: gray;"></span></div></div><div style="float:right"><div class="personal-info" style="text-align: right; display: block;"><span class="organization"><a href="https://icpc.vnoi.info/organization/olp296671922"><img class="uni-logo" src="https://icpc.vnoi.info/contest/hsgs_icpc/ranking/" style="display: none;"><p class="">THPT Chuyên Lào Cai</p></a></span></div></div></div></td><td class="user-points"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn01/">6</a></td><td class="user-penalty">623</td><td></td><td></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn01/icpc_c/"><div class="solving-time-minute">38</div><div class="solving-time">00:38:45</div>8 tries</a></td><td class="first-solve full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn01/icpc_d/"><div class="solving-time-minute">14</div><div class="solving-time">00:14:31</div>2 tries</a></td><td></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn01/icpc_f/"><div class="solving-time-minute">52</div><div class="solving-time">00:52:37</div>2 tries</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn01/icpc_g/"><div class="solving-time-minute">3</div><div class="solving-time">00:03:02</div>1 try</a></td><td></td><td></td><td class="failed-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn01/icpc_j/">6 tries</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn01/icpc_k/"><div class="solving-time-minute">113</div><div class="solving-time">01:53:09</div>4 tries</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn01/icpc_l/"><div class="solving-time-minute">83</div><div class="solving-time">01:23:55</div>5 tries</a></td><td class="failed-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn01/icpc_m/">7 tries</a></td></tr><tr id="user-hsgs_hcm01"><td>23</td><td class="user-name"><div class="info-container"><div style="float:left"><i class="fav-button fa fa-heart fa-heart-o" aria-hidden="true"></i><span data-user-tag="None" class="rating rate-none user"><a href="https://icpc.vnoi.info/user/hsgs_hcm01" style="display: inline-block;">HSG-A305</a></span><div class="personal-info" style="display: block;"><span style="font-weight: 600; color: gray;"></span></div></div><div style="float:right"><div class="personal-info" style="text-align: right; display: block;"><span class="organization"><a href="https://icpc.vnoi.info/organization/olp783613517"><img class="uni-logo" src="https://icpc.vnoi.info/contest/hsgs_icpc/ranking/" style="display: none;"><p class="">THPT Chuyên Đại học Quốc Gia Thành phố Hồ Chí Minh</p></a></span></div></div></div></td><td class="user-points"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hcm01/">6</a></td><td class="user-penalty">626</td><td></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hcm01/icpc_b/"><div class="solving-time-minute">232</div><div class="solving-time">03:52:20</div>1 try</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hcm01/icpc_c/"><div class="solving-time-minute">26</div><div class="solving-time">00:26:32</div>1 try</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hcm01/icpc_d/"><div class="solving-time-minute">43</div><div class="solving-time">00:43:40</div>1 try</a></td><td></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hcm01/icpc_f/"><div class="solving-time-minute">20</div><div class="solving-time">00:20:06</div>1 try</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hcm01/icpc_g/"><div class="solving-time-minute">8</div><div class="solving-time">00:08:46</div>1 try</a></td><td></td><td></td><td></td><td class="failed-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hcm01/icpc_k/">11 tries</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hcm01/icpc_l/"><div class="solving-time-minute">177</div><div class="solving-time">02:57:47</div>7 tries</a></td><td class="failed-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hcm01/icpc_m/">2 tries</a></td></tr><tr id="user-hsgs_hcm07"><td>24</td><td class="user-name"><div class="info-container"><div style="float:left"><i class="fav-button fa fa-heart fa-heart-o" aria-hidden="true"></i><span data-user-tag="None" class="rating rate-none user"><a href="https://icpc.vnoi.info/user/hsgs_hcm07" style="display: inline-block;">LHP-NeedMilkTea</a></span><div class="personal-info" style="display: block;"><span style="font-weight: 600; color: gray;"></span></div></div><div style="float:right"><div class="personal-info" style="text-align: right; display: block;"><span class="organization"><a href="https://icpc.vnoi.info/organization/olp989866502"><img class="uni-logo" src="https://icpc.vnoi.info/contest/hsgs_icpc/ranking/" style="display: none;"><p class="">THPT Chuyên Lê Hồng Phong Thành phố Hồ Chí Minh</p></a></span></div></div></div></td><td class="user-points"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hcm07/">6</a></td><td class="user-penalty">642</td><td></td><td></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hcm07/icpc_c/"><div class="solving-time-minute">12</div><div class="solving-time">00:12:56</div>1 try</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hcm07/icpc_d/"><div class="solving-time-minute">83</div><div class="solving-time">01:23:48</div>2 tries</a></td><td></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hcm07/icpc_f/"><div class="solving-time-minute">32</div><div class="solving-time">00:32:23</div>2 tries</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hcm07/icpc_g/"><div class="solving-time-minute">8</div><div class="solving-time">00:08:38</div>1 try</a></td><td></td><td></td><td></td><td class="failed-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hcm07/icpc_k/">3 tries</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hcm07/icpc_l/"><div class="solving-time-minute">93</div><div class="solving-time">01:33:14</div>6 tries</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hcm07/icpc_m/"><div class="solving-time-minute">234</div><div class="solving-time">03:54:17</div>3 tries</a></td></tr><tr id="user-hsgs_hn10"><td>25</td><td class="user-name"><div class="info-container"><div style="float:left"><i class="fav-button fa fa-heart fa-heart-o" aria-hidden="true"></i><span data-user-tag="None" class="rating rate-none user"><a href="https://icpc.vnoi.info/user/hsgs_hn10" style="display: inline-block;">ND.LHP.TrinhTranPhuongTuan</a></span><div class="personal-info" style="display: block;"><span style="font-weight: 600; color: gray;"></span></div></div><div style="float:right"><div class="personal-info" style="text-align: right; display: block;"><span class="organization"><a href="https://icpc.vnoi.info/organization/olp896126864"><img class="uni-logo" src="https://icpc.vnoi.info/contest/hsgs_icpc/ranking/" style="display: none;"><p class="">THPT Chuyên Lê Hồng Phong Nam Định</p></a></span></div></div></div></td><td class="user-points"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn10/">6</a></td><td class="user-penalty">719</td><td></td><td></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn10/icpc_c/"><div class="solving-time-minute">30</div><div class="solving-time">00:30:21</div>2 tries</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn10/icpc_d/"><div class="solving-time-minute">46</div><div class="solving-time">00:46:02</div>4 tries</a></td><td></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn10/icpc_f/"><div class="solving-time-minute">52</div><div class="solving-time">00:52:04</div>2 tries</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn10/icpc_g/"><div class="solving-time-minute">13</div><div class="solving-time">00:13:20</div>1 try</a></td><td></td><td></td><td></td><td class="failed-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn10/icpc_k/">1 try</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn10/icpc_l/"><div class="solving-time-minute">133</div><div class="solving-time">02:13:40</div>3 tries</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn10/icpc_m/"><div class="solving-time-minute">185</div><div class="solving-time">03:05:53</div>7 tries</a></td></tr><tr id="user-hsgs_hcm02"><td>26</td><td class="user-name"><div class="info-container"><div style="float:left"><i class="fav-button fa fa-heart fa-heart-o" aria-hidden="true"></i><span data-user-tag="None" class="rating rate-none user"><a href="https://icpc.vnoi.info/user/hsgs_hcm02" style="display: inline-block;">HSG-Capy33</a></span><div class="personal-info" style="display: block;"><span style="font-weight: 600; color: gray;"></span></div></div><div style="float:right"><div class="personal-info" style="text-align: right; display: block;"><span class="organization"><a href="https://icpc.vnoi.info/organization/olp783613517"><img class="uni-logo" src="https://icpc.vnoi.info/contest/hsgs_icpc/ranking/" style="display: none;"><p class="">THPT Chuyên Đại học Quốc Gia Thành phố Hồ Chí Minh</p></a></span></div></div></div></td><td class="user-points"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hcm02/">6</a></td><td class="user-penalty">796</td><td></td><td></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hcm02/icpc_c/"><div class="solving-time-minute">22</div><div class="solving-time">00:22:54</div>2 tries</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hcm02/icpc_d/"><div class="solving-time-minute">58</div><div class="solving-time">00:58:13</div>2 tries</a></td><td></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hcm02/icpc_f/"><div class="solving-time-minute">30</div><div class="solving-time">00:30:36</div>1 try</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hcm02/icpc_g/"><div class="solving-time-minute">5</div><div class="solving-time">00:05:09</div>1 try</a></td><td></td><td></td><td></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hcm02/icpc_k/"><div class="solving-time-minute">251</div><div class="solving-time">04:11:12</div>9 tries</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hcm02/icpc_l/"><div class="solving-time-minute">170</div><div class="solving-time">02:50:44</div>4 tries</a></td><td class="failed-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hcm02/icpc_m/">16 tries</a></td></tr><tr id="user-hsgs_hcm06"><td>27</td><td class="user-name"><div class="info-container"><div style="float:left"><i class="fav-button fa fa-heart fa-heart-o" aria-hidden="true"></i><span data-user-tag="None" class="rating rate-none user"><a href="https://icpc.vnoi.info/user/hsgs_hcm06" style="display: inline-block;">LHP-VIM</a></span><div class="personal-info" style="display: block;"><span style="font-weight: 600; color: gray;"></span></div></div><div style="float:right"><div class="personal-info" style="text-align: right; display: block;"><span class="organization"><a href="https://icpc.vnoi.info/organization/olp989866502"><img class="uni-logo" src="https://icpc.vnoi.info/contest/hsgs_icpc/ranking/" style="display: none;"><p class="">THPT Chuyên Lê Hồng Phong Thành phố Hồ Chí Minh</p></a></span></div></div></div></td><td class="user-points"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hcm06/">6</a></td><td class="user-penalty">895</td><td></td><td></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hcm06/icpc_c/"><div class="solving-time-minute">23</div><div class="solving-time">00:23:12</div>1 try</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hcm06/icpc_d/"><div class="solving-time-minute">152</div><div class="solving-time">02:32:42</div>3 tries</a></td><td></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hcm06/icpc_f/"><div class="solving-time-minute">17</div><div class="solving-time">00:17:10</div>2 tries</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hcm06/icpc_g/"><div class="solving-time-minute">3</div><div class="solving-time">00:03:16</div>1 try</a></td><td></td><td></td><td></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hcm06/icpc_k/"><div class="solving-time-minute">292</div><div class="solving-time">04:52:41</div>4 tries</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hcm06/icpc_l/"><div class="solving-time-minute">228</div><div class="solving-time">03:48:08</div>4 tries</a></td><td class="failed-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hcm06/icpc_m/">1 try</a></td></tr><tr id="user-hsgs_hn08"><td>28</td><td class="user-name"><div class="info-container"><div style="float:left"><i class="fav-button fa fa-heart fa-heart-o" aria-hidden="true"></i><span data-user-tag="None" class="rating rate-none user"><a href="https://icpc.vnoi.info/user/hsgs_hn08" style="display: inline-block;">CSP. Glory</a></span><div class="personal-info" style="display: block;"><span style="font-weight: 600; color: gray;"></span></div></div><div style="float:right"><div class="personal-info" style="text-align: right; display: block;"><span class="organization"><a href="https://icpc.vnoi.info/organization/olp422965679"><img class="uni-logo" src="https://icpc.vnoi.info/contest/hsgs_icpc/ranking/" style="display: none;"><p class="">THPT Chuyên Sư phạm Hà Nội</p></a></span></div></div></div></td><td class="user-points"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn08/">6</a></td><td class="user-penalty">921</td><td></td><td class="failed-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn08/icpc_b/">4 tries</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn08/icpc_c/"><div class="solving-time-minute">46</div><div class="solving-time">00:46:47</div>1 try</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn08/icpc_d/"><div class="solving-time-minute">52</div><div class="solving-time">00:52:28</div>3 tries</a></td><td class="failed-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn08/icpc_e/">7 tries</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn08/icpc_f/"><div class="solving-time-minute">33</div><div class="solving-time">00:33:11</div>4 tries</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn08/icpc_g/"><div class="solving-time-minute">6</div><div class="solving-time">00:06:02</div>1 try</a></td><td></td><td></td><td></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn08/icpc_k/"><div class="solving-time-minute">251</div><div class="solving-time">04:11:05</div>14 tries</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn08/icpc_l/"><div class="solving-time-minute">173</div><div class="solving-time">02:53:16</div>1 try</a></td><td></td></tr><tr id="user-hsgs_hn02"><td>29</td><td class="user-name"><div class="info-container"><div style="float:left"><i class="fav-button fa fa-heart fa-heart-o" aria-hidden="true"></i><span data-user-tag="None" class="rating rate-none user"><a href="https://icpc.vnoi.info/user/hsgs_hn02" style="display: inline-block;">CNH.meomeo</a></span><div class="personal-info" style="display: block;"><span style="font-weight: 600; color: gray;"></span></div></div><div style="float:right"><div class="personal-info" style="text-align: right; display: block;"><span class="organization"><a href="https://icpc.vnoi.info/organization/olp518531121"><img class="uni-logo" src="https://icpc.vnoi.info/contest/hsgs_icpc/ranking/" style="display: none;"><p class="">THPT Chuyên Nguyễn Huệ Hà Nội</p></a></span></div></div></div></td><td class="user-points"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn02/">6</a></td><td class="user-penalty">989</td><td></td><td></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn02/icpc_c/"><div class="solving-time-minute">40</div><div class="solving-time">00:40:19</div>3 tries</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn02/icpc_d/"><div class="solving-time-minute">194</div><div class="solving-time">03:14:09</div>4 tries</a></td><td class="failed-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn02/icpc_e/">1 try</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn02/icpc_f/"><div class="solving-time-minute">31</div><div class="solving-time">00:31:57</div>1 try</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn02/icpc_g/"><div class="solving-time-minute">12</div><div class="solving-time">00:12:00</div>1 try</a></td><td></td><td></td><td></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn02/icpc_k/"><div class="solving-time-minute">270</div><div class="solving-time">04:30:35</div>4 tries</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn02/icpc_l/"><div class="solving-time-minute">262</div><div class="solving-time">04:22:39</div>2 tries</a></td><td></td></tr><tr id="user-hsgs_hcm08"><td>30</td><td class="user-name"><div class="info-container"><div style="float:left"><i class="fav-button fa fa-heart fa-heart-o" aria-hidden="true"></i><span data-user-tag="None" class="rating rate-none user"><a href="https://icpc.vnoi.info/user/hsgs_hcm08" style="display: inline-block;">CHV_SIMPLE</a></span><div class="personal-info" style="display: block;"><span style="font-weight: 600; color: gray;"></span></div></div><div style="float:right"><div class="personal-info" style="text-align: right; display: block;"><span class="organization"><a href="https://icpc.vnoi.info/organization/olp590977686"><img class="uni-logo" src="https://icpc.vnoi.info/contest/hsgs_icpc/ranking/" style="display: none;"><p class="">THPT Chuyên Hùng Vương Bình Dương</p></a></span></div></div></div></td><td class="user-points"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hcm08/">6</a></td><td class="user-penalty">1082</td><td></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hcm08/icpc_b/"><div class="solving-time-minute">163</div><div class="solving-time">02:43:35</div>6 tries</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hcm08/icpc_c/"><div class="solving-time-minute">59</div><div class="solving-time">00:59:17</div>1 try</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hcm08/icpc_d/"><div class="solving-time-minute">178</div><div class="solving-time">02:58:12</div>4 tries</a></td><td></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hcm08/icpc_f/"><div class="solving-time-minute">112</div><div class="solving-time">01:52:04</div>2 tries</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hcm08/icpc_g/"><div class="solving-time-minute">12</div><div class="solving-time">00:12:58</div>1 try</a></td><td></td><td></td><td></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hcm08/icpc_k/"><div class="solving-time-minute">258</div><div class="solving-time">04:18:04</div>7 tries</a></td><td></td><td class="failed-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hcm08/icpc_m/">1 try</a></td></tr><tr id="user-hsgs_hn15"><td>31</td><td class="user-name"><div class="info-container"><div style="float:left"><i class="fav-button fa fa-heart fa-heart-o" aria-hidden="true"></i><span data-user-tag="None" class="rating rate-none user"><a href="https://icpc.vnoi.info/user/hsgs_hn15" style="display: inline-block;">NguuMaVuong</a></span><div class="personal-info" style="display: block;"><span style="font-weight: 600; color: gray;"></span></div></div><div style="float:right"><div class="personal-info" style="text-align: right; display: block;"><span class="organization"><a href="https://icpc.vnoi.info/organization/olp993667958"><img class="uni-logo" src="https://icpc.vnoi.info/contest/hsgs_icpc/ranking/" style="display: none;"><p class="">THPT Chuyên Amsterdam Hà Nội</p></a></span></div></div></div></td><td class="user-points"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn15/">6</a></td><td class="user-penalty">1364</td><td></td><td></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn15/icpc_c/"><div class="solving-time-minute">25</div><div class="solving-time">00:25:10</div>6 tries</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn15/icpc_d/"><div class="solving-time-minute">134</div><div class="solving-time">02:14:56</div>8 tries</a></td><td></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn15/icpc_f/"><div class="solving-time-minute">73</div><div class="solving-time">01:13:06</div>2 tries</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn15/icpc_g/"><div class="solving-time-minute">31</div><div class="solving-time">00:31:31</div>3 tries</a></td><td></td><td></td><td></td><td></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn15/icpc_l/"><div class="solving-time-minute">151</div><div class="solving-time">02:31:50</div>2 tries</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn15/icpc_m/"><div class="solving-time-minute">290</div><div class="solving-time">04:50:35</div>18 tries</a></td></tr><tr id="user-hsgs_hn16"><td>32</td><td class="user-name"><div class="info-container"><div style="float:left"><i class="fav-button fa fa-heart fa-heart-o" aria-hidden="true"></i><span data-user-tag="None" class="rating rate-none user"><a href="https://icpc.vnoi.info/user/hsgs_hn16" style="display: inline-block;">HongHaiNhi</a></span><div class="personal-info" style="display: block;"><span style="font-weight: 600; color: gray;"></span></div></div><div style="float:right"><div class="personal-info" style="text-align: right; display: block;"><span class="organization"><a href="https://icpc.vnoi.info/organization/olp993667958"><img class="uni-logo" src="https://icpc.vnoi.info/contest/hsgs_icpc/ranking/" style="display: none;"><p class="">THPT Chuyên Amsterdam Hà Nội</p></a></span></div></div></div></td><td class="user-points"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn16/">5</a></td><td class="user-penalty">233</td><td></td><td></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn16/icpc_c/"><div class="solving-time-minute">23</div><div class="solving-time">00:23:39</div>1 try</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn16/icpc_d/"><div class="solving-time-minute">44</div><div class="solving-time">00:44:12</div>1 try</a></td><td></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn16/icpc_f/"><div class="solving-time-minute">27</div><div class="solving-time">00:27:40</div>3 tries</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn16/icpc_g/"><div class="solving-time-minute">7</div><div class="solving-time">00:07:46</div>1 try</a></td><td></td><td></td><td></td><td class="failed-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn16/icpc_k/">9 tries</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn16/icpc_l/"><div class="solving-time-minute">92</div><div class="solving-time">01:32:55</div>1 try</a></td><td class="failed-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn16/icpc_m/">8 tries</a></td></tr><tr id="user-hsgs_hn09"><td>33</td><td class="user-name"><div class="info-container"><div style="float:left"><i class="fav-button fa fa-heart fa-heart-o" aria-hidden="true"></i><span data-user-tag="None" class="rating rate-none user"><a href="https://icpc.vnoi.info/user/hsgs_hn09" style="display: inline-block;">CHL R2R1</a></span><div class="personal-info" style="display: block;"><span style="font-weight: 600; color: gray;"></span></div></div><div style="float:right"><div class="personal-info" style="text-align: right; display: block;"><span class="organization"><a href="https://icpc.vnoi.info/organization/olp190441880"><img class="uni-logo" src="https://icpc.vnoi.info/contest/hsgs_icpc/ranking/" style="display: none;"><p class="">THPT Chuyên Hạ Long Quảng Ninh</p></a></span></div></div></div></td><td class="user-points"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn09/">5</a></td><td class="user-penalty">250</td><td></td><td></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn09/icpc_c/"><div class="solving-time-minute">55</div><div class="solving-time">00:55:07</div>1 try</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn09/icpc_d/"><div class="solving-time-minute">49</div><div class="solving-time">00:49:13</div>1 try</a></td><td class="failed-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn09/icpc_e/">1 try</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn09/icpc_f/"><div class="solving-time-minute">33</div><div class="solving-time">00:33:58</div>1 try</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn09/icpc_g/"><div class="solving-time-minute">8</div><div class="solving-time">00:08:25</div>1 try</a></td><td></td><td></td><td class="failed-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn09/icpc_j/">6 tries</a></td><td class="failed-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn09/icpc_k/">9 tries</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn09/icpc_l/"><div class="solving-time-minute">85</div><div class="solving-time">01:25:04</div>2 tries</a></td><td class="failed-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn09/icpc_m/">2 tries</a></td></tr><tr id="user-hsgs_hcm05"><td>34</td><td class="user-name"><div class="info-container"><div style="float:left"><i class="fav-button fa fa-heart fa-heart-o" aria-hidden="true"></i><span data-user-tag="None" class="rating rate-none user"><a href="https://icpc.vnoi.info/user/hsgs_hcm05" style="display: inline-block;">TN.HLK PromptAC-ed</a></span><div class="personal-info" style="display: block;"><span style="font-weight: 600; color: gray;"></span></div></div><div style="float:right"><div class="personal-info" style="text-align: right; display: block;"><span class="organization"><a href="https://icpc.vnoi.info/organization/olp801234089"><img class="uni-logo" src="https://icpc.vnoi.info/contest/hsgs_icpc/ranking/" style="display: none;"><p class="">THPT Chuyên Hoàng Lê Kha Tây Ninh</p></a></span></div></div></div></td><td class="user-points"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hcm05/">5</a></td><td class="user-penalty">713</td><td></td><td></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hcm05/icpc_c/"><div class="solving-time-minute">59</div><div class="solving-time">00:59:43</div>3 tries</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hcm05/icpc_d/"><div class="solving-time-minute">93</div><div class="solving-time">01:33:00</div>2 tries</a></td><td></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hcm05/icpc_f/"><div class="solving-time-minute">30</div><div class="solving-time">00:30:52</div>1 try</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hcm05/icpc_g/"><div class="solving-time-minute">4</div><div class="solving-time">00:04:32</div>1 try</a></td><td></td><td></td><td></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hcm05/icpc_k/"><div class="solving-time-minute">267</div><div class="solving-time">04:27:35</div>11 tries</a></td><td></td><td class="failed-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hcm05/icpc_m/">5 tries</a></td></tr><tr id="user-hsgs_hn04"><td>35</td><td class="user-name"><div class="info-container"><div style="float:left"><i class="fav-button fa fa-heart fa-heart-o" aria-hidden="true"></i><span data-user-tag="None" class="rating rate-none user"><a href="https://icpc.vnoi.info/user/hsgs_hn04" style="display: inline-block;">HP.CTP.001</a></span><div class="personal-info" style="display: block;"><span style="font-weight: 600; color: gray;"></span></div></div><div style="float:right"><div class="personal-info" style="text-align: right; display: block;"><span class="organization"><a href="https://icpc.vnoi.info/organization/olp105853768"><img class="uni-logo" src="https://icpc.vnoi.info/contest/hsgs_icpc/ranking/" style="display: none;"><p class="">THPT Chuyên Trần Phú Hải Phòng</p></a></span></div></div></div></td><td class="user-points"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn04/">4</a></td><td class="user-penalty">271</td><td class="failed-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn04/icpc_a/">1 try</a></td><td class="failed-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn04/icpc_b/">1 try</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn04/icpc_c/"><div class="solving-time-minute">26</div><div class="solving-time">00:26:16</div>1 try</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn04/icpc_d/"><div class="solving-time-minute">109</div><div class="solving-time">01:49:42</div>3 tries</a></td><td class="failed-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn04/icpc_e/">1 try</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn04/icpc_f/"><div class="solving-time-minute">71</div><div class="solving-time">01:11:42</div>2 tries</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn04/icpc_g/"><div class="solving-time-minute">5</div><div class="solving-time">00:05:54</div>1 try</a></td><td class="failed-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn04/icpc_h/">1 try</a></td><td class="failed-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn04/icpc_i/">1 try</a></td><td class="failed-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn04/icpc_j/">1 try</a></td><td class="failed-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn04/icpc_k/">9 tries</a></td><td class="failed-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn04/icpc_l/">10 tries</a></td><td class="failed-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn04/icpc_m/">5 tries</a></td></tr><tr id="user-hsgs_hn03"><td>36</td><td class="user-name"><div class="info-container"><div style="float:left"><i class="fav-button fa fa-heart fa-heart-o" aria-hidden="true"></i><span data-user-tag="None" class="rating rate-none user"><a href="https://icpc.vnoi.info/user/hsgs_hn03" style="display: inline-block;">CNH.ICOI24</a></span><div class="personal-info" style="display: block;"><span style="font-weight: 600; color: gray;"></span></div></div><div style="float:right"><div class="personal-info" style="text-align: right; display: block;"><span class="organization"><a href="https://icpc.vnoi.info/organization/olp518531121"><img class="uni-logo" src="https://icpc.vnoi.info/contest/hsgs_icpc/ranking/" style="display: none;"><p class="">THPT Chuyên Nguyễn Huệ Hà Nội</p></a></span></div></div></div></td><td class="user-points"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn03/">4</a></td><td class="user-penalty">306</td><td></td><td></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn03/icpc_c/"><div class="solving-time-minute">66</div><div class="solving-time">01:06:04</div>2 tries</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn03/icpc_d/"><div class="solving-time-minute">92</div><div class="solving-time">01:32:20</div>1 try</a></td><td class="failed-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn03/icpc_e/">1 try</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn03/icpc_f/"><div class="solving-time-minute">100</div><div class="solving-time">01:40:10</div>2 tries</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn03/icpc_g/"><div class="solving-time-minute">8</div><div class="solving-time">00:08:54</div>1 try</a></td><td></td><td></td><td></td><td class="failed-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn03/icpc_k/">13 tries</a></td><td class="failed-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn03/icpc_l/">5 tries</a></td><td class="failed-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_hn03/icpc_m/">6 tries</a></td></tr><tr id="user-hsgs_dn05"><td>37</td><td class="user-name"><div class="info-container"><div style="float:left"><i class="fav-button fa fa-heart fa-heart-o" aria-hidden="true"></i><span data-user-tag="None" class="rating rate-none user"><a href="https://icpc.vnoi.info/user/hsgs_dn05" style="display: inline-block;">ChiLang01</a></span><div class="personal-info" style="display: block;"><span style="font-weight: 600; color: gray;"></span></div></div><div style="float:right"><div class="personal-info" style="text-align: right; display: block;"><span class="organization"><a href="https://icpc.vnoi.info/organization/olp437735522"><img class="uni-logo" src="https://icpc.vnoi.info/contest/hsgs_icpc/ranking/" style="display: none;"><p class="">Trường THPT Chi Lăng Gia Lai</p></a></span></div></div></div></td><td class="user-points"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_dn05/">4</a></td><td class="user-penalty">511</td><td></td><td></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_dn05/icpc_c/"><div class="solving-time-minute">63</div><div class="solving-time">01:03:29</div>1 try</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_dn05/icpc_d/"><div class="solving-time-minute">158</div><div class="solving-time">02:38:37</div>5 tries</a></td><td></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_dn05/icpc_f/"><div class="solving-time-minute">79</div><div class="solving-time">01:19:55</div>6 tries</a></td><td class="full-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_dn05/icpc_g/"><div class="solving-time-minute">31</div><div class="solving-time">00:31:04</div>1 try</a></td><td></td><td></td><td></td><td class="failed-score"><a href="https://icpc.vnoi.info/contest/hsgs_icpc/submissions/hsgs_dn05/icpc_k/">1 try</a></td><td></td><td></td></tr><tr><td colspan="4">Total AC</td><td class="total-ac" id="A-total">0</td><td class="total-ac" id="B-total">11</td><td class="total-ac" id="C-total">37</td><td class="total-ac" id="D-total">37</td><td class="total-ac" id="E-total">0</td><td class="total-ac" id="F-total">37</td><td class="total-ac" id="G-total">37</td><td class="total-ac" id="H-total">1</td><td class="total-ac" id="I-total">1</td><td class="total-ac" id="J-total">6</td><td class="total-ac" id="K-total">23</td><td class="total-ac" id="L-total">32</td><td class="total-ac" id="M-total">19</td></tr></tbody></table>
+            </div>
+        </div>
+    </div>
+
+    <table id="cell_legend" class="table" style="width: 10em; margin-left: 0">
+        <thead>
+            <tr>
+                <th scope="col">Cell colours</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="first-solve">
+                <td>Solved first</td>
+            </tr>
+            <tr class="full-score">
+                <td>Solved</td>
+            </tr>
+            <tr class="failed-score">
+                <td>Tried, incorrect</td>
+            </tr>
+            <tr class="pending">
+                <td>Tried, pending</td>
+            </tr>
+            <tr>
+                <td>Untried</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+    </main>
+
+
+<script type="text/javascript" src="./scoreboard-hsgs_files/mathjax_config.js"></script>
+<script type="text/javascript" src="./scoreboard-hsgs_files/tex-chtml.min.js"></script>
+<script type="text/javascript">
+    MathJax.typesetPromise().then(function () {
+        $('.tex-image').hide();
+        $('.tex-text').show();
+    });
+</script>
+    <footer>
+        <span id="footer-content">
+            <br>
+            proudly powered by <a style="color: #808080" href="https://dmoj.ca/"><b>DMOJ</b></a> |
+            follow us on <a style="color: #808080" href="https://github.com/VNOI-Admin/OJ"><b>Github</b></a> and <a style="color: #808080" href="https://www.facebook.com/vnoi.wiki"><b>Facebook</b></a>
+            <form id="set_language" action="https://icpc.vnoi.info/i18n/setlang/" method="post" style="display: inline">
+<input type="hidden" name="csrfmiddlewaretoken" value="4lGHsuqTCQHN8TQmwjArqdcP55e4GhnuM64wRL5tP7BYNNqEwzxR9rDA94noLYTz">            <input name="next" type="hidden" value="/contest/hsgs_icpc/ranking/">
+            <input name="language" type="hidden" value="en">
+          </form>
+        </span>
+    </footer>
+</div>
+
+</body></html>
