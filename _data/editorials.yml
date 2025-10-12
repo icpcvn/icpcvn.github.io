@@ -1,3 +1,11 @@
+- year: 2025
+  contests:
+    - type: Southern
+      contents:
+        - title: Scoreboard
+          url: 2025/southern/scoreboard.html
+        - title: Problems
+          url: 2025/southern/problems.pdf
 - year: 2024
   contests:
     - type: Regional

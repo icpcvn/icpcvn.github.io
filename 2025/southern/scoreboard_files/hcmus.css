@@ -1,0 +1,9 @@
+.banner {
+    max-width: 98%;
+    max-height: 30ex;
+    height: auto;
+    display: block;
+    margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+}
