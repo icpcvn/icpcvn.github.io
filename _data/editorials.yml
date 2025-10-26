@@ -12,6 +12,16 @@
           url: 2025/southern/scoreboard.html
         - title: Problems
           url: 2025/southern/problems.pdf
+        - title: Upsolve
+          url: https://oj.vnoi.info/contest/icpc25_mt
+    - type: Northern
+      contents:
+        - title: Scoreboard
+          url: 2025/northern/scoreboard.html
+        - title: Problems
+          url: 2025/northern/problems.pdf
+        - title: Upsolve
+          url: https://oj.vnoi.info/contest/icpc25_mb
 - year: 2024
   contests:
     - type: Regional
