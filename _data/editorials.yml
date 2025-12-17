@@ -1,5 +1,15 @@
 - year: 2025
   contests:
+    - type: Regional
+      contents:
+        - title: Scoreboard
+          url: 2025/regional/scoreboard.html
+        - title: Scoreboard (HSGS)
+          url: 2025/regional/scoreboard-hsgs.html
+        - title: Problems
+          url: 2025/regional/problems.pdf
+        - title: Upsolve
+          url: https://oj.vnoi.info/contest/icpc25_regional
     - type: National
       contents:
         - title: Scoreboard
