@@ -1,3 +1,13 @@
+- year: 2026
+  contests:
+    - type: Northern
+      contents:
+        - title: Scoreboard
+          url: 2026/northern/scoreboard.html
+        - title: Problems
+          url: 2026/northern/problems.pdf
+        - title: Upsolve
+          url: https://oj.vnoi.info/contest/icpc26_mb
 - year: 2025
   contests:
     - type: Regional
