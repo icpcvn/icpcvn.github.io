@@ -16,6 +16,14 @@
           url: 2026/southern/problems.pdf
         - title: Upsolve
           url: https://oj.vnoi.info/contest/icpc26_mn
+    - type: Central
+      contents:
+        - title: Scoreboard
+          url: 2026/central/scoreboard.html
+        - title: Problems
+          url: 2026/central/problems.pdf
+        - title: Upsolve
+          url: https://oj.vnoi.info/contest/icpc26_mt
 - year: 2025
   contests:
     - type: Regional
